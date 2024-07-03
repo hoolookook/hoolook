@@ -1,0 +1,144 @@
+@import "../base/commons.scss";
+
+#contents {
+  @include WH(100vw, 100vh);
+  .playWrap {
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 100vh;
+    #playPause {
+      @include apsolutePos(none, 0, 184px, none, $transform: false);
+      padding-right: 75%;
+      display: block;
+
+      z-index: 15;
+      button {
+        margin: 0 7px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        &:focus {
+          opacity: 1;
+        }
+      }
+      .play {
+        @include WH(15px, 15px);
+        @include backgroundRS(15px 15px);
+        background-image: url(../../images/icons/slider-play-icon-white.png);
+        opacity: 1;
+      }
+      .pause {
+        @include WH(15px, 15px);
+        @include backgroundRS(15px 15px);
+        background-image: url(../../images/icons/slider-pause-icon-white.png);
+        opacity: 0.5;
+      }
+    }
+  }
+
+  #custom-seekbar {
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: 10px;
+    outline: thin solid orange;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    z-index: 5;
+    span {
+      background-color: orange;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 10px;
+      width: 0px;
+    }
+  }
+  .videoSection {
+    @include WH(100vw, 100vh);
+    @include apsolutePos(0, 0, 0, 0, $transform: false);
+    .FrontVideo {
+      @include WH(100vw, 100vh);
+
+      video {
+        @include MinWH(100%, 100%);
+        @include apsolutePos(50%, none, none, 50%, $transform: false);
+        transform: translate(-50%, -50%);
+      }
+    }
+    .videoTitle {
+      @include WH(100%, auto);
+      @include apsolutePos(25%, none, none, 50%, $transform: true);
+      max-width: 1170px;
+      text-align: left;
+      h2 {
+        font-size: 76px;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+  .dropDownSection {
+    display: block;
+    @include apsolutePos(none, none, 0, 50%, $transform: true);
+    width: 100%;
+    z-index: 1;
+    .wrap {
+      margin: 0 auto;
+      max-width: 1170px;
+      @include WH(auto, auto);
+      border-radius: 30px 30px 0 0;
+      background-color: #4b4b4b;
+      .container {
+        // flex-wrap: nowrap;
+        padding: 30px 60px 40px;
+        @include commonFlex(row wrap, center, center);
+        column-gap: 30px;
+        flex-wrap: nowrap;
+
+        select,
+        input,
+        select option {
+          @include WH(300px, 48px);
+          font-size: 20px;
+          border: 0;
+          font-weight: 500;
+          border-bottom: 1px solid #818181;
+        }
+        select {
+          width: 28.5%;
+          background: transparent;
+          background-image: url(/assets/images/icons/form-select-arrow-white.png);
+          background-repeat: no-repeat;
+          background-position-x: 92%;
+          background-position-y: 25px;
+          background-size: 16px 10px;
+          color: white;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          option {
+            color: #4b4b4b;
+          }
+        }
+        input {
+          width: 28.5%;
+          background: transparent;
+          color: white;
+          &::placeholder {
+            color: white;
+          }
+        }
+        .searchBtn {
+          width: 28.5%;
+          @include WH(48px, 48px);
+          border-radius: 50%;
+          img {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

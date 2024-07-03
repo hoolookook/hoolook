@@ -1,0 +1,139 @@
+#footer {
+    background-color: #4b4b4b;
+}
+
+#footer .wrap {
+    margin: 0 20px;
+}
+
+#footer .wrap .container {
+    position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#footer .wrap .container .footerNavWrap .footerLogo {
+    position: absolute;
+    top: 0;
+    right: none;
+    bottom: none;
+    left: 0;
+    padding-top: 48px;
+}
+
+#footer .wrap .container .footerNavWrap .footerLogo img {
+    width: 130px;
+    height: 47.5px;
+}
+
+#footer .wrap .container .footerNavWrap .introduceWrap {
+    width: 100%;
+    height: 100%;
+    padding: 48px 0;
+    float: right;
+}
+
+#footer .wrap .container .footerNavWrap .introduceWrap ul {
+    width: 400px;
+    padding: 16px 0;
+    margin: 0 0 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#footer .wrap .container .footerNavWrap .introduceWrap ul strong {
+    float: left;
+    width: 25%;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#footer .wrap .container .footerNavWrap .introduceWrap ul li {
+    float: left;
+    width: 25%;
+}
+
+#footer .wrap .container .footerNavWrap .introduceWrap ul li a {
+    color: #999999;
+}
+
+#footer .wrap .copyRight {
+    padding: 16px 0;
+    border-top: 1px solid #595959;
+}
+
+#footer .wrap .copyRight .ulWrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#footer .wrap .copyRight .ulWrap .copyWrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#footer .wrap .copyRight .ulWrap .copyWrap li {
+    padding: 17px 0;
+}
+
+#footer .wrap .copyRight .ulWrap .copyWrap li .ind {
+    position: relative;
+}
+
+#footer .wrap .copyRight .ulWrap .copyWrap li .ind::before {
+    position: absolute;
+    top: 0;
+    right: -9px;
+    bottom: none;
+    left: none;
+    content: "|";
+    color: #999999;
+}
+
+#footer .wrap .copyRight .ulWrap .copyWrap li p {
+    color: #999999;
+}
+
+#footer .wrap .copyRight .ulWrap .copyWrap li p:not(.ind) {
+    padding-left: 15px;
+}

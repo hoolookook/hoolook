@@ -1,0 +1,76 @@
+@import "../base/commons.scss";
+#footer {
+  background-color: #4b4b4b;
+  .wrap {
+    margin: 0 20px;
+    .container {
+      position: relative;
+      max-width: 1170px;
+      margin: 0 auto;
+      .footerNavWrap {
+        .footerLogo {
+          @include apsolutePos(0, none, none, 0, false);
+          padding-top: 48px;
+          img {
+            @include WH(130px, 47.5px);
+          }
+        }
+        .introduceWrap {
+          width: 100%;
+          height: 100%;
+          padding: 48px 0;
+          float: right;
+          ul {
+            width: 400px;
+            padding: 16px 0;
+            margin: 0 0 0 auto;
+            @include commonFlex(row, flex-end, center);
+            strong {
+              float: left;
+              width: 25%;
+              color: #ffffff;
+              font-weight: bold;
+            }
+            li {
+              float: left;
+              width: 25%;
+              a {
+                color: #999999;
+              }
+            }
+          }
+        }
+      }
+    }
+    .copyRight {
+      padding: 16px 0;
+      border-top: 1px solid #595959;
+      .ulWrap {
+        max-width: 1170px;
+        margin: 0 auto;
+        .copyWrap {
+          @include commonFlex(row, flex-start, center);
+
+          li {
+            padding: 17px 0;
+            .ind {
+              position: relative;
+              &::before {
+                @include apsolutePos(0, -9px, none, none, false);
+
+                content: "|";
+                color: #999999;
+              }
+            }
+            p {
+              color: #999999;
+              &:not(.ind) {
+                padding-left: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

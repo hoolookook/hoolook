@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SKMaterials</title>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<!-- AOS library -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+	<!-- js -->
+	<!--js 편집 끝나면 build로 다시 바꿔 -->
+	<script src="/assets/js/lib/main.js" defer></script>
+	<!-- slick -->
+	<script src="/assets/js/lib/slick.js"></script>
+	<!-- css -->
+	<link rel="stylesheet" href="/public/build/resources/css/base/style.css">
+
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/public/build/resources/images/icons/favicon.png">
+	<!--favicon ios Andro-->
+	<link rel="icon" sizes="152x152" href="/public/build/resources/images/icons/apple-icon-152x152.png">
+</head>
+
+<body>
+
+
+	<section id="header">
+		<div class="deepMenuOn"></div>
+		<div class="headerWrap clearfix">
+			<div class="logo">
+				<h1 class="ir_so">SKmaterials</h1>
+				<a href="#" taget="_blank">
+					<img src="/assets/images/icons/header-ci-white.png" alt="logo" title="logo">
+				</a>
+			</div>
+			<button class="navOnOff">
+				<span class="ir_so">nav버튼 활성화</span>
+			</button>
+			<ul class="navWrap">
+				<li class="nav"><a href="#">지원하기</a></li>
+				<li class="nav mtFam">
+					<a href="#">SK머티리얼즈 패밀리</a>
+					<ul class="FamDeepMenu">
+						<li><a href="#">SK머티리얼즈</a></li>
+						<li><a href="#">SK머티리얼즈에어플러스</a></li>
+						<li><a href="#">SK트리캠</a></li>
+						<li><a href="#">SK쇼와덴코</a></li>
+						<li><a href="#">SK머티리얼즈리뉴텍</a></li>
+						<li><a href="#">SK머티리얼즈퍼포먼스</a></li>
+						<li><a href="#">SK머티리얼즈제이엔씨</a></li>
+						<li><a href="#">Tech Platform 센터 / 품질·분석센터</a></li>
+					</ul>
+				</li>
+				<li class="nav mtLife">
+					<a href="#">라이프</a>
+					<ul class="LifeDeepMenu">
+						<li><a href="#">구성원 생활</a></li>
+						<li><a href="#">채용 뉴스</a></li>
+					</ul>
+				</li>
+				<li class="nav"><a href="#">워크</a></li>
+				<li class="nav"><a href="#"><span class="login">로그인</span></a></li>
+			</ul>
+
+			<!-- media navWrap -->
+			<div class="MediaNavWrap">
+				<ul class="wrap">
+					<li class="firstNav"><a href="#">지원하기</a></li>
+					<li class="firstNav family">
+						<a href="#">SK머티리얼즈 패밀리</a>
+						<ul class="click FamilyDeepM">
+							<li><a href="#">SK머티리얼즈</a></li>
+							<li><a href="#">SK머티리얼즈에어플러스</a></li>
+							<li><a href="#">SK트리캠</a></li>
+							<li><a href="#">SK쇼와덴코</a></li>
+							<li><a href="#">SK머티리얼즈리뉴텍</a></li>
+							<li><a href="#">SK머티리얼즈퍼포먼스</a></li>
+							<li><a href="#">SK머티리얼즈제이엔씨</a></li>
+							<li><a href="#">Tech Platform 센터 / 품질·분석센터</a></li>
+						</ul>
+					</li>
+					<li class="firstNav life">
+						<a href="#">라이프</a>
+						<ul class="click LifeDeepM">
+							<li><a href="#">구성원 생활</a></li>
+							<li><a href="#">채용 뉴스</a></li>
+						</ul>
+					</li>
+					<li class="firstNav"><a href="#">워크</a></li>
+					<li class="firstNav"><a href="#"><span class="login">로그인</span></a></li>
+				</ul>
+			</div>
+			<!-- media navWrap -->
+
+		</div>
+	</section>
+	<section id="contents">
+		<div class="playWrap">
+			<div id="playPause">
+				<button class='play'></button>
+				<button class='pause'></button>
+			</div>
+		</div>
+		<div class="videoSection">
+			<div class="FrontVideo one">
+				<video id="video" autoplay="autoplay" muted="muted" loop="loop" src="/assets/images/movie/main-visual-mov-01.mp4" type="video/mp4"></video>
+
+				<div class="videoTitle">
+					<h2>행복한 소통</h2>
+				</div>
+			</div>
+			<div class="FrontVideo two">
+				<video id="video" autoplay="autoplay" muted="muted" loop="loop" src="/assets/images/movie/main-visual-mov-02.mp4" type="video/mp4"></video>
+
+				<div class="videoTitle">
+					<h2>각자의 방식으로<br>가장 자유롭게</h2>
+				</div>
+			</div>
+			<div class="FrontVideo three">
+				<video id="video" autoplay="autoplay" muted="muted" loop="loop" src="/assets/images/movie/main-visual-mov-03.mp4" type="video/mp4"></video>
+				<div class="videoTitle">
+					<h2>호기심, 탐구, 진리</h2>
+				</div>
+			</div>
+		</div>
+		<div class="dropDownSection">
+			<div class="wrap">
+				<div class="container">
+					<select title="계열사 선택" class="dropDownBox familyGroup">
+						<option value="A1">패밀리사</option>
+						<option value="A2">SK머티리얼즈</option>
+						<option value="A3">SK트리켐</option>
+						<option value="A4">SK머티리얼즈 에어플러스</option>
+						<option value="A5">SK쇼와덴코</option>
+						<option value="A6">SK머티리얼즈 리뉴텍</option>
+						<option value="A7">SK머티리얼즈 퍼포먼스</option>
+						<option value="A7">SK머티리얼즈 제이앤씨</option>
+					</select>
+					<select title="채용 유형 선택" class="dropDownBox ">
+						<option value>채용유형</option>
+						<option value="B1">신입/인턴</option>
+						<option value="B2">경력</option>
+					</select>
+					<input type="text" placeholder="직무를 입력해주세요.">
+					<button class="searchBtn">
+						<img src="/assets/images/icons/search-btn-icon.png" alt="search button">
+					</button>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<section id="fullpage">
+		<div class="cardSection">
+			<div class="card section1">
+				<div class="backImg"></div>
+				<div class="titleBox" data-aos="fade-up">
+					<p class="smTitle padd">AI인공지능, 드론택배, 자율주행버스<br>우리가 꿈꾸는 미래,</p>
+					<h3 class="larTitle">반도체,디스플레이,배터리가<br>진화를 거듭할수록<br><span class="lineBreak">상상은 빠르게</span>일상이 됩니다.</h3>
+				</div>
+			</div>
+			<div class="card section2">
+				<div class="backImg"></div>
+				<div class="titleBox" data-aos="fade-up">
+					<h3 class="larTitle padd">이 모든 혁신의 시작은<br>결국 소재에서부터</h3>
+					<p class="smTitle">본질을 꿰뚫고 새로운 소재를 발견하는 것,<br>미래를 여는 첫 걸음이라 믿습니다.</p>
+				</div>
+			</div>
+			<div class="card section3">
+				<div class="backImg"></div>
+				<div class="titleBox" data-aos="fade-up">
+					<p class="larTitle padd">우리는<br><span class="lineBreak">SK머티리얼즈</span>패밀리입니다.</p>
+					<h3 class="smTitle">SK머티리얼즈 SK머티리얼즈 에어플러스 SK트리켐 SK쇼와덴코<br>SK머티리얼즈 리뉴텍
+						SK머티리얼즈 퍼포먼스 SK머티리얼즈 제이엔씨</h3>
+				</div>
+			</div>
+		</div>
+		<div class="freeSection">
+			<div class="container">
+				<h3 class="larTitle">우리는<br>거침없이 성장하고 있습니다.</h3>
+				<div id="growH" class="grow">
+					<div class="growBox industry">
+						<div class="circle">
+							<div class="chart">
+								<div class="left bar">
+									<div class="growRate smTitle smGrey">5.4%</div>
+									<div id="indGrey" class="growBar"></div>
+									<div class="category smTitle smGrey">반도체<br>산업</div>
+								</div>
+								<div class="right bar">
+									<div class="growRate midTitle">15.7%</div>
+									<div class="growBar"></div>
+									<div class="category smTitle smGrey">SK머티리얼즈<br>패밀리</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="growDetail midTitle">
+							전방산업 대비, 성장률 3배 이상
+							<div class="standard smTitle smGrey">
+								*최근 5년 CAGR 기준
+							</div>
+						</div>
+					</div>
+					<div class="growBox value">
+						<div class="circle">
+							<div class="chart">
+
+								<div class="left bar">
+									<div class="growRate smTitle smGrey">1.2조</div>
+									<div class="growBar"></div>
+									<div class="category smTitle smGrey">2016년<br>&nbsp;</div>
+								</div>
+								<div class="right bar">
+									<div class="growRate midTitle">3.8조</div>
+									<div class="growBar"></div>
+									<div class="category smTitle smGrey">2020년 말<br>&nbsp;</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="growDetail midTitle">
+							기업가치 3배 이상 성장
+							<div class="standard smTitle smGrey">
+								*시가 총액 기준
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="oppo" class="container opportunity">
+				<h3 class="larTitle">우리는<br>기회를 놓치는 법을 모릅니다.</h3>
+				<p class="smTitle">여러분의 일상이 더욱 스마트해질수록,<br>우리는 거침없는 성장을 거듭할 것입니다.</p>
+				<div class="grow">
+					<div class="growBox value one">
+						<div class="circle">
+							<img src="/assets/images/icons/opportunity-ai-icon.png" alt="opportunityAi">
+							<strong>
+								<span id="percentage"></span>
+								%
+							</strong>
+						</div>
+						<div class="growDetail midTitle">
+							AI
+						</div>
+					</div>
+					<div class="growBox value two">
+						<div class="circle">
+							<img src="/assets/images/icons/opportunity-autocar-icon.png" alt="opportunityAutoCar">
+							<strong>
+								<span id="percentage"></span>
+								%
+							</strong>
+						</div>
+						<div class="growDetail midTitle">
+							자율주행차
+						</div>
+					</div>
+					<div class="growBox value three">
+						<div class="circle">
+							<img src="/assets/images/icons/opportunity-display-icon.png" alt="opportunityDisPlay">
+							<strong>
+								<span id="percentage"></span>
+								%
+							</strong>
+						</div>
+						<div class="growDetail midTitle">
+							<span class="lineBreak">차세대</span>디스플레이
+						</div>
+					</div>
+					<div class="growBox value four">
+						<div class="circle">
+							<img src="/assets/images/icons/opportunity-battery-icon.png" alt="opportunityBattery">
+							<strong>
+								<span id="percentage"></span>
+								%
+							</strong>
+						</div>
+						<div class="growDetail midTitle">
+							<span class="lineBreak">전기차용</span>배터리
+						</div>
+					</div>
+				</div>
+				<div class="oppoDetail smTitle smGrey">
+					* 전방산업 성장 전망률 '20~30', CAGR기준
+					<div class="standard smTitle ">
+						<span class="lineBreak">언제나 그랬듯, 민첩한 유전자로</span> - 우리는 답을 찾을 것입니다.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cardSection">
+			<div class="card section4">
+				<div class="backImg"></div>
+				<div class="titleBox" data-aos="fade-up">
+					<h3 class="larTitle padd">환경에 더욱 가까워지는 일,<br><span class="lineBreak">그것이 우리의</span>경쟁력 입니다.</h3>
+					<p class="smTitle">우리는 2030년까지 모든 전력을 100% 재생에너지로 대체함을 공표하며,<br>
+						<span class="lineBreak">탄소배출량이 Zero가 되는</span>완전한 그린 사업장을 향해 달려갑니다.<br><br>
+						폐자원을 재활용한 친환경 소재의 개발,<br>공기 중의 이산화 탄소 재활용을 통한 자원학,<br>
+						<br>당신과 지구의 건강한 내일을 위해 <span class="lineBreak">모든 사업의 친환경화에 몰두하고 있습니다.</span>
+					</p>
+				</div>
+			</div>
+			<div class="card section5">
+				<div class="backImg"></div>
+				<div class="titleBox" data-aos="fade-up">
+					<h3 class="larTitle padd">우리는<br>지역사회의 행복에 대해<br>책임감을 가집니다.</h3>
+					<p class="smTitle"><span class="lineBreak">구성원의 삶의 터전인 지역사회와</span>안전하게 상생하거,
+						<br>지역을 기반으로 한 사회적 기업을 지원합니다.
+					</p>
+				</div>
+			</div>
+			<div class="card section6">
+				<div class="backImg"></div>
+				<div class="titleBox" data-aos="fade-up">
+					<p class="smTitle padd">상상을 현실로 만드는 시작점,</p>
+					<h3 class="larTitle"><span class="lineBreak">새로운 미래를</span>함께 그려나갈<br> 동료를 기다립니다.</h3>
+					<div class="recruitWrap">
+						<div class="wrap">
+							<a href="#">SK머티리얼즈 성장의 주인공 되기
+								<i class="select"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<section id="fixed">
+			<button id="upicon" class="toTop">
+				<i class="select"></i>
+				<p>top</p>
+			</button>
+
+			<div class="recruitWrap">
+				<ul class="leftArea">
+					<li>
+						<p class="recruit head">진행 중 공고</p>
+					</li>
+					<li>
+						<a href="#" class="recruit">경력 채용 <strong>16</strong>건</a>
+						<a href="#" class="recruit">신입/인턴 채용 <strong>5</strong>건</a>
+					</li>
+				</ul>
+				<ul class="rightAria">
+					<li><a href="#" class="recruit">인재풀 등록<e class="hide">하기</e><i class="select"></i></a></li>
+					<li><a href="#" class="recruit">채용알림 신청<e class="hide">하기</e><i class="ring"><i class="insideRing"></i></i></a></li>
+				</ul>
+
+			</div>
+		</section>
+	</section>
+	<section id="footer">
+		<div class="wrap">
+			<div class="container">
+				<div class="footerNavWrap clearfix">
+					<div class="footerLogo"><img src="/assets/images/icons/footer-ci.png" alt="SKMaterials Footer Logo"></div>
+					<div class="introduceWrap ">
+						<ul class="first">
+							<strong>기업 소개</strong>
+							<li><a href="#">투자 정보</a></li>
+							<li><a href="#">사업 정보</a></li>
+							<li><a href="#">지속가능경영</a></li>
+						</ul>
+						<ul class="second">
+							<strong>공지/문의</strong>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">1:1문의</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="copyRight">
+				<div class="ulWrap">
+					<ul class="copyWrap">
+						<li>
+							<p class="ind">개인정보 처리방침</p>
+						</li>
+						<li>
+							<p>COPYRIGHT© SKMaterials. ALL RIGHTS RESERVED.</p>
+						</li>
+					</ul>
+					<div class="webAccessIcon">
+						<!-- <img src="../../resources/images/icons/web-access-ci.png" alt="과학기술정보통신부 웹접근성 인증 마크"> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<script>
+		// aos js
+		AOS.init({
+			offset: 200,
+			duration: 300,
+			easing: "ease",
+
+		});
+		AOS.refresh();
+	</script>
+</body>
+
+</html>
