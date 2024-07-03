@@ -1,0 +1,158 @@
+// :root {
+//   // color
+//   --Green1: #519462;
+//   --Green2: #457d53;
+//   --Green3: #366141;
+//   --Green4: #0b593d;
+//   --Green5: #174c39;
+//   --black1: #1c1b18;
+//   --black2: #24221f;
+//   --black3: #302e2a;
+//   --fontC: #caa623;
+// }
+$fontC: #caa623;
+$Green1: #519462;
+$Green2: #457d53;
+$Green3: #366141;
+$Green4: #0b593d;
+$Green5: #174c39;
+$black1: #1c1b18;
+$black2: #24221f;
+$black3: #302e2a;
+$minWidth: 280px;
+$border: 3px dashed $fontC;
+
+@mixin commonWrap($width, $height) {
+  width: $width;
+  height: $height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "JSDongkang-Regular", sans-serif;
+  color: var(--fontC);
+}
+@mixin commonFont($fontSize, $fontColor) {
+  font-size: $fontSize;
+  color: $fontColor;
+}
+@mixin commonFlex($flexF, $justifyC, $alignI) {
+  display: flex;
+  flex-flow: $flexF;
+  justify-content: $justifyC;
+  align-items: $alignI;
+}
+@mixin borderBG($backgroundColor, $borderColor) {
+  background-color: $backgroundColor;
+  border: 3px dashed $borderColor;
+}
+@mixin WH($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin footRatio(
+  $division,
+  $textDivision,
+  $ChartDivision,
+  $small_fontSize,
+  $big_fontSize
+) {
+  #footer {
+    .profileWrap {
+      .profileL {
+        .profilePhoto {
+          img {
+            @include WH(
+              calc($profilePicW/$division),
+              calc($profilePicH/$division)
+            );
+          }
+        }
+        .profileContact {
+          p {
+            font-size: calc($small_fontSize/$textDivision);
+            &:last-child {
+              a {
+                font-size: calc($big_fontSize/$textDivision);
+              }
+            }
+          }
+        }
+      }
+      .profileR {
+        .skills {
+          p {
+            span {
+              font-size: calc($big_fontSize/$textDivision);
+            }
+          }
+          .sphereChartWrap {
+            .sphere {
+              @include WH(
+                calc($sphereWH/$ChartDivision),
+                calc($sphereWH/$ChartDivision)
+              );
+
+              .skillTitle {
+                strong {
+                  font-size: calc($small_fontSize/$textDivision);
+                }
+              }
+              .center {
+                @include WH(
+                  calc($centerWHL/$ChartDivision),
+                  calc($centerWHL/$ChartDivision)
+                );
+                font-size: calc($big_fontSize/$textDivision);
+                line-height: calc($centerWHL/$ChartDivision);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// animation keyframes
+@keyframes opLv {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@function vw($target, $pc-size) {
+  @if type-of($target) == number {
+    @return calc(($target * 100) / $pc-size) * 1vw;
+  } @else if type-of($target) == list {
+    $vw: ();
+    @each $value in $target {
+      @if type-of($value) == number {
+        $vw: append($vw, (($value * 100) / $pc-size) * 1vw);
+      } @else if type-of($value) == string {
+        $vw: append($vw, $value);
+      }
+    }
+    @return $vw;
+  } @else {
+    @return $target;
+  }
+}

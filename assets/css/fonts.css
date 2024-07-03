@@ -1,0 +1,46 @@
+@keyframes opLv {
+  0%, 100% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@font-face {
+  font-family: "JSDongkang-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+a,
+button,
+p,
+strong {
+  font-family: "JSDongkang-Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #caa623;
+}
+
+.openPdf {
+  font-family: "JSDongkang-Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #caa623;
+  font-weight: bold;
+}

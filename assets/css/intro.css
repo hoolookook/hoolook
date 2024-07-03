@@ -1,0 +1,95 @@
+@keyframes opLv {
+  0%, 100% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+#intro {
+  min-width: 280px;
+  border-bottom: none;
+  border-top: none;
+}
+#intro .introWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "JSDongkang-Regular", sans-serif;
+  color: var(--fontC);
+  flex-direction: column;
+  font-size: 30px;
+  color: #caa623;
+  animation: opLv 3s ease-in-out infinite;
+}
+#intro .introWrap h2 {
+  padding-bottom: 20px;
+}
+#intro .introWrap .typeText {
+  height: 50px;
+}
+#intro .introWrap .typeText::after {
+  font-size: 38px;
+  content: "|";
+  animation: none;
+}
+#intro .introWrap .showAnim.typeText::after {
+  animation: blink 1s step-end infinite;
+}
+#intro .scrollDown {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  animation: opLv 3s ease-in-out infinite;
+}
+#intro .scrollDown a {
+  font-size: 14px;
+}
+#intro .scrollDown a i {
+  padding: 10px;
+  transform: scale(1);
+  animation: bubble 1.5s ease-in infinite;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1);
+    padding-bottom: 10px;
+  }
+  50% {
+    transform: scale(1.3);
+    padding-bottom: 20px;
+  }
+  100% {
+    transform: scale(1);
+    padding-bottom: 10px;
+  }
+}
+@keyframes bubbleHalf {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}

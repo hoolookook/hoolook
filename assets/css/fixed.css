@@ -1,0 +1,73 @@
+@keyframes opLv {
+  0%, 100% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+#fixedWrap {
+  z-index: 6;
+}
+#fixedWrap .iconBtn {
+  background: url(/assets/images/screenShot/upArrow.png) no-repeat center center;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  border: none;
+  cursor: pointer;
+}
+#fixedWrap #upicon {
+  right: 15px;
+  transform: rotateX(0deg);
+  bottom: 55px;
+}
+#fixedWrap #downicon {
+  right: 15px;
+  bottom: 20px;
+  transform: rotateX(180deg);
+}
+#fixedWrap .fixed {
+  position: fixed;
+}
+#fixedWrap .Top {
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 3px dashed #caa623;
+}
+#fixedWrap .Bottom {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 3px dashed #caa623;
+}
+#fixedWrap .Left {
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  top: 0;
+  left: 0;
+  border-left: 3px dashed #caa623;
+}
+#fixedWrap .Right {
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  top: 0;
+  right: 0;
+  border-right: 3px dashed #caa623;
+}

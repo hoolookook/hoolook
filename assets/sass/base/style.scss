@@ -1,0 +1,63 @@
+@import "./reset.scss";
+@import "../base/common.scss";
+@import "../base/fonts.scss";
+@import "../layout/header.scss";
+@import "../layout/intro.scss";
+@import "../layout/contents.scss";
+@import "../layout/footer.scss";
+@import "../layout/fixed.scss";
+@import "../layout/media.scss";
+
+
+html {
+  background-color: $black1;
+}
+
+body {
+  // min-width: $minWidth;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  #section,
+  .contents,
+  #intro,
+  #footer {
+    width: 100%;
+    // min-width: $minWidth;
+    // height: 100vh;
+    min-height: 1200px;
+  }
+  #header {
+    width: 100%;
+    // min-width: $minWidth;
+    height: 75px;
+  }
+  #intro {
+    margin-top: -75px;
+  }
+  #intro,
+  #footer {
+    height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
+  &::-webkit-scrollbar {
+    // background-color: $black1;
+    // border-radius: 10px;
+    // width: 10px;
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    // border: $border;
+    // // border-radius: 10px;
+    // border-left: none;
+    // border-bottom: none;
+    // border-top: none;
+  }
+  // &::-webkit-scrollbar-track-piece:start {
+  //   background: transparent;
+  // }
+  // &::-webkit-scrollbar-track-piece:end {
+  //   background: transparent;
+  // }
+}

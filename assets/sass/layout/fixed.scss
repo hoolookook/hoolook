@@ -1,0 +1,54 @@
+@import "../base/common.scss";
+#fixedWrap {
+  z-index: 6;
+  .iconBtn {
+    background: url(/assets/images/screenShot/upArrow.png)
+      no-repeat center center;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    border: none;
+    cursor: pointer;
+  }
+  #upicon {
+    right: 15px;
+    transform: rotateX(0deg);
+    bottom: 55px;
+  }
+  #downicon {
+    right: 15px;
+    bottom: 20px;
+    transform: rotateX(180deg);
+  }
+
+  .fixed {
+    position: fixed;
+  }
+  .Top {
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: $border;
+  }
+  .Bottom {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-top: $border;
+  }
+  .Left {
+    height: 100vh;
+    min-height: -webkit-fill-available;
+    top: 0;
+    left: 0;
+    border-left: $border;
+  }
+  .Right {
+    height: 100vh;
+    min-height: -webkit-fill-available;
+    top: 0;
+    right: 0;
+    border-right: $border;
+  }
+}

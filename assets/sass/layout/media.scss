@@ -1,0 +1,401 @@
+@import "../base/common.scss";
+
+// @media screen and (max-width: 469px) {
+//   #intro {
+//     .introWrap {
+//       font-size: 20px;
+//       .typeText {
+//         font-size: 14px;
+//         &::after {
+//           font-size: 20px;
+//         }
+//       }
+//     }
+//     .scrollDown {
+//       bottom: 0px;
+//       a {
+//         font-size: 12px;
+//         i {
+//           padding: 10px;
+//           transform: scale(0.7);
+//           animation: bubbleHalf 3s ease-in infinite;
+//         }
+//       }
+//     }
+//   }
+//   #header {
+//     .navBar {
+//       .navUl {
+//         li {
+//           padding: 10px;
+//           a {
+//             font-size: 18px;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .contents {
+//     min-height: 700px !important;
+//     // min-height: 0 !important;
+//     // height: 100% !important;
+//     .pageWrap {
+//       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+//       // grid-template-rows: repeat(9, 50px);
+//       grid-template-rows: repeat(auto-fit, 50px);
+
+//       gap: 20px;
+//       .page {
+//         .pageDetail {
+//           .buttonWrap {
+//             .firstBtn {
+//               border-right: $border;
+//             }
+//             .lastBtn {
+//               border-left: $border;
+//             }
+//             .openPdf {
+//               height: 100%;
+//               width: 15%;
+//               text-indent: -9999px;
+//               svg {
+//                 position: absolute;
+//                 display: block;
+//                 top: 50%;
+//                 left: 50%;
+//                 width: 15px;
+//                 height: 15px;
+//                 transform: translate(-50%, -50%);
+//               }
+//               &:hover svg {
+//                 fill: var(--black2);
+//               }
+//             }
+//             .detailCard {
+//               transform: translate(-50%, -70%);
+//               em {
+//                 display: inline-block;
+//               }
+//             }
+//           }
+//         }
+//         .title {
+//           h3 {
+//             font-size: 20px;
+//           }
+//         }
+//       }
+//     }
+//     .category {
+//       top: 0%;
+//       gap: 10px;
+//       .btn {
+//         font-size: 15px;
+//       }
+//     }
+//   }
+//   #footer {
+//     .profileWrap {
+//       .profileL {
+//         justify-content: center;
+//         flex-direction: column;
+//         .profilePhoto {
+//           padding-bottom: 80px;
+//           img {
+//             @include WH(146px, 196px);
+//           }
+//         }
+//         .profileContact {
+//           padding: 0;
+//           p {
+//             font-size: 12px;
+//             &:last-child a {
+//               font-size: 12px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 500px) and(max-width:680px) {
+//   #footer {
+//     .profileWrap {
+//       .profileR {
+//         .skills {
+//           p {
+//             span {
+//               font-size: 12px;
+//             }
+//           }
+//           .sphereChartWrap {
+//             .sphere {
+//               @include WH(70px, 70px);
+//               .skillTitle {
+//                 strong {
+//                   font-size: 6px;
+//                 }
+//               }
+//               .center {
+//                 font-size: 12px;
+//                 @include WH(45px, 45px);
+//                 line-height: 45px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media screen and (max-width: 560px) {
+//   .contents {
+//     .pageWrap {
+//       .page {
+//         .pageDetail {
+//           .buttonWrap {
+//             .openPdf {
+//               font-size: 11px;
+//             }
+//             .detailCard {
+//               em {
+//                 font-size: 11px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media screen and (min-width: 100px) and(max-width:500px) {
+//   #footer {
+//     .profileWrap {
+//       .profileR {
+//         .skills {
+//           p {
+//             span {
+//               font-size: 12px;
+//             }
+//           }
+//           .sphereChartWrap {
+//             width: 280px;
+//             .sphere {
+//               @include WH(70px, 70px);
+//               .skillTitle {
+//                 strong {
+//                   font-size: 6px;
+//                 }
+//               }
+//               .center {
+//                 font-size: 12px;
+//                 @include WH(45px, 45px);
+//                 line-height: 45px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// main.js에 이름바꾸기 있음
+@media screen and (max-width: 767px) {
+  .contents {
+    .pageWrap {
+      .page {
+        .title {
+          h3 {
+            width: 82px;
+            overflow: hidden;
+            font-size: 14.34vw;
+          }
+        }
+        // .pageDetail {
+        //   img {
+        //     position: absolute;
+        //     left: 50%;
+        //     top: 50%;
+        //     transform: translate(-50%, -50%);
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+// ============================================
+// ============================================
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 1020px) {
+  $pc-size: 1000;
+  .contents{
+    padding-left: vw(30,$pc-size);
+    padding-right: vw(30,$pc-size);
+    .category{
+      margin-top: vw(120,$pc-size);
+      gap: vw(20,$pc-size);
+    }
+    .pageWrap{
+      padding-top: vw(110,$pc-size);
+      gap: vw(20,$pc-size);
+      max-width: vw(1000,$pc-size);
+      .page{
+        width: vw(300,$pc-size);
+        height: vw(300,$pc-size);
+        .title{
+          h2{
+            font-size: vw(30,$pc-size);
+          }
+        }
+        .pageDetail{
+          border-width: vw(3,$pc-size);
+        }
+      }
+    } 
+  } 
+}
+@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 767px) {
+  $pc-size: 767;
+  .contents{
+    .pageWrap{
+      .page{
+        .pageDetail{
+          .buttonWrap{
+            .openPdf{
+              font-size: vw(16,$pc-size);
+            }
+            .detailCard{
+              em{
+                font-size: vw(16,$pc-size);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 653px) {
+  $pc-size: 653;
+  #header{
+    .navBar{
+      .navUl{
+        li{
+          padding: vw(24,$pc-size);
+          #clickThis{
+            font-size: vw(24,$pc-size);
+
+          }
+        }
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 481px) {
+  #header {
+    .navBar {
+      display: none;
+    }
+    .moBtn {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 441px) {
+  $pc-size: 441;
+  
+  #footer{
+    .profileWrap{
+      .profileL{
+        justify-content: center;
+      }
+      .profileR{
+        .skills{
+          .sphereChartWrap{
+            column-gap: vw(10,$pc-size);
+            .sphere{
+              .center{
+                width: vw(65,$pc-size);
+                height: vw(65,$pc-size);
+                line-height: vw(65,$pc-size);
+                font-size: vw(16,$pc-size);
+              }
+              width: vw(100,$pc-size);
+              height: vw(100,$pc-size);
+              .skillTitle{
+                svg{
+                  width: vw(35,$pc-size);
+                  height: vw(35,$pc-size);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 393px) {
+  $pc-size: 393;
+  .contents {
+    padding: vw(30,$pc-size);
+    // min-width: vw(280,$pc-size);
+    .category{
+      gap: vw(20,$pc-size);
+      >button{
+        // font-size: 6.1vw;
+        font-size: vw(24,$pc-size);
+        border-width: vw(3,$pc-size);
+      }
+    }
+    .pageWrap {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      .page{
+        width: 100%;
+        .title{
+          h3{
+            // font-size: 7.63vw;
+            width: 100%;
+            font-size : vw(24,$pc-size);
+          }
+        }
+        .pageDetail{
+          .buttonWrap{  
+            z-index: 10;
+            .openPdf{
+              top: 50%;
+              bottom: unset;
+              transform: translateY(-50%);
+              // height: vw(40,$pc-size);
+              height: 100%;
+              font-size: vw(16,$pc-size);
+            }
+            .detailCard{
+              em{
+                display: none;
+              }
+            }
+          }
+          .badge{
+            display: flex;
+            align-items: center;
+            padding: vw(5,$pc-size);
+            height: 100%;
+            font-size: vw(15,$pc-size);
+            border-bottom: unset;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 294px) {
+}

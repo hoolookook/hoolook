@@ -1,0 +1,24 @@
+@import "../base/common.scss";
+@font-face {
+  font-family: "JSDongkang-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body,
+a,
+button,
+p,
+strong {
+  font-family: "JSDongkang-Regular", sans-serif;
+  text-transform: uppercase;
+  @include commonFont(24px, $fontC);
+}
+
+.openPdf {
+  font-family: "JSDongkang-Regular", sans-serif;
+  text-transform: uppercase;
+  @include commonFont(16px, $fontC);
+  font-weight: bold;
+}

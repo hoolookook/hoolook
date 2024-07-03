@@ -1,0 +1,100 @@
+@import "../base/common.scss";
+#footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: none;
+  text-align: center;
+  .profileWrap {
+    @include WH(100%, 70%);
+    @include commonFlex(row wrap, center, center);
+    gap: 120px;
+    .profileL {
+      display: flex;
+      flex-flow: row wrap;
+      .profilePhoto {
+        img {
+          border-radius: 50%;
+          width: 176px;
+          height: 236px;
+        }
+      }
+      .profileContact {
+        padding: 50px 25px;
+        @include commonFlex(column wrap, center, flex-start);
+        p {
+          @include commonFont(16px, $fontC);
+          padding: 5px 5px;
+          &:last-child {
+            a {
+              // vertical-align: text-bottom;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .profileR {
+      .skills {
+        p {
+          padding-bottom: 60px;
+          span {
+            @include commonFont(16px, var(--fontC));
+            font-weight: bold;
+          }
+        }
+        .sphereChartWrap {
+          @include commonFlex(row wrap, center, center);
+          column-gap: 10px;
+          .sphere {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: 0.3s;
+            // background-color: red;
+            .skillTitle {
+              width: 100%;
+              height: 100%;
+              display: inline-block;
+              svg {
+                position: absolute;
+                display: block;
+                top: 50%;
+                left: 50%;
+                width: 35px;
+                height: 35px;
+                transform: translate(-50%, -190%);
+                z-index: 1;
+                fill: #caa623;
+              }
+              &:hover svg {
+                // fill: var(--black2);
+              }
+              strong {
+                @include commonFont(12px, $fontC);
+                vertical-align: top;
+                font-weight: bold;
+              }
+            }
+            .center {
+              font-size: 16px;
+              background-color: $black1;
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: 65px;
+              height: 65px;
+              line-height: 65px;
+              border-radius: 50%;
+              text-align: center;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
