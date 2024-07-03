@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데시네마</title>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="resource/css/style.css">
+    <link rel="stylesheet" href="resource/css/default.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="resource/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="menuWrap">
+            <div class="hoverWrap">
+                <ul class="hoverMenu one">
+                    <li><a href="#">예매하기</a></li>
+                    <li><a href="#">상영시간표</a></li>
+                    <li><a href="#">할인안내</a></li>
+                </ul>
+                <ul class="hoverMenu two">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">현재상영작</a></li>
+                    <li><a href="#">상영예정작</a></li>
+                    <li><a href="#">아르떼</a></li>
+                </ul>
+                <ul class="hoverMenu three">
+                    <li><a href="#">스페셜관</a></li>
+                    <li><a href="#">서울</a></li>
+                    <li><a href="#">경기/인천</a></li>
+                    <li><a href="#">충청/대전</a></li>
+                    <li><a href="#">전라/광주</a></li>
+                    <li><a href="#">경북/대구</a></li>
+                    <li><a href="#">경남/부산/울산</a></li>
+                    <li><a href="#">강원</a></li>
+                    <li><a href="#">제주</a></li>
+                </ul>
+                <ul class="hoverMenu four">
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">영화</a></li>
+                    <li><a href="#">시사회/무대인사</a></li>
+                    <li><a href="#">HOT</a></li>
+                    <li><a href="#">제휴할인</a></li>
+                    <li><a href="#">우리동네영화관</a></li>
+                </ul>
+                <ul class="hoverMenu five">
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">관람권</a></li>
+                    <li><a href="#">스낵음료</a></li>
+                    <li><a href="#">포토카드</a></li>
+                </ul>
+            </div>
+            <div class="topmenu clearfix">
+                <div class="leftmenu">
+                    <ul class="clearfix">
+                        <li><a href="#" class="facebook">좋아요</a></li>
+                        <li><a href="#" class="youtube">구독하기</a></li>
+                        <li><a href="#" class="instagram">팔로우</a></li>
+                        
+                    </ul>
+                </div>
+                <h1 class="logo">
+                    <a href="#">lotteCinema</a>
+                </h1>
+                <div class="rightmenu">
+                    <ul class="clearfix">
+                        <li><a href="#" class="membership">멤버십</a></li>
+                        <li><a href="#" class="servicecenter">고객센터</a></li>
+                        <li><a href="#" class="login">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mainmenu">
+                <div class="mainLeftBlank">
+                    
+                </div>
+                <div class="infomenu">
+                    <h2>메뉴</h2>
+                    <ul class="clearfix">
+                        <li class="hoverMe booking"><a href="#">예매</a></li>
+                        <li class="hoverMe movie"><a href="#">영화</a></li>
+                        <li class="hoverMe theater"><a href="#">영화관</a></li>
+                        <li class="hoverMe eventM"><a href="#">이벤트</a></li>
+                        <li class="hoverMe store"><a href="#">스토어</a></li>
+                    </ul>
+                </div>
+                <div class="accountmenu">
+                    <ul class="clearfix">
+                        <li><a href="#" class="nav_my">회원가입</a></li>
+                        <li><a href="#" class="nav_reserve">바로예매</a></li>
+                        <li><a href="#" class="nav_side"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="main">
+        <div class="top gradient"></div>
+        <div class="bottom gradient"></div>
+        <div class="carouselWrap">
+            <div class="movie-date">
+                <a href="#">06.25 22:40 기준</a>
+            </div>
+            <div class="owl-nav">
+                <div class="customNextBtn custombtn"></div>
+                <div class="customPrevBtn custombtn"></div>
+            </div>
+            <div id='carousel-custom-dots' class='owl-dots'> 
+                <button class='owl-dot'><div></div></button> 
+                <button class='owl-dot'><div></div></button> 
+                <button class='owl-dot'><div></div></button> 
+                <button class='owl-dot'><div></div></button> 
+                
+            </div>
+            <div id="playPause">
+                <button class='play'><div></div></button> 
+                <button class='pause'><div></div></button> 
+            </div>
+            <div class="-top-carouselbox">
+                <div id="owl1" class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item ">
+                                <a href="#"  ><img src="resource/img/Jam_1920774.jpg"  alt="SpaceJam"></a>
+                            </div>
+                            <div class="owl-item">
+                                <a href="#"  ><img src="resource/img/Killer_1920774.jpg" alt="KillerBodyguard2"></a>
+                            </div>
+                            <div class="owl-item">
+                                <a href="#"  ><img src="resource/img/Dark_1920774.jpg " alt="DarkAndWicked"></a>
+                            </div>
+                            <div class="owl-item">
+                                <a href="#"  ><img src="resource/img/Place_1920774.jpg " alt="QuietPlace2"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <!-- boxoffice -->
+            <div class="-box_nav">
+                <div class="box_customNextBtn custombtn"></div>
+                <div class="box_customPrevBtn custombtn"></div>
+            </div>
+            <div class="-boxoffice-carouselbox">
+                <div id="owl2" class="owl-carousel owl-theme owl-loaded">
+                    <div class="owl-stage-outer">
+                        
+                        <div class="owl-stage">
+                            <div class="owl-item ">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"><img src="resource/img/17468_101_1.jpg" alt="SendRestriction">
+                                    <span class="ranknum">1</span>
+                                </a>
+                                <div class="info"><h3>발신제한</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 32.5%</span>
+                                        <span class="starinfo">8</span>
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"><img src="resource/img/17416_101_1.jpg" alt="KillerBodyguard2">
+                                    <span class="ranknum">2</span>
+                                </a>
+                                <div class="info"><h3>킬러의 보디가드 2</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 23.6%</span>
+                                        <span class="starinfo">7.9</span>
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"><img src="resource/img/17387_101_1.jpg" alt="Cruella">
+                                    <span class="ranknum">3</span>
+                                </a>
+                                <div class="info"><h3>크루엘라</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 15.1%</span>
+                                        <span class="starinfo">9.2</span>
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"><img src="resource/img/15474_101_1.jpg" alt="QuietPlace2">
+                                    <span class="ranknum">4</span>
+                                </a>
+                                <div class="info"><h3>콰이어트 플레이스 2</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 14.7%</span>
+                                        <span class="starinfo">8.7</span>
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item AD">
+                                <div class="bookingDetail">
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"  ><img src="resource/img/Dark_184262.jpg" alt="AD">
+                                    <span class="ranknum">AD</span>
+                                </a>
+                                
+                            </div>
+                            <div class="owl-item">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"  ><img src="resource/img/Dark_184262.jpg" alt="DarkAndWicked">
+                                    <span class="ranknum">5</span>
+                                </a>
+                                <div class="info"><h3>다크 앤드 위키드</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 32.3%</span>
+                                        <span class="starinfo">9.1</span>
+                                        
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"  ><img src="resource/img/Dark_184262.jpg" alt="DarkAndWicked">
+                                    <span class="ranknum">6</span>
+                                </a>
+                                <div class="info"><h3>다크 앤드 위키드</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 32.3%</span>
+                                        <span class="starinfo">9.1</span>
+                                        
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"  ><img src="resource/img/Dark_184262.jpg" alt="DarkAndWicked">
+                                    <span class="ranknum">7</span>
+                                </a>
+                                <div class="info"><h3>다크 앤드 위키드</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 32.3%</span>
+                                        <span class="starinfo">9.1</span>
+                                        
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"  ><img src="resource/img/Dark_184262.jpg" alt="DarkAndWicked">
+                                    <span class="ranknum">8</span>
+                                </a>
+                                <div class="info"><h3>다크 앤드 위키드</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 32.3%</span>
+                                        <span class="starinfo">9.1</span>
+                                        
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bookingDetail">
+                                    <div class="goBooking"><a href="#">예매하기</a></div>
+                                    <div class="detail"><a href="#">상세정보</a></div>
+                                </div>
+                                <a href="#"  ><img src="resource/img/Dark_184262.jpg" alt="DarkAndWicked">
+                                    <span class="ranknum">9</span>
+                                </a>
+                                <div class="info"><h3>다크 앤드 위키드</h3> 
+                                    <div class="subinfo">
+                                        <span class="rateinfo">예매율 32.3%</span>
+                                        <span class="starinfo">9.1</span>
+                                        
+                                        <span class="bookinginfo">
+                                            <button type="button" class="btn-booking"></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="subMain">
+        <div class="addinfo">
+            <div class="special-theater ">
+                <div class="info">
+                    스페셜관
+                </div>
+                <a href="#" class="more-btn text">더보기</a>
+    
+                <ul class="specialList clearfix">
+                    <li><a href="#"><img src="resource/img/e2a94c82115c46f7b326baee6e10266a.png" alt="charlotte"></a></li>
+                    <li><a href="#"><img src="resource/img/3ffca854b1844fdc8b54d8d9db45a03f.png" alt="superflexG"></a></li>
+                    <li><a href="#"><img src="resource/img/ff43cb260a2647dbb5f3c62b709103c4.png" alt="superS"></a></li>
+                    <li><a href="#"><img src="resource/img/c9078226c9ad4085b1b629bee2aba138.png" alt="superflex"></a></li>
+                    <li><a href="#"><img src="resource/img/61fb906fbd9b4ff1b34d6e0bd78dc655.png" alt="super4D"></a></li>
+                    <li><a href="#"><img src="resource/img/2a366799460a49359bf93250f50852cf.png" alt="colorium"></a></li>
+                    <li><a href="#"><img src="resource/img/208a5ede362244fb8ab2e5cc3ab07529.png" alt="cineSalon"></a></li>
+                    <li><a href="#"><img src="resource/img/5c23288d3a104f7fa4f7d3e725a2c6a8.png" alt="cineComfort"></a></li>
+                </ul>
+                <a href="#" class="more-btn text">더보기</a>
+            </div>
+            <div class="event">
+                <div class="info">
+                    이벤트
+                </div>
+                <ul class="eventwrap clearfix">
+                    <li class="event_1"><a href="#"><img src="resource/img/8b13ab301456406c982f3162837ca093.jpg" alt="10thContest"></a></li>
+                    <li class="event_1"><a href="#"><img src="resource/img/00ca0af6ef4c4dd481774b91e2fb980e.jpg" alt="lotteOn"></a></li>
+                    <li class="event_3"><a href="#"><img src="resource/img/f8505b1c5a624944b31359da8d0ae7ee.jpg" alt="grandOpening"></a></li>
+                    <li class="event_4"><a href="#"><img src="resource/img/Inbyu_295511.png" alt="lotteXinbyu"></a></li>
+                    <li class="event_5"><a href="#"><img src="resource/img/54250fc5c47844bea4e6e4c212a1957e.jpg" alt="membershipFriends"></a></li>
+                    <li class="event_6"><a href="#"><img src="resource/img/8e42fbf38d414f9f8bfa3e9c527d6e32.jpg" alt="myMovieDiaryEvent"></a></li>
+                </ul>
+                <!-- <a href="#" class="more-btn text">더보기</a> -->
+                
+            </div>
+            <div class="stage-greeting clearfix">
+                <div class="info">
+                    시사회/무대인사
+                </div>
+                <a href="#" class="more-btn text">더보기</a>
+                <ul class="eventwrap clearfix">
+                    <li class="event_1"><a href="#"><img src="resource/img/444da69d00b54045a4da086ff64559ff.jpg" alt="plantCafeGoodsOpen"></a></li>
+                    <li class="event_1"><a href="#"><img src="resource/img/a8a851ef80584ad1865998a78d2bb4f8.jpg" alt="SendRestrictionHello"></a></li>
+                    <li class="event_3"><a href="#"><img src="resource/img/9278d1e981764cbd80bec403cef46884.jpg" alt="madeInRoofHello"></a></li>
+                </ul>
+                
+            </div>
+            <div class="end-menu">
+                <ul class=" clearfix">
+                    <li><a href="#"><img src="resource/img/3423e358b74d49d5b12867c7d9c6f6a8.png" alt="discount"></a></li>
+                    <li><a href="#"><img src="resource/img/16b056e5e6a04c609b94a5c21e786d3b.png" alt="point"></a></li>
+                    <li><a href="#"><img src="resource/img/9fd4a77cd6a44a39aa35d07e5bb8a010.png" alt="membership"></a></li>
+                    <li><a href="#"><img src="resource/img/3633088df0644062b53cd88b34067895.png" alt="tintinclub"></a></li>
+                    <li><a href="#"><img src="resource/img/9c4e2721ecdd488d86df6d27e3c2a000.png" alt="bravoclub"></a></li>
+                </ul>
+            </div>
+            <div class="notice">
+                <div class="info">공지사항</div>
+                <!-- <div class="news"></div> -->
+                <a href="#" class="more-btn text">더보기</a>
+                <div id="upwardnotice">
+                    <div id="upward">
+                        <ul>
+                            <li>KT 멤버십 영화예매 적립 서비스 안내</li>
+                            <li>마스크 착용 의무화 행정명령 시행 안내</li>
+                            <li>롯데시네마 영구VIP 서비스 종료 안내</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="banner">
+        <div class="banner01">
+            <div class="image">
+                
+            </div>
+        </div>
+        <div class="banner02">
+            <div class="image">
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="endLogo"></div>
+        <div class="footerwrap">
+            <ul class="info clearfix">
+                <li><a href="#">회원약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">영상정보처리기기운영 및 관리방침</a></li>
+                <li><a href="#">L.POINT회원안내</a></li>
+                <li><a href="#">배정기준</a></li>
+                <li><a href="#">채용안내</a></li>
+                <li><a href="#">광고/임대문의</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">기업정보</a></li>
+            </ul>
+            <div class="addresswrap">
+                <ul class="address">
+                    <li>서울특별시 송파구 올림픽로 300 롯데월드타워 27층</li>
+                    <li><strong>고객센터 1544-8855</strong></li>
+                </ul>
+                <ul class="ceo">
+                    <li><strong>대표이사 기원규</strong></li>
+                    <li>사업자등록번호 313-87-00979</li>
+                    <li>통신판매업신고번호 제1184호</li>
+                    <li>개인정보 보호 최고 책임자 김무성</li>
+                </ul>
+                <div><strong>COPYRIGHT© LOTTE CINEMA ALL RIGHT RESERVED.</strong></div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="end-award">
+        <ul class="image">
+            <li><img src="resource/img/footer_award_NCSI6.png" alt="NCSI6years"></li>
+            <li><img src="resource/img/footer_award_kcsi.png" alt="KCSI7years"></li>
+            <li><img src="resource/img/footer_award_kssqi-1.png" alt="KS-SQI9years"></li>
+            <li><img src="resource/img/footer_award_brandcinema.png" alt="brandCinema10years"></li>
+            <li><img src="resource/img/footer_award_greenstar.png" alt="greenStar4years"></li>
+            <li><img src="resource/img/footer_award_brandstar.png" alt="brandstarFirst"></li>
+            <li><img src="resource/img/footer_award_familyship.png" alt="familyShip"></li>
+            <li><img src="resource/img/footer_award_winner.png" alt="awardWinner2020"></li>
+        </ul>
+    </div>
+</body>
+</html>
