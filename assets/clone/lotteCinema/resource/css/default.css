@@ -1,0 +1,48 @@
+.btn-booking {
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-indent: -9999em;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* h1, */
+h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+}
+strong {
+  font-weight: lighter;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/* .button:focus {
+  color: #000;
+  outline: 0;
+} */
+button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
