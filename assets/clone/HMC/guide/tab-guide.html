@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hyundai-Guide</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/guide.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- Default -->
+            <div class="contents" id="contents">
+                <!-- START -->
+                <h2 class="guide-title">Tab</h2>
+                <div class="guide-tab">
+                    <ul>
+                        <li class="guide-tab-list">
+                            <a href="color-guide.html">Color</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="button-guide.html">Button</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="icon-guide.html">Icon</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="input-guide.html">Input/Select</a>
+                        </li>
+                        <li class="guide-tab-list active">
+                            <a href="tab-guide.html">Tab</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="popup-guide.html">PoPup</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="product-guide.html">Product</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guide-content tab"><!-- [P] 컨텐츠에 맞는 더블 클래스 추가하여 CSS 적용 -->
+                    <div class="item-box">
+                        <strong class="item__title">Horizontal</strong>
+                        <div class="item-list">
+                            <ul>
+                                <li>
+                                    <strong class="list__title">Normal / Hover / Active</strong>
+                                    <div class="menu-tab-wrap menu-tab-wrap--horizontal" id="menu-tab">
+                                        <div class="menu-tab">
+                                            <ul class="menu-tab__list" role="tablist">
+                                                <!-- [JS] 탭 버튼 활성화시 .menu-tab__item 클래스에 .is-active 클래스 추가 -->
+                                                <li class="menu-tab__item is-active">
+                                                    <!-- [JS] 탭 버튼 활성화시 aria-selected="true" 속성 추가 -->
+                                                    <!-- [JS] 탭 버튼 aria-controls="tab-panel-01" / 탭 컨텐츠 id="tab-panel-01" ID 값 매칭 -->
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="true" aria-controls="tab-panel-01"><span>tab01</span></a>
+                                                </li>
+                                                <li class="menu-tab__item">
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="false" aria-controls="tab-panel-02"><span>tab02</span></a>
+                                                </li>
+                                                <li class="menu-tab__item">
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="false" aria-controls="tab-panel-03"><span>tab03</span></a>
+                                                </li>
+                                                <li class="menu-tab__item">
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="false" aria-controls="tab-panel-04"><span>tab04</span></a>
+                                                </li>
+                                                <li class="menu-tab__item">
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="false" aria-controls="tab-panel-05"><span>tab05</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-content-wrap">
+                                        <!-- [JS] 탭 컨텐츠 활성화시 .is-active 클래스 추가 -->
+                                        <div class="tab-content is-active" role="tabpanel" id="tab-panel-01">
+                                            tab01 컨텐츠
+                                        </div>
+                                        <div class="tab-content" role="tabpanel" id="tab-panel-02">
+                                            tab02 컨텐츠
+                                        </div>
+                                        <div class="tab-content" role="tabpanel" id="tab-panel-03">
+                                            tab03 컨텐츠
+                                        </div>
+                                        <div class="tab-content" role="tabpanel" id="tab-panel-04">
+                                            tab04 컨텐츠
+                                        </div>
+                                        <div class="tab-content" role="tabpanel" id="tab-panel-05">
+                                            tab05 컨텐츠
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <strong class="item__title">Vertical</strong>
+                        <div class="item-list">
+                            <ul>
+                                <li>
+                                    <strong class="list__title">Normal / Hover / Active</strong>
+                                    <div class="menu-tab-wrap menu-tab-wrap--vertical" id="menu-tab">
+                                        <div class="menu-tab">
+                                            <ul class="menu-tab__list" role="tablist">
+                                                <!-- [JS] 탭 버튼 활성화시 .menu-tab__item 클래스에 .is-active 클래스 추가 -->
+                                                <li class="menu-tab__item">
+                                                    <!-- [JS] 탭 버튼 활성화시 aria-selected="true" 속성 추가 -->
+                                                    <!-- [JS] 탭 버튼 aria-controls="tab-panel-01" / 탭 컨텐츠 id="tab-panel-01" ID 값 매칭 -->
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="true" aria-controls="tab-panel-01"><span>tab01</span></a>
+                                                </li>
+                                                <li class="menu-tab__item">
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="false" aria-controls="tab-panel-02"><span>tab02</span></a>
+                                                </li>
+                                                <li class="menu-tab__item">
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="false" aria-controls="tab-panel-03"><span>tab03</span></a>
+                                                </li>
+                                                <li class="menu-tab__item">
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="false" aria-controls="tab-panel-04"><span>tab04</span></a>
+                                                </li>
+                                                <li class="menu-tab__item is-active">
+                                                    <a href="#none" class="menu-tab__link" role="tab" aria-selected="false"  aria-controls="tab-panel-05"><span>tab05</span></a>
+                                                    <div class="sub-menu__box">
+                                                        <ul class="sub-menu__list">
+                                                            <!-- [JS] 탭 버튼 활성화시 .sub-menu-tab__item 클래스에 .is-active 클래스 추가 -->
+                                                            <li class="sub-menu__item is-active">
+                                                                <a href="#none" class="sub-menu__link" ><span>KONA</span></a>
+                                                            </li>
+                                                            <li class="sub-menu__item sub-menu--green">
+                                                                <a href="#none" class="sub-menu__link"><span>TUCSON</span></a>
+                                                            </li>
+                                                            <li class="sub-menu__item sub-menu--red">
+                                                                <a href="#none" class="sub-menu__link"><span>The new</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <div class="tab-content-wrap">
+                                        <!-- [JS] 탭 컨텐츠 활성화시 .is-active 클래스 추가 -->
+                                        <div class="tab-content is-active" role="tabpanel" id="tab-panel-01">
+                                            tab01 컨텐츠
+                                        </div>
+                                        <div class="tab-content" role="tabpanel" id="tab-panel-02">
+                                            tab02 컨텐츠
+                                        </div>
+                                        <div class="tab-content" role="tabpanel" id="tab-panel-03">
+                                            tab03 컨텐츠
+                                        </div>
+                                        <div class="tab-content" role="tabpanel" id="tab-panel-04">
+                                            tab04 컨텐츠
+                                        </div>
+                                        <div class="tab-content" role="tabpanel" id="tab-panel-05">
+                                            tab05 컨텐츠
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--// END -->
+            </div>
+            <!--// Default -->
+        </div>
+        <!--// Container -->
+    </div>
+</body>
+</html>

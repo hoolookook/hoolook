@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Compare Your Build</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+         <!-- Header -->
+        <header class="header header--configurator" id="header"></header>
+        <!--// Header -->
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- contents -->
+            <div class="contents is-wide is-max" id="contents">
+                <!-- START -->
+                <!-- [JS] intro 끝난 후 .configurator-wrap에 .is-active 클래스 추가 + 효과 끝난 후 .configurator-intro영역 hide 처리 필요 -->
+                <div class="configurator-wrap is-active">
+                    <!-- Intro -->
+
+                    <!-- Main(Swiper) -->
+                    <div class="configurator-main configurator-inner">
+                        <div class="btn-wrap btn-option">
+                            <div class="btn-option__item"><!-- [JS] btn__background 버튼 클릭시 is-active 클래스 추가 -->
+                                <button type="button" class="btn btn__background">
+                                    <span class="btn__text ir">Background</span>
+                                </button>
+                                <div class="item__list">
+                                    <div class="item__box">
+                                        <a href="#none" class="item__link btn--outside is-active" role="button" title="선택됨"><!-- [JS] 현재 활성화된 Outside/Studio 컷에 is-active 클래스 추가 -->
+                                            <span class="img__box">
+                                                <img src="../images/dummy/img_bg_select_dummy_01.png" alt="outside">
+                                            </span>
+                                            <strong class="item__title">Exterior</strong>
+                                        </a>
+                                        <a href="#none" class="item__link btn--studio" role="button">
+                                            <span class="img__box">
+                                                <img src="../images/dummy/img_bg_select_dummy_02.png" alt="studio">
+                                            </span>
+                                            <strong class="item__title">Studio</strong>
+                                        </a>
+                                    </div>
+                                    <button type="button" class="btn btn-option__close">
+                                        <span class="btn__text ir">Background layer close</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="btn-option__item">
+                                <button type="button" class="btn btn__dimensions">
+                                    <span class="btn__text ir">Dimensions</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="configurator-swiper">
+                            <!-- [JS] 활성화 시(.btn--outside 클릭 시) is-active 클래스 추가 -->
+                            <div class="swiper-container swiper-main swiperConfiguratorOutside is-active">
+                                <div class="swiper-wrapper swiper--outside">
+                                    <div class="swiper-slide">
+                                        <img src="../images/dummy/img_dummy_configurator_outside_01.png" alt="KONA Hybrid in outside 1">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../images/dummy/img_dummy_configurator_outside_02.png" alt="KONA Hybrid in outside 2">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../images/dummy/img_dummy_configurator_outside_03.png" alt="KONA Hybrid in outside 3">
+                                    </div>
+                                </div>
+                                <div class="half-swiper-indicator">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <div class="swiper-indicator">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-container swiper-thumbs swiperConfiguratorOutsideThumbs">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../images/dummy/img_dummy_configurator_pagination_outside_01.png" alt="KONA Hybrid in outside 1 thumbnail">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../images/dummy/img_dummy_configurator_pagination_outside_02.png" alt="KONA Hybrid in outside 2 thumbnail">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../images/dummy/img_dummy_configurator_pagination_outside_03.png" alt="KONA Hybrid in outside 3 thumbnail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <!-- 230703 : mobile indicator 추가 -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="configurator-disclaimer show-pc">
+                            <div class="btn-wrap">
+                                <a href="#none" class="btn btn__link type02" target="_blank">
+                                    <span class="btn__text">Disclaimer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Options -->
+                    <div class="configurator-options configurator-inner">
+                        <div class="options-head">
+                            <div class="options-select options-select--dropdown">
+                                <!-- [JS] 버튼 활성화 시 .options-select__btn에 .is-active 클래스 추가 -->
+                                <a href="#none" class="options-select__btn" title="Open a popup to select a model" role="button">
+                                    <span class="options-select__title">Model</span>
+                                </a>
+                                <strong class="options-select__selected-name">KONA Hybrid</strong>
+                            </div>
+                        </div>
+
+                        <div class="options-body  is-active">
+                            <div class="options-select-wrap">
+                                <!-- Year of Product -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Year of Product</h3>
+                                    <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                    <a href="#none" class="options-select__btn" title="Open a popup to select an option" role="button" data-popup=".yearProduct">
+                                        <span class="options-select__selected">
+                                            <span class="options-select__selected-name">Select Option</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- Body Type -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Body Type</h3>
+                                    <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                    <a href="#none" class="options-select__btn" title="Open a popup to select an option" role="button" data-popup=".bodyType">
+                                        <span class="options-select__selected">
+                                            <span class="options-select__selected-name">Select Option</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- Trim -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Trim</h3>
+                                    <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                    <a href="#none" class="options-select__btn" title="Open a popup to select an option" role="button" data-popup=".trim">
+                                        <span class="options-select__selected">
+                                            <span class="options-select__selected-name">Select Option</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- Powertrain -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Powertrain</h3>
+                                    <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                    <a href="#none" class="options-select__btn" title="Open a popup to select an option" role="button" data-popup=".powerTrain">
+                                        <span class="options-select__selected">
+                                            <span class="options-select__selected-name">Select Option</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- Exterior -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Exterior</h3>
+                                    <div class="options-select__bundles">
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Colors</h4>
+                                            <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                            <a href="#none" class="options-select__btn use-thumbnail is-active" title="Open a popup to select an option" role="button" data-popup=".exteriorColors">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-thumbnail">
+                                                        <img src="../images/dummy/img_dummy_option_01.png" alt="$Exterior Colors : Glossy - Phantom Black Pearl$ image">
+                                                    </span>
+                                                    <span class="options-select__selected-name">Glossy - Phantom Black Pearl</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 90.00</span>
+                                            </a>
+                                        </div>
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Wheels</h4>
+                                            <a href="#none" class="options-select__btn use-thumbnail is-active" title="Open a popup to select an option" role="button" data-popup=".exteriorWheels">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-thumbnail">
+                                                        <img src="../images/dummy/img_dummy_option_03.png" alt="$Exterior Colors : 17-inch Alloy Wheels$ image">
+                                                    </span>
+                                                    <span class="options-select__selected-name">17-inch Alloy Wheels</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 90.00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Interior -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Interior</h3>
+                                    <div class="options-select__bundles">
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Colors</h4>
+                                            <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                            <a href="#none" class="options-select__btn use-thumbnail is-active" title="Open a popup to select an option" role="button" data-popup=".interiorColors">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-thumbnail">
+                                                        <img src="../images/dummy/img_dummy_option_02.png" alt="$Interior Colors : Black Monotone$ image">
+                                                    </span>
+                                                    <span class="options-select__selected-name">Black Monotone</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Additional -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Additional</h3>
+                                    <div class="options-select__bundles">
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Options</h4>
+                                            <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                            <a href="#none" class="options-select__btn is-active" title="Open a popup to select an option" role="button" data-popup=".additionalOptions">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-name">Dual Full Auto Air-Conditioner</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 90.00</span>
+                                            </a>
+                                        </div>
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Packages</h4>
+                                            <a href="#none" class="options-select__btn is-active" title="Open a popup to select an option" role="button">
+                                                <span class="options-select__selected" data-popup=".additionalPackages">
+                                                    <span class="options-select__selected-name">Convenience</span>
+                                                    <span class="options-select__selected-multiple">1</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 315.00</span>
+                                            </a>
+                                        </div>
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Accessories</h4>
+                                            <a href="#none" class="options-select__btn is-active" title="Open a popup to select an option" role="button" data-popup=".accessories">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-name">Floor Mat</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 80.00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="configurator-disclaimer show-mobile">
+                                <div class="btn-wrap">
+                                    <a href="#none" class="btn btn__link type02" target="_blank">
+                                        <span class="btn__text">Disclaimer</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="options-bottom  is-active">
+                            <div class="options-total">
+                                <a href="#none" class="total-btn" title="Go to your build page">
+                                    <span class="total__title">Total Price</span>
+                                    <span class="total__price">€ 20,530.00</span>
+                                </a>
+                            </div>
+                            <div class="options-compare">
+                                <div class="compare-btn btn-wrap btn-secondary__type01">
+                                    <button type="button" class="btn btn__compare-add">
+                                        <span class="btn__text ir">Add to Compare</span>
+                                    </button>
+                                    <!-- 230720 : is-unactive 태그가 있을때는 버튼 클릭 안됨 -->
+                                    <button type="button" class="btn btn__compare--type01 is-unactive">
+                                        <span class="btn__text">Compare Your Build (1/3)</span>
+                                    </button>
+                                </div>
+                                <div class="compare-add">
+                                    <div class="add-box">
+                                        <span class="add__model">
+                                            <img src="../images/dummy/img_dummy_addcompare_01.png" alt="car image for comparison">
+                                        </span>
+                                        <span class="add__model">
+                                            <img src="../images/dummy/img_dummy_addcompare_02.png" alt="car image for comparison">
+                                        </span>
+                                        <!-- [D] 이미지 데이터가가 없을 경우 .add__model에 .nodata 클래스 추가 -->
+                                        <span class="add__model nodata">
+                                            <!-- <img src="../images/dummy/img_dummy_addcompare_03.png" alt="car image for comparison"> -->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// END -->
+            </div>
+            <!--// contents -->
+
+            
+            <!-- popup : Compare Your Build - A_BU_LP_016.html 스크롤 다운 시 is-scrolling 추가 -->
+            <!-- Full-popup default : .popup-container > .popup-inner > .title-wrap + .각_팝업_컨텐츠 -->
+            <div class="popup-container type-half type2 is-active">
+                <div class="popup-inner">
+                    <div class="title-wrap"> 
+                        <h2 class="title-wrap__title">Compare Your Build</h2>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn__close">
+                                <span class="btn__text ir">close</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contents-compare build">
+                        <div class="contents-compare__switch">
+                            <div class="btn-wrap">
+                                <div class="btn__switch-item btn__switch--type01">
+                                  <!-- 230719 : 버튼 아이디값 수정 -->
+                                    <input type="checkbox" name="switch03" class="btn__switch" id="switchbtn08">
+                                    <label for="switchbtn08">
+                                        <!-- [JS] 체크 활성화/비활성화시 .is-active 클래스 / title="선택됨" 추가 -->
+                                            <span class="btn__text ir is-active" title="선택됨">inside</span>
+                                            <span class="btn__text ir">outside</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="contents-compare__item is-active">
+                                <div class="contents-compare__item-option">
+                                    <div class="btn-wrap">
+                                        <button type="button" class="btn btn__delete btn--underline">
+                                            <span class="btn__text">Delete</span>
+                                        </button>
+                                    </div>
+                                    <div class="car-info">
+                                        <div class="car-info--image">
+                                            <img src="../images/dummy/img_dummy_konahybrid.png" alt="KONA Hybrid">
+                                            <!-- 230719 : interior img 추가 -->
+                                            <img src="../images/dummy/img_dummy_konahybrid_interior.png" alt="KONA Hybrid interior">
+                                        </div>
+                                        <div class="car-info--text">
+                                            <div class="car-info--type">
+                                                <span>Gasoline / Diesel</span>
+                                            </div>
+                                            <div class="car-info--name">
+                                                <span>KONA Hybrid</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents-compare__item-option">
+                                    <div class="btn-wrap">
+                                        <button type="button" class="btn btn__delete btn--underline">
+                                            <span class="btn__text">Delete</span>
+                                        </button>
+                                    </div>
+                                    <div class="car-info">
+                                        <div class="car-info--image">
+                                            <img src="../images/dummy/img_dummy_konahybrid.png" alt="KONA Hybrid">
+                                            <!-- 230719 : interior img 추가 -->
+                                            <img src="../images/dummy/img_dummy_konahybrid_interior.png" alt="KONA Hybrid interior">
+                                        </div>
+                                        <div class="car-info--text">
+                                            <div class="car-info--type">
+                                                <span>Gasoline / Diesel</span>
+                                            </div>
+                                            <div class="car-info--name">
+                                                <span>KONA Hybrid</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents-compare__item-option no-data">
+                                    <div class="car-info">
+                                        <div class="btn-wrap">
+                                            <button type="button" class="btn btn__add">
+                                                <span class="btn__text ir">add</span>
+                                            </button>
+                                        </div>
+                                        <div class="no-data--text">
+                                            <span>Add New Build to Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 230719 : interior img 추가 삭제 -->
+                            <!-- <div class="contents-compare__item">
+                                <div class="contents-compare__item-option">
+                                    <div class="btn-wrap">
+                                        <button type="button" class="btn btn__delete btn--underline">
+                                            <span class="btn__text">Delete</span>
+                                        </button>
+                                    </div>
+                                    <div class="car-info">
+                                        <div class="car-info--image">
+                                            <img src="../images/dummy/img_dummy_konahybrid_interior.png" alt="KONA Hybrid interior">
+                                        </div>
+                                        <div class="car-info--text">
+                                            <div class="car-info--type">
+                                                <span>Gasoline / Diesel</span>
+                                            </div>
+                                            <div class="car-info--name">
+                                                <span>KONA Hybrid</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents-compare__item-option">
+                                    <div class="btn-wrap">
+                                        <button type="button" class="btn btn__delete btn--underline">
+                                            <span class="btn__text">Delete</span>
+                                        </button>
+                                    </div>
+                                    <div class="car-info">
+                                        <div class="car-info--image">
+                                            <img src="../images/dummy/img_dummy_konahybrid_interior.png" alt="KONA Hybrid interior">
+                                        </div>
+                                        <div class="car-info--text">
+                                            <div class="car-info--type">
+                                                <span>Gasoline / Diesel</span>
+                                            </div>
+                                            <div class="car-info--name">
+                                                <span>KONA Hybrid</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents-compare__item-option no-data">
+                                    <div class="car-info">
+                                        <div class="btn-wrap">
+                                            <button type="button" class="btn btn__add">
+                                                <span class="btn__text ir">add</span>
+                                            </button>
+                                        </div>
+                                        <div class="no-data--text">
+                                            <span>Add New Build to Compare</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="scroll-btn-wrap">
+                                <button class="scrollLeftButton is-active"></button>
+                                <button class="scrollRightButton"></button>
+                            </div>
+                        </div>
+                        <div class="contents-compare__option show-pc">
+                            <div class="contents-compare__option-inner">
+                                <ul>
+                                    <li class="contents-compare__option-list"><span>Year of Product</span></li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="select-btn" title="언어 선택"><span>2023</span></button>
+                                            <div class="select-list">
+                                                <ul>
+                                                    <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                    <li class="select__box is-active">
+                                                        <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                        <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">2023</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="select-btn" title="언어 선택"><span>2023</span></button>
+                                            <div class="select-list">
+                                                <ul>
+                                                    <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                    <li class="select__box is-active">
+                                                        <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                        <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">2023</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list"></li>
+                                </ul>
+                                <ul>
+                                    <li class="contents-compare__option-list"><span>Body type</span></li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="select-btn" title="언어 선택"><span>4 Seats</span></button>
+                                            <div class="select-list">
+                                                <ul>
+                                                    <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                    <li class="select__box is-active">
+                                                        <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                        <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">4 Seats</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="select-btn" title="언어 선택"><span>4 Seats</span></button>
+                                            <div class="select-list">
+                                                <ul>
+                                                    <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                    <li class="select__box is-active">
+                                                        <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                        <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">4 Seats</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list"></li>
+                                </ul>
+                                <ul>
+                                    <li class="contents-compare__option-list"><span>Trim</span></li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="select-btn" title="언어 선택"><span>Modern</span></button>
+                                            <div class="select-list">
+                                                <ul>
+                                                    <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                    <li class="select__box is-active">
+                                                        <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                        <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">Modern</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="select-btn" title="언어 선택"><span>Modern</span></button>
+                                            <div class="select-list">
+                                                <ul>
+                                                    <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                    <li class="select__box is-active">
+                                                        <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                        <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">Modern</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list"></li>
+                                </ul>
+                                <ul>
+                                    <li class="contents-compare__option-list"><span>Powertrain</span></li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="select-btn" title="언어 선택"><span>1.6 Gasoline Turbo</span></button>
+                                            <div class="select-list">
+                                                <ul>
+                                                    <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                    <li class="select__box is-active">
+                                                        <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                        <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="select-btn" title="언어 선택"><span>1.6 Gasoline Turbo</span></button>
+                                            <div class="select-list">
+                                                <ul>
+                                                    <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                    <li class="select__box is-active">
+                                                        <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                        <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list"></li>
+                                </ul>
+                                <ul>
+                                    <li class="contents-compare__option-list"><span>Exterior</span></li>
+                                    <li class="contents-compare__option-list">
+                                        <!-- 230720 : no-image 구분 클래스 추가 -->
+                                        <div class="select-list__wrap exterior">
+                                            <div class="select-list__title-box">
+                                                <span class="select-list__title">Colors</span>
+                                                <p class="select-list__color-name">Phantom Black Pearl</p>
+                                            </div>
+                                            <div class="select-list select-list--list">
+                                                <ul>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item is-active" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_01.png" alt="Phantom Black Pearl">
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_02.png" alt="img_dummy_colors_02"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_03.png" alt="img_dummy_colors_03"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_04.png" alt="img_dummy_colors_04"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_05.png" alt="img_dummy_colors_05"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <!-- 230724 클릭시 동적으로 accordian 코드 불러옴 -->
+                                                        <!-- <a href="#none" class="select__item is-change" onclick="window.hyundai.CC.accordian.init();" role="button"> -->
+                                                        <a href="#none" class="select__item is-change" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_06.png" alt="img_dummy_colors_06"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- 230720 : no-image 구분 클래스 추가 -->
+                                        <div class="select-list__wrap wheels">
+                                            <div class="select-list__title-box">
+                                                <span class="select-list__title">Wheels</span>
+                                                <p class="select-list__color-name">17-inch Alloy Wheels</p>
+                                            </div>
+                                            <div class="select-list select-list--list">
+                                                <ul>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item is-active" role="button">
+                                                          <!-- 230719 : no-image 경우 추가 -->
+                                                            <div class="item-image no-image">
+                                                                <img src="../images/dummy/img_dummy_wheel_01.png" alt="17-inch Alloy Wheels">
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_wheel_02.png" alt="img_dummy_wheel_02"> <!-- D: alt 텍스트 휠값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_wheel_03.png" alt="img_dummy_wheel_03"> <!-- D: alt 텍스트 휠값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list">
+                                        <!-- 230720 : no-image 구분 클래스 추가 -->
+                                        <div class="select-list__wrap exterior">
+                                            <div class="select-list__title-box">
+                                                <span class="select-list__title">Colors</span>
+                                                <p class="select-list__color-name">Phantom Black Pearl</p>
+                                            </div>
+                                            <div class="select-list select-list--list">
+                                                <ul>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item is-active" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_01.png" alt="Phantom Black Pearl">
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_02.png" alt="img_dummy_colors_02"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_03.png" alt="img_dummy_colors_03"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_04.png" alt="img_dummy_colors_04"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_05.png" alt="img_dummy_colors_05"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item is-change" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_06.png" alt="img_dummy_colors_06"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- 230720 : no-image 구분 클래스 추가 -->
+                                        <div class="select-list__wrap wheels">
+                                            <div class="select-list__title-box">
+                                                <span class="select-list__title">Wheels</span>
+                                                <p class="select-list__color-name">17-inch Alloy Wheels</p>
+                                            </div>
+                                            <div class="select-list select-list--list">
+                                                <ul>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item is-active" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_wheel_01.png" alt="17-inch Alloy Wheels">
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_wheel_02.png" alt="img_dummy_wheel_02"> <!-- D: alt 텍스트 휠값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_wheel_03.png" alt="img_dummy_wheel_03"> <!-- D: alt 텍스트 휠값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list"></li>
+                                </ul>
+                                <ul>
+                                    <li class="contents-compare__option-list"><span>Interior</span></li>
+                                    <li class="contents-compare__option-list">
+                                        <!-- 230720 : no-image 구분 클래스 추가 -->
+                                        <div class="select-list__wrap interior">
+                                            <div class="select-list__title-box">
+                                                <span class="select-list__title">Colors</span>
+                                                <p class="select-list__color-name">Black Monotone</p>
+                                            </div>
+                                            <div class="select-list select-list--list">
+                                                <ul>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item is-active" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_101.png" alt="Black Monotone">
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_102.png" alt="img_dummy_colors_102"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_103.png" alt="img_dummy_colors_103"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_104.png" alt="img_dummy_colors_104"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_105.png" alt="img_dummy_colors_105"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_106.png" alt="img_dummy_colors_106"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list">
+                                        <!-- 230720 : no-image 구분 클래스 추가 -->
+                                        <div class="select-list__wrap interior">
+                                            <div class="select-list__title-box">
+                                                <span class="select-list__title">Colors</span>
+                                                <p class="select-list__color-name">Black Monotone</p>
+                                            </div>
+                                            <div class="select-list select-list--list">
+                                                <ul>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item is-active" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_101.png" alt="Black Monotone">
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_102.png" alt="img_dummy_colors_102"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_103.png" alt="img_dummy_colors_103"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_104.png" alt="img_dummy_colors_104"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_105.png" alt="img_dummy_colors_105"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="select__box">
+                                                        <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                        <a href="#none" class="select__item" role="button">
+                                                            <div class="item-image">
+                                                                <img src="../images/dummy/img_dummy_colors_106.png" alt="img_dummy_colors_106"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list"></li>
+                                </ul>
+                                <ul>
+                                    <li class="contents-compare__option-list"><span>Additional</span></li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="additional-box">
+                                            <span class="additional-box__title">Convenience <em class="alert-label">+2</em></span>
+                                            <button type="button" class="btn btn--underline">
+                                                <span class="btn__text">Change</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list">
+                                        <div class="additional-box">
+                                            <span class="additional-box__title">Convenience <em class="alert-label">+2</em></span>
+                                            <button type="button" class="btn btn--underline">
+                                                <span class="btn__text">Change</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="contents-compare__option-list"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contents-compare__option show-mobile">
+                            <div class="contents-compare__option-inner">
+                                <div class="table-wrap">  
+                                    <div class="table-item">
+                                        <div class="table-item__title_wrap">
+                                            <strong class="table-item__title">Year of Product</strong>
+                                        </div>
+                                        <div class="table-box">
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>2023</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>2023</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>2023</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">2023</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>           
+                                    <div class="table-item">
+                                        <div class="table-item__title_wrap">
+                                            <strong class="table-item__title">Body type</span></strong> 
+                                        </div>
+                                        <div class="table-box">
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>4 Seats</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">4 Seats</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>4 Seats</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">4 Seats</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">4 Seats</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-item">
+                                        <div class="table-item__title_wrap">
+                                            <strong class="table-item__title">Trim</strong>
+                                        </div>
+                                        <div class="table-box">
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>Modern</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">Modern</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>Modern</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">Modern</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">Modern</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-item">
+                                        <div class="table-item__title_wrap">
+                                            <strong class="table-item__title">Powertrain</strong>
+                                        </div>
+                                        <div class="table-box">
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>1.6 Gasoline Turbo</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                                <button type="button" class="select-btn" title="언어 선택"><span>1.6 Gasoline Turbo</span></button>
+                                                <div class="select-list">
+                                                    <ul>
+                                                        <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                        <li class="select__box is-active">
+                                                            <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                            <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <button type="button" class="select__item"><span class="select__title">1.6 Gasoline Turbo</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-item">
+                                        <div class="table-item__title_wrap">
+                                            <strong class="table-item__title">Exterior</strong> 
+                                        </div>
+                                        <div class="table-box">
+                                            <!-- 230720 : no-image 구분 클래스 추가 -->
+                                            <div class="select-list__wrap exterior">
+                                                <div class="select-list__title-box">
+                                                    <span class="select-list__title">Colors</span>
+                                                    <p class="select-list__color-name">Phantom Black Pearl</p>
+                                                </div>
+                                                <div class="select-list select-list--list">
+                                                    <ul>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item is-active" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_01.png" alt="Phantom Black Pearl">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_02.png" alt="img_dummy_colors_02"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_03.png" alt="img_dummy_colors_03"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_04.png" alt="img_dummy_colors_04"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_05.png" alt="img_dummy_colors_05"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item is-change" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_06.png" alt="img_dummy_colors_06"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- 230720 : no-image 구분 클래스 추가 -->
+                                            <div class="select-list__wrap exterior">
+                                                <div class="select-list__title-box">
+                                                    <span class="select-list__title">Colors</span>
+                                                    <p class="select-list__color-name">Phantom Black Pearl</p>
+                                                </div>
+                                                <div class="select-list select-list--list">
+                                                    <ul>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item is-active" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_01.png" alt="Phantom Black Pearl">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_02.png" alt="img_dummy_colors_02"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_03.png" alt="img_dummy_colors_03"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_04.png" alt="img_dummy_colors_04"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_05.png" alt="img_dummy_colors_05"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item is-change" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_06.png" alt="img_dummy_colors_06"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-box">
+                                            <!-- 230720 : no-image 구분 클래스 추가 -->
+                                            <div class="select-list__wrap wheels">
+                                                <div class="select-list__title-box">
+                                                    <span class="select-list__title">Wheels</span>
+                                                    <p class="select-list__color-name">17-inch Alloy Wheels</p>
+                                                </div>
+                                                <div class="select-list select-list--list">
+                                                    <ul>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item is-active" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_wheel_01.png" alt="17-inch Alloy Wheels">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_wheel_02.png" alt="img_dummy_wheel_02"> <!-- D: alt 텍스트 휠값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_wheel_03.png" alt="img_dummy_wheel_03"> <!-- D: alt 텍스트 휠값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- 230720 : no-image 구분 클래스 추가 -->
+                                            <div class="select-list__wrap wheels">
+                                                <div class="select-list__title-box">
+                                                    <span class="select-list__title">Wheels</span>
+                                                    <p class="select-list__color-name">17-inch Alloy Wheels</p>
+                                                </div>
+                                                <div class="select-list select-list--list">
+                                                    <ul>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item is-active" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_wheel_01.png" alt="17-inch Alloy Wheels">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_wheel_02.png" alt="img_dummy_wheel_02"> <!-- D: alt 텍스트 휠값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_wheel_03.png" alt="img_dummy_wheel_03"> <!-- D: alt 텍스트 휠값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    <div class="table-item">
+                                        <div class="table-item__title_wrap">
+                                            <strong class="table-item__title">Interior</strong>
+                                        </div>
+                                        <div class="table-box">
+                                            <!-- 230720 : no-image 구분 클래스 추가 -->
+                                            <div class="select-list__wrap interior">
+                                                <div class="select-list__title-box">
+                                                    <span class="select-list__title">Colors</span>
+                                                    <p class="select-list__color-name">Black Monotone</p>
+                                                </div>
+                                                <div class="select-list select-list--list">
+                                                    <ul>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item is-active" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_101.png" alt="Black Monotone">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_102.png" alt="img_dummy_colors_102"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_103.png" alt="img_dummy_colors_103"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_104.png" alt="img_dummy_colors_104"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_105.png" alt="img_dummy_colors_105"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_106.png" alt="img_dummy_colors_106"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- 230720 : no-image 구분 클래스 추가 -->
+                                            <div class="select-list__wrap interior">
+                                                <div class="select-list__title-box">
+                                                    <span class="select-list__title">Colors</span>
+                                                    <p class="select-list__color-name">Black Monotone</p>
+                                                </div>
+                                                <div class="select-list select-list--list">
+                                                    <ul>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item is-active" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_101.png" alt="Black Monotone">
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_102.png" alt="img_dummy_colors_102"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_103.png" alt="img_dummy_colors_103"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_104.png" alt="img_dummy_colors_104"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_105.png" alt="img_dummy_colors_105"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="select__box">
+                                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                            <a href="#none" class="select__item" role="button">
+                                                                <div class="item-image">
+                                                                    <img src="../images/dummy/img_dummy_colors_106.png" alt="img_dummy_colors_106"> <!-- D: alt 텍스트 색상값에 맞춰 변경 필요 -->
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-item">
+                                        <div class="table-item__title_wrap">
+                                            <strong class="table-item__title">Additional</strong>
+                                        </div>
+                                        <div class="table-box">
+                                            <div class="additional-box">
+                                                <span class="additional-box__title">Convenience <em class="alert-label">+2</em></span>
+                                                <button type="button" class="btn btn--underline">
+                                                    <span class="btn__text">Change</span>
+                                                </button>
+                                            </div>
+                                            <div class="additional-box">
+                                                <span class="additional-box__title">Convenience <em class="alert-label">+2</em></span>
+                                                <button type="button" class="btn btn--underline">
+                                                    <span class="btn__text">Change</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <div class="accordion-content-wrap">
+                                <div class="accordion-content-inner">
+                                    <div class="accordion-title-wrap">
+                                        <div class="accordion-title">
+                                            <strong class="accordion-title__title">Specifications</strong>
+                                            <button type="button" class="accordion-title__btn" onclick=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div class="accorheight contents-box">
+                                            <div class="table-wrap">  
+                                                <div class="table-item">
+                                                    <div class="table-item__title_wrap">
+                                                        <strong class="table-item__title tit01">Model information</strong>
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <!-- [js] td가 2개일땐 div.table에 .tabel_td2 추가/ td가 1개일땐 div.table에 .tabel_td1 추가 -->
+                                                        <table class="table">
+                                                            <caption>Product Years, Fuel type, Available Eco Labels 내용의 표</caption>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Product Years</span></th>
+                                                                <td><span class="number">2023</span></td>
+                                                                <td><span class="number">2023</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Fuel type</span></th>
+                                                                <td><span>Gasoline</span></td>
+                                                                <td><span>Hybrid</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Available Eco Labels</span></th>
+                                                                <td><span class="number">-</span></td>
+                                                                <td>
+                                                                    <!-- 230721: eco label 수정 -->
+                                                                    <div class="label-wrap">
+                                                                            <!-- 
+                                                                            ECO - label-wrap__icon--eco
+                                                                            C - label-wrap__icon--c
+                                                                            B - label-wrap__icon--b
+                                                                            0 - label-wrap__icon--0 -->
+                                                                        <i class="label-wrap__icon label-wrap__icon--eco"></i>
+                                                                        <i class="label-wrap__icon label-wrap__icon--0"></i>
+                                                                    </div>
+                                                                    <!-- 230721: eco label 수정 -->
+                                                                </td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>           
+                                                <div class="table-item">
+                                                    <div class="table-item__title_wrap">
+                                                        <strong class="table-item__title tit02">Dimensions<span>(mm)</span></strong> 
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <table class="table">
+                                                            <caption>Overall length, Overall width, Overall height, Wheelbase, Wheel tread, Front, Wheel tread, Rear 내용의 표</caption>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Overall length</span></th>
+                                                                <td><span class="number">4,630</span></td>
+                                                                <td><span class="number">4,630</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Overall width</span></th>
+                                                                <td><span class="number">1,865</span></td>
+                                                                <td><span class="number">1,865</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Overall height</span></th>
+                                                                <td><span class="number">2,765</span></td>
+                                                                <td><span class="number">2,765</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Wheelbase</span></th>
+                                                                <td><span class="number">2,765</span></td>
+                                                                <td><span class="number">2,765</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Wheel tread, Front</span></th>
+                                                                <td><span class="number">5,234</span></td>
+                                                                <td><span class="number">5,234</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Wheel tread, Rear</span></th>
+                                                                <td><span class="number">1,254</span></td>
+                                                                <td><span class="number">1,254</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>  
+                                                <div class="table-item">
+                                                    <div class="table-item__title_wrap">
+                                                        <strong class="table-item__title tit03">Powertrain</strong> 
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <table class="table">
+                                                            <caption>Engine type, Powertrain name, Transmission type, Displacement (cc), Max. Power (hp), Max. Torque (kgf.m), Max. Motor power (kW), Max. Motor torque (Nm) 내용의 표</caption>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Engine type</span></th>
+                                                                <td><span>Gasoline</span></td>
+                                                                <td><span>Hybrid</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Powertrain name</span></th>
+                                                                <td><span>G1.6 Turbo</span></td>
+                                                                <td><span>G1.6T</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Transmission type</span></th>
+                                                                <td><span>DCT</span></td>
+                                                                <td><span>Auto</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Displacement (cc)</span></th>
+                                                                <td><span class="number">1,865</span></td>
+                                                                <td><span class="number">1,865</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Max. Power (hp)</span></th>
+                                                                <td><span>180 / 5,500</span></td>
+                                                                <td><span>180 / 5,500</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Max. Torque (kgf.m)</span></th>
+                                                                <td><span>27.0 /<br class="show-mobile"> 1,500~4,500</span></td>
+                                                                <td><span>27.0 /<br class="show-mobile"> 1,500~4,500</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Max. Motor power (kW)</span></th>
+                                                                <td><span class="number">-</span></td>
+                                                                <td><span class="number">-</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Max. Motor torque (Nm)</span></th>
+                                                                <td><span class="number">-</span></td>
+                                                                <td><span class="number">-</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>    
+                                                <div class="table-item">
+                                                    <div class="table-item__title_wrap">
+                                                        <strong class="table-item__title tit04">Distance driven</strong>
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <table class="table">
+                                                            <caption>Max. Speed (km/h), Acceleration (0 -> 100km/h : sec), Driving range per 100% charging - Combined (km) 내용의 표</caption>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Max. Speed (km/h)</span></th>
+                                                                <td><span class="number">230</span></td>
+                                                                <td><span class="number">230</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Acceleration (0 -> 100km/h : sec)</span></th>
+                                                                <td><span class="number">6.7</span></td>
+                                                                <td><span class="number">6.7</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="bg_gray td-height">
+                                                                <th><span class="title">Driving range per 100% <br>charging - Combined (km)</span></th>
+                                                                <td><span class="number">524</span></td>
+                                                                <td><span class="number">524</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="table-item">
+                                                    <div class="table-item__title_wrap">
+                                                        <strong class="table-item__title tit05">Fuel</strong>
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <table class="table">
+                                                            <caption>Fuel tank (l), Combined fuel economy (km/l) 내용의 표</caption>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Fuel tank (l)</span></th>
+                                                                <td><span class="number">54</span></td>
+                                                                <td><span class="number">54</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="top_align">
+                                                                <th><span class="title">Combined fuel economy <br>(km/l) <span class="footnote">*Electric : km/kWh <br>*Hydrogen : km/kg</span></span></th>
+                                                                <td><span class="number">12.5</span></td>
+                                                                <td><span class="number">12.5</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="table-item">
+                                                    <div class="table-item__title_wrap">
+                                                        <strong class="table-item__title tit06">Battery</strong>
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <table class="table">
+                                                            <caption>Battery type, Battery capacity (kWh/Ah) 내용의 표</caption>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">Battery type</span></th>
+                                                                <td><span class="number">-</span></td>
+                                                                <td><span class="number">-</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">Battery capacity (kWh/Ah)</span></th>
+                                                                <td><span class="number">-</span></td>
+                                                                <td><span class="number">-</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="table-item">
+                                                    <div class="table-item__title_wrap">
+                                                        <strong class="table-item__title tit07">CO2<span>(g/km)</span></strong>
+                                                    </div>
+                                                    <div class="table-box">
+                                                        <table class="table">
+                                                            <caption>CO2 emissions, CO2 Urban, CO2 Extra Urban 내용의 표</caption>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">CO2 emissions</span></th>
+                                                                <td><span class="number">133</span></td>
+                                                                <td><span class="number">133</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><span class="title">CO2 Urban</span></th>
+                                                                <td><span class="number">54</span></td>
+                                                                <td><span class="number">54</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr class="bg_gray">
+                                                                <th><span class="title">CO2 Extra Urban</span></th>
+                                                                <td><span class="number">79</span></td>
+                                                                <td><span class="number">79</span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>                   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>           
+                            </div>
+                        </div>
+                        <div class="contents-compare__price-wrap">
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn__link type3">
+                                    <span class="btn-title">Confirm Your Build</span>
+                                    <strong class="contents-compare__price">€ 20.530,00</strong>
+                                </button>
+                                <button type="button" class="btn btn__link type3">
+                                    <span class="btn-title">Confirm Your Build</span>
+                                    <strong class="contents-compare__price">€ 20.530,00</strong>
+                                </button>
+                                <button type="button" class="btn btn__link type3 no-data">
+                                    <span class="btn-title">Add New Build</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dimm is-active"></div>
+            <!-- // popup : Compare Your Build - A_BU_LP_016.html -->
+        </div>
+        <!--// Container -->
+    </div>
+
+    <!-- script -->
+    <script>
+    
+        // 230719 : interior img 추가 스크립트 수정 ui.js로 이동
+        // const toggleBtn = document.querySelectorAll('input[name=switch01]');
+        // const selectList = document.querySelectorAll('.contents-compare__item');
+        // const selectListImgFir = document.querySelectorAll('.contents-compare__item img:first-child');
+        // const selectListImgLast = document.querySelectorAll('.contents-compare__item img:last-child');
+      
+        // selectListImgLast.forEach((el)=>{
+        //   el.style.display = "none";
+        // })
+
+        // toggleBtn.forEach((el)=>{
+        //     el.addEventListener('click',()=>{
+        //         if(el.checked){
+        //             selectList.forEach((el)=>{
+        //                 selectListImgFir.forEach((el)=>{
+        //                   el.style.display = 'none'
+        //                 })
+        //                 selectListImgLast.forEach((el)=>{
+        //                   el.style.display = 'block'
+        //                 })
+                        
+        //             })
+        //         }else{
+        //             selectList.forEach((el)=>{
+        //                 selectListImgFir.forEach((el)=>{
+        //                   el.style.display = 'block'
+        //                 })
+        //                 selectListImgLast.forEach((el)=>{
+        //                   el.style.display = 'none'
+        //                 })
+                        
+        //             })
+        //         }
+        //     })
+        // })
+    </script>
+</body>
+</html>

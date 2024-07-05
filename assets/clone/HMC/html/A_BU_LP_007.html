@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A_BU_LP_007.html</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="popup-container is-active">
+        <!-- powertrain-header -->
+        <div class="powertrain-header">
+            <h2 class="powertrain-title">Details</h2>
+            <div class="btn-wrap">
+                <button type="button" class="btn btn__close">
+                    <span class="btn__text ir">close</span>
+                </button>
+            </div>
+        </div>
+        <!-- // powertrain-header -->
+        <div class="powertrain-content">
+            <!-- [js] scrolling 되면 table-item__title에 is-active 추가-->
+            <div class="powertrain-detail ">    
+                <div class="pt-table-wrap">
+                    <div class="table-item">
+                        <strong class="table-item__title">
+                            <span class="radio-box radio__type01">
+                                <input type="radio" name="radio-box02" id="radio01" checked>
+                                <label for="radio01">
+                                    <span class="text">1.6 Gasoline Turbo</span>
+                                    <span class="table-item__title__price">€ 0.00</span>
+                                </label>
+                            </span>
+                        </strong>
+                        <div class="table-item-inner">
+                            <div class="table-item-inner__label">
+                                <strong class="pt-title">Eco Label</strong>
+                                <div class="label-wrap">
+                                    <!-- 230628 : label icon 변경시 class 값 추가
+                                        ECO - label-wrap__icon--eco
+                                        C - label-wrap__icon--c
+                                        B - label-wrap__icon--b
+                                        0 - label-wrap__icon--0 -->
+                                    <i class="label-wrap__icon label-wrap__icon--eco"></i>
+                                    <span class="text">ECO Distintivo Ambiental DGT</span>
+                                </div>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Engine</strong>
+                                <table class="table">
+                                    <caption>Acceleration (0 -> 100km/h : sec) Power max (hp/rpm) Max. speed (km/h) Pair max. (Nm/rpm) Displacement (cc) Battery capacity (kWh) Maximum on-board loader power (kW) Battery voltage (V) 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th>Acceleration <br class="show-mobile">(0 -> 100km/h : sec)</th>
+                                            <td>7.6</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Power max (hp/rpm)</th>
+                                            <td>150/204</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Max. speed (km/h)</th>
+                                            <td>167</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Pair max. (Nm/rpm)</th>
+                                            <td>395</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Displacement (cc)</th>
+                                            <td>1598</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Battery capacity <br class="show-mobile">(kWh)</th>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Maximum on-board <br class="show-mobile"> loader power (kW)</th>
+                                            <td>10.5</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Battery voltage (V)</th>
+                                            <td>356</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Transmission</strong>
+                                <table class="table">
+                                    <caption>Transmission, Automatic 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th>Traction</th>
+                                            <td>2WD</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Transmission</th>
+                                            <td>Automatic</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Consumption and emissions</strong>
+                                <table class="table">
+                                    <caption>Combined Medium Cycle Autonomy (WLTP) →, CO2 emissions (WLTP combined cycle), Fuel consumption combined cycle WLTP (l/100km), Very high fuel consumption WLTP (l/100km), High fuel consumption WLTP (l/100km), Low cycle fuel consumption WLTP (l/100km), Fuel consumption mean WLTP cycle(l/100km) 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th><a href="javascript:void(0)">Combined Medium Cycle Autonomy<br class="show-mobile">(WLTP) →</a></th>
+                                            <td>484</td>
+                                        </tr>
+                                        <tr>
+                                            <th>CO2 emissions <br class="show-mobile">(WLTP combined cycle)</th>
+                                            <td>31</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fuel consumption combined cycle <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Very high fuel <br class="show-mobile">consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>High fuel <br class="show-mobile">consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Low cycle fuel consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fuel consumption mean WLTP cycle <br class="show-mobile">(l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-item">
+                        <strong class="table-item__title">
+                            <span class="radio-box radio__type01">
+                                <input type="radio" name="radio-box02" id="radio02">
+                                <label for="radio02">
+                                    <span class="text">1.6 Diesel</span>
+                                    <span class="table-item__title__price">€ 0.00</span>
+                                </label>
+                            </span>
+                        </strong>
+                        <div class="table-item-inner">
+                            <div class="table-item-inner__label">
+                                <strong class="pt-title">Eco Label</strong>
+                                <div class="label-wrap">
+                                    <!-- 230628 : label icon 변경시 class 값 추가
+                                        ECO - label-wrap__icon--eco
+                                        C - label-wrap__icon--c
+                                        B - label-wrap__icon--b
+                                        0 - label-wrap__icon--0 -->
+                                    <i class="label-wrap__icon label-wrap__icon--eco"></i>
+                                    <span class="text">ECO Distintivo Ambiental DGT</span>
+                                </div>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Engine</strong>
+                                <table class="table">
+                                    <caption>Acceleration (0 -> 100km/h : sec) Power max (hp/rpm) Max. speed (km/h) Pair max. (Nm/rpm) Displacement (cc) Battery capacity (kWh) Maximum on-board loader power (kW) Battery voltage (V) 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th>Acceleration <br class="show-mobile">(0 -> 100km/h : sec)</th>
+                                            <td>7.6</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Power max (hp/rpm)</th>
+                                            <td>150/204</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Max. speed (km/h)</th>
+                                            <td>167</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Pair max. (Nm/rpm)</th>
+                                            <td>395</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Displacement (cc)</th>
+                                            <td>1598</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Battery capacity <br class="show-mobile">(kWh)</th>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Maximum on-board <br class="show-mobile"> loader power (kW)</th>
+                                            <td>10.5</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Battery voltage (V)</th>
+                                            <td>356</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Transmission</strong>
+                                <table class="table">
+                                    <caption>Transmission, Automatic 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th>Traction</th>
+                                            <td>2WD</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Transmission</th>
+                                            <td>Automatic</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Consumption and emissions</strong>
+                                <table class="table">
+                                    <caption>Combined Medium Cycle Autonomy (WLTP) →, CO2 emissions (WLTP combined cycle), Fuel consumption combined cycle WLTP (l/100km), Very high fuel consumption WLTP (l/100km), High fuel consumption WLTP (l/100km), Low cycle fuel consumption WLTP (l/100km), Fuel consumption mean WLTP cycle(l/100km) 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th><a href="javascript:void(0)">Combined Medium Cycle Autonomy <br class="show-mobile">(WLTP) →</a></th>
+                                            <td>484</td>
+                                        </tr>
+                                        <tr>
+                                            <th>CO2 emissions <br class="show-mobile">(WLTP combined cycle)</th>
+                                            <td>31</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fuel consumption combined cycle <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Very high fuel <br class="show-mobile">consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>High fuel <br class="show-mobile">consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Low cycle fuel consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fuel consumption mean WLTP cycle <br class="show-mobile">(l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-item">
+                        <strong class="table-item__title">
+                            <span class="radio-box radio__type01">
+                                <input type="radio" name="radio-box02" id="radio03">
+                                <label for="radio03">
+                                    <span class="text is-change">2.0 Diesel</span>
+                                </label>
+                            </span>
+                        </strong>
+                        <div class="table-item-inner">
+                            <div class="table-item-inner__label">
+                                <strong class="pt-title">Eco Label</strong>
+                                <div class="label-wrap">
+                                    <!-- 230628 : label icon 변경시 class 값 추가
+                                        ECO - label-wrap__icon--eco
+                                        C - label-wrap__icon--c
+                                        B - label-wrap__icon--b
+                                        0 - label-wrap__icon--0 -->
+                                    <i class="label-wrap__icon label-wrap__icon--eco"></i>
+                                    <span class="text">ECO Distintivo Ambiental DGT</span>
+                                </div>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Engine</strong>
+                                <table class="table">
+                                    <caption>Acceleration (0 -> 100km/h : sec) Power max (hp/rpm) Max. speed (km/h) Pair max. (Nm/rpm) Displacement (cc) Battery capacity (kWh) Maximum on-board loader power (kW) Battery voltage (V) 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th>Acceleration <br class="show-mobile">(0 -> 100km/h : sec)</th>
+                                            <td>7.6</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Power max (hp/rpm)</th>
+                                            <td>150/204</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Max. speed (km/h)</th>
+                                            <td>167</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Pair max. (Nm/rpm)</th>
+                                            <td>395</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Displacement (cc)</th>
+                                            <td>1598</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Battery capacity <br class="show-mobile">(kWh)</th>
+                                            <td>64</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Maximum on-board <br class="show-mobile"> loader power (kW)</th>
+                                            <td>10.5</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Battery voltage (V)</th>
+                                            <td>356</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Transmission</strong>
+                                <table class="table">
+                                    <caption>Transmission, Automatic 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th>Traction</th>
+                                            <td>2WD</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Transmission</th>
+                                            <td>Automatic</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-item-inner__box">
+                                <strong class="pt-title">Consumption and emissions</strong>
+                                <table class="table">
+                                    <caption>Combined Medium Cycle Autonomy (WLTP) →, CO2 emissions (WLTP combined cycle), Fuel consumption combined cycle WLTP (l/100km), Very high fuel consumption WLTP (l/100km), High fuel consumption WLTP (l/100km), Low cycle fuel consumption WLTP (l/100km), Fuel consumption mean WLTP cycle(l/100km) 내용의 표</caption>
+                                    <tbody>
+                                        <tr>
+                                            <th><a href="javascript:void(0)">Combined Medium Cycle Autonomy <br class="show-mobile">(WLTP) →</a></th>
+                                            <td>484</td>
+                                        </tr>
+                                        <tr>
+                                            <th>CO2 emissions <br class="show-mobile">(WLTP combined cycle)</th>
+                                            <td>31</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fuel consumption combined cycle <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Very high fuel <br class="show-mobile">consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>High fuel <br class="show-mobile">consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Low cycle fuel consumption <br class="show-mobile">WLTP (l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Fuel consumption mean WLTP cycle <br class="show-mobile">(l/100km)</th>
+                                            <td>1.4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-wrap btn-secondary__type02">
+                <button type="button" class="btn btn__apply is-active"><!-- [JS] active시 is-active 클래스 추가 -->
+                    <span class="btn__text">Apply</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 단일 페이지 확인용 임시 스크립트 ui.js에 동일 스크립트 있음
+    window.addEventListener('scroll', function(){
+        let scrollPos = window.scrollY;
+        let pos = document.body.offsetTop;
+        // console.log(scrollPos);
+        if(scrollPos>0){
+            document.querySelector('.powertrain-header').classList.add('is-active');
+            document.querySelector('.powertrain-detail').classList.add('is-active');
+            // document.querySelector('.btn__close').classList.add('btn__close--scroll');
+        }
+        else{
+            document.querySelector('.powertrain-header').classList.remove('is-active');
+            document.querySelector('.powertrain-detail').classList.remove('is-active');
+            // document.querySelector('.btn__close').classList.remove('btn__close--scroll');
+        }
+    });
+    
+</script>
+</html>

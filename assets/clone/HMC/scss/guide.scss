@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+// viewport size
+$pc-size: 1920;
+$mobile-size: 375; 
+
+// vw 변환 function 
+@function vw-pc($target) {
+  @if type-of($target) == number {
+    @return (($target * 100) / $pc-size) * 1vw;
+  } @else if type-of($target) == list {
+    $vw: ();
+    @each $value in $target {
+      @if type-of($value) == number {
+        $vw: append($vw, (($value * 100) / $pc-size) * 1vw);
+      } @else if type-of($value) == string {
+        $vw: append($vw, $value);
+      }
+    }
+    @return $vw;
+  } @else {
+    @return $target;
+  }
+}
+// @function vw-pc($target) {
+//   @if type-of($target) == number {
+//     @return $target * 1px;
+//   } @else if type-of($target) == list {
+//     $vw: ();
+//     @each $value in $target {
+//       @if type-of($value) == number {
+//         $vw: append($vw, $value * 1px);
+//       } @else if type-of($value) == string {
+//         $vw: append($vw, $value);
+//       }
+//     }
+//     @return $vw;
+//   } @else {
+//     @return $target;
+//   }
+// }
+
+// vw 변환 function 
+@function vw-mo($target) {
+  @if type-of($target) == number {
+    @return (($target * 100) / $mobile-size) * 1vw;
+  } @else if type-of($target) == list {
+    $vw: ();
+    @each $value in $target {
+      @if type-of($value) == number {
+        $vw: append($vw, (($value * 100) / $mobile-size) * 1vw);
+      } @else if type-of($value) == string {
+        $vw: append($vw, $value);
+      }
+    }
+    @return $vw;
+  } @else {
+    @return $target;
+  }
+}
+
+// 사용법
+// 클래스명 margin: vw-pc(font-size, 50);
+
+
+
+
+
+// $size--pc: 1920;
+// $size--mobile: 750;
+
+// @mixin vw-pc($prop,$val){
+//     @if $val <= 1{
+//         #{$prop}:($val/$size--pc)*100vw;
+//     } @else if $val <= 2{
+//         #{$prop}:($val/$size--pc)*100vw ($val/$size--pc)*100vw;
+//     }
+//     /*
+//     px->vw 변환비율구하기 =
+//     px에 100곱하고 나누기 너비
+//     */
+// }
+// @mixin vw-pc($prop,$val,$val2, $base:1920){
+//     #{$prop}:($val/$base)*100vw,($val2/$base)*100vw;
+//     /*
+//     px->vw 변환비율구하기 =
+//     px에 100곱하고 나누기 너비
+//     */
+// }
+// @mixin vw-pc($property, $pixel) {
+//     // @if length($pixel) = 2 {
+//     //     #{property}: unit(extract($pixel, 1)) * 100 / $size--mobile * 1vw
+//     //     unit(extract($pixel, 2)) * 100 / $size--mobile * 1vw;
+//     // }
+//     #{$property}:($val/$size--pc)*100vw;
+//     //     /*
+//     //     px->vw 변환비율구하기 =
+//     //     px에 100곱하고 나누기 너비
+//     //     */
+// }
+
+// @mixin vw-mo($prop,$val, $base:1920){
+//     #{$prop}:($val/$base)*100vw;
+//     /*
+//     px->vw 변환비율구하기 =
+//     px에 100곱하고 나누기 너비
+//     */
+// }
+
+
+// @media screen and (min-width: 751px) and (max-width: 1920px){
+//     클래스명{
+//         @include vw-pc(font-size, 50);
+//     }
+    
+// }
+
+// @media screen and (max-width: 750px) {
+//     클래스명{
+//         @include vw-mo(font-size, 50);
+//     }
+    
+// }

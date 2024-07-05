@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Your Build</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <style>
+        .test{display:none;z-index:1;width:560px;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);border:1px solid #000;background-color:#fff;}
+
+        @media screen and (max-width:750px) {
+            .test{display:block;width:100%;border:none;top:auto;bottom:0;left:0;transform:none;border-radius:20px 20px 0 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+        <!-- Header -->
+        <header class="header" id="header"></header>
+        <!--// Header -->
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- contents -->
+            <div class="contents is-wide" id="contents">
+                <!-- START -->
+                <div style="height:1000px;background-color:#ccc;">
+                    <div class="test">
+                        <!-- start -->
+                        <div class="popup__inner popup--share">
+                            <div class="popup--share__buttons btn-icon-set">
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn btn-icon--link">
+                                    </button>
+                                    <span class="btn__text">Copy Link</span>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn btn-icon--download">
+                                    </button>
+                                    <span class="btn__text">PDF</span>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn btn-icon--email">
+                                    </button>
+                                    <span class="btn__text">E-mail</span>
+                                </div>
+                            </div>
+                            <div class="popup--share__text">
+                                <p class="popup--share__valid">Available until 2023.12.10</p>
+                            </div>
+                        </div>
+                        <!-- end -->
+                    </div>
+                </div>
+                <!--// END -->
+            </div>
+            <!--// contents -->
+        </div>
+        <!--// Container -->
+        <!-- Footer -->
+        <footer id="footer" class="footer-wrap"></footer>
+        <!--// Footer -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>table</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+        <!-- Header -->
+        <header id="header"></header>
+        <!--// Header -->
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- contents -->
+            <div class="contents is-wide" id="contents">
+                <div class="table-wrap">  
+                    <div class="table-item">
+                        <strong class="table-item__title tit01">Model information</strong>
+                        <div class="table-box">
+                            <!-- [js] td가 2개일땐 div.table에 .tabel_td2 추가/ td가 1개일땐 div.table에 .tabel_td1 추가 -->
+                            <table class="table">
+                                <caption>Product Years, Fuel type, Available Eco Labels 내용의 표</caption>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Product Years</span></th>
+                                    <td><span class="number">2023</span></td>
+                                    <td><span class="number">2023</span></td>
+                                    <td><span class="number">2023</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Fuel type</span></th>
+                                    <td><span>Gasoline</span></td>
+                                    <td><span>Hybrid</span></td>
+                                    <td><span>Electric</span></td>
+                                </tr>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Available Eco Labels</span></th>
+                                    <td><span class="number">-</span></td>
+                                    <td><img src="../images/dummy/ico_dgt-eco_01.png" alt="dgt-eco" class="img_dgt-eco-01"><img src="../images/dummy/ico_dgt-eco_02.png" alt="dgt-eco" class="img_dgt-eco-02"></td>
+                                    <td><img src="../images/dummy/ico_dgt-eco_01.png" alt="dgt-eco" class="img_dgt-eco-01"><img src="../images/dummy/ico_dgt-eco_02.png" alt="dgt-eco" class="img_dgt-eco-02"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>           
+                    <div class="table-item">
+                        <strong class="table-item__title tit02">Dimensions<span>(mm)</span></strong> 
+                        <div class="table-box">
+                            <table class="table">
+                                <caption>Overall length, Overall width, Overall height, Wheelbase, Wheel tread, Front, Wheel tread, Rear 내용의 표</caption>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Overall length</span></th>
+                                    <td><span class="number">4,630</span></td>
+                                    <td><span class="number">4,630</span></td>
+                                    <td><span class="number">4,630</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Overall width</span></th>
+                                    <td><span class="number">1,865</span></td>
+                                    <td><span class="number">1,865</span></td>
+                                    <td><span class="number">1,865</span></td>
+                                </tr>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Overall height</span></th>
+                                    <td><span class="number">2,765</span></td>
+                                    <td><span class="number">2,765</span></td>
+                                    <td><span class="number">2,765</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Wheelbase</span></th>
+                                    <td><span class="number">2,765</span></td>
+                                    <td><span class="number">2,765</span></td>
+                                    <td><span class="number">2,765</span></td>
+                                </tr>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Wheel tread, Front</span></th>
+                                    <td><span class="number">5,234</span></td>
+                                    <td><span class="number">5,234</span></td>
+                                    <td><span class="number">5,234</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Wheel tread, Rear</span></th>
+                                    <td><span class="number">1,254</span></td>
+                                    <td><span class="number">1,254</span></td>
+                                    <td><span class="number">1,254</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>  
+                    <div class="table-item">
+                        <strong class="table-item__title tit03">Powertrain</strong> 
+                        <div class="table-box">
+                            <table class="table">
+                                <caption>Engine type, Powertrain name, Transmission type, Displacement (cc), Max. Power (hp), Max. Torque (kgf.m), Max. Motor power (kW), Max. Motor torque (Nm) 내용의 표</caption>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Engine type</span></th>
+                                    <td><span>Gasoline</span></td>
+                                    <td><span>Hybrid</span></td>
+                                    <td><span>Electric</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Powertrain name</span></th>
+                                    <td><span>G1.6 Turbo</span></td>
+                                    <td><span>G1.6T</span></td>
+                                    <td><span class="number">-</span></td>
+                                </tr>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Transmission type</span></th>
+                                    <td><span>DCT</span></td>
+                                    <td><span>Auto</span></td>
+                                    <td><span class="number">-</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Displacement (cc)</span></th>
+                                    <td><span class="number">1,865</span></td>
+                                    <td><span class="number">1,865</span></td>
+                                    <td><span class="number">-</span></td>
+                                </tr>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Max. Power (hp)</span></th>
+                                    <td><span>180 / 5,500</span></td>
+                                    <td><span>180 / 5,500</span></td>
+                                    <td><span class="number">-</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Max. Torque (kgf.m)</span></th>
+                                    <td><span>27.0 /<br class="show-mobile"> 1,500~4,500</span></td>
+                                    <td><span>27.0 /<br class="show-mobile"> 1,500~4,500</span></td>
+                                    <td><span class="number">-</span></td>
+                                </tr>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Max. Motor power (kW)</span></th>
+                                    <td><span class="number">-</span></td>
+                                    <td><span class="number">-</span></td>
+                                    <td><span class="number">168</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Max. Motor torque (Nm)</span></th>
+                                    <td><span class="number">-</span></td>
+                                    <td><span class="number">-</span></td>
+                                    <td><span class="number">350</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>    
+                    <div class="table-item">
+                        <strong class="table-item__title tit04">Distance driven</strong>
+                        <div class="table-box">
+                            <table class="table">
+                                <caption>Max. Speed (km/h), Acceleration (0 -> 100km/h : sec), Driving range per 100% charging - Combined (km) 내용의 표</caption>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Max. Speed (km/h)</span></th>
+                                    <td><span class="number">230</span></td>
+                                    <td><span class="number">230</span></td>
+                                    <td><span class="number">230</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Acceleration (0 -> 100km/h : sec)</span></th>
+                                    <td><span class="number">6.7</span></td>
+                                    <td><span class="number">6.7</span></td>
+                                    <td><span class="number">6.7</span></td>
+                                </tr>
+                                <tr class="bg_gray td-height">
+                                    <th><span class="title">Driving range per 100% <br>charging - Combined (km)</span></th>
+                                    <td><span class="number">524</span></td>
+                                    <td><span class="number">524</span></td>
+                                    <td><span class="number">524</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="table-item">
+                        <strong class="table-item__title tit05">Fuel</strong>
+                        <div class="table-box">
+                            <table class="table">
+                                <caption>Fuel tank (l), Combined fuel economy (km/l) 내용의 표</caption>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Fuel tank (l)</span></th>
+                                    <td><span class="number">54</span></td>
+                                    <td><span class="number">54</span></td>
+                                    <td><span class="number">-</span></td>
+                                </tr>
+                                <tr class="top_align">
+                                    <th><span class="title">Combined fuel economy <br>(km/l) <span class="footnote">*Electric : km/kWh <br>*Hydrogen : km/kg</span></span></th>
+                                    <td><span class="number">12.5</span></td>
+                                    <td><span class="number">12.5</span></td>
+                                    <td><span class="number">12.5</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="table-item">
+                        <strong class="table-item__title tit06">Battery</strong>
+                        <div class="table-box">
+                            <table class="table">
+                                <caption>Battery type, Battery capacity (kWh/Ah) 내용의 표</caption>
+                                <tr class="bg_gray">
+                                    <th><span class="title">Battery type</span></th>
+                                    <td><span class="number">-</span></td>
+                                    <td><span class="number">-</span></td>
+                                    <td><span>Lithium-ion</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">Battery capacity (kWh/Ah)</span></th>
+                                    <td><span class="number">-</span></td>
+                                    <td><span class="number">-</span></td>
+                                    <td><span class="number">77.4</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="table-item">
+                        <strong class="table-item__title tit07">CO2<span>(g/km)</span></strong>
+                        <div class="table-box">
+                            <table class="table">
+                                <caption>CO2 emissions, CO2 Urban, CO2 Extra Urban 내용의 표</caption>
+                                <tr class="bg_gray">
+                                    <th><span class="title">CO2 emissions</span></th>
+                                    <td><span class="number">133</span></td>
+                                    <td><span class="number">133</span></td>
+                                    <td><span class="number">0</span></td>
+                                </tr>
+                                <tr>
+                                    <th><span class="title">CO2 Urban</span></th>
+                                    <td><span class="number">54</span></td>
+                                    <td><span class="number">54</span></td>
+                                    <td><span class="number">0</span></td>
+                                </tr>
+                                <tr class="bg_gray">
+                                    <th><span class="title">CO2 Extra Urban</span></th>
+                                    <td><span class="number">79</span></td>
+                                    <td><span class="number">79</span></td>
+                                    <td><span class="number">0</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+            <!--// contents -->
+        </div>
+        <!--// Container -->
+        <!-- Footer -->
+        <footer id="footer"></footer>
+        <!--// Footer -->
+    </div>
+</body>
+</html>

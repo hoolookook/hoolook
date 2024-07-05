@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>configurator - Change Additional</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+        <!-- Header -->
+        <header class="header" id="header"></header>
+        <!--// Header -->
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- contents -->
+            <div class="contents is-wide" id="contents">
+            </div>
+            <!--// contents -->
+
+            
+            <!-- popup START -->
+            <div class="popup-layer-wrap is-active">
+                <div class="popup-layer-inner">
+                    <div class="popup-layer type-popup--additional is-active">
+                        <div class="popup-layer-header">
+                            <h2 class="popup-layer__title">Change Additional</h2>
+                        </div>
+                        <div class="popup-layer-body">
+                            <div class="popup-layer-cont">
+                                <div class="change-additional-wrap">
+                                    <div class="additional-list-wrap">
+                                        <strong class="additional__title">Options</strong>
+                                        <ul class="additional-list">
+                                            <li>
+                                                <input type="checkbox" name="additional-options" id="options01" checked>
+                                                <label for="options01" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item">Convenience</span>
+                                                    <span class="change-additional-btn__price">€315,00</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="additional-options" id="options02">
+                                                <label for="options02" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item">Convenience</span>
+                                                    <span class="change-additional-btn__price">€315,00</span>
+                                                </label>
+                                            </li>
+                                            <li class="show-pc">
+                                                <input type="checkbox" name="additional-options" id="options03">
+                                                <label for="options03" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item">Convenience</span>
+                                                    <span class="change-additional-btn__price">€315,00</span>
+                                                </label>
+                                            </li>
+                                            <!-- [D] input disabled 스타일 .change-additional-btn__item에 .is-change 추가 -->
+                                            <li>
+                                                <input type="checkbox" name="additional-options" id="options04" disabled>
+                                                <label for="options04" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item is-change">Convenience</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="additional-list-wrap">
+                                        <strong class="additional__title">Packages</strong>
+                                        <ul class="additional-list">
+                                            <li>
+                                                <input type="checkbox" name="additional-packages" id="packages01" checked>
+                                                <label for="packages01" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item">Convenience</span>
+                                                    <span class="change-additional-btn__price">€315,00</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="additional-packages" id="packages02">
+                                                <label for="packages02" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item">Convenience</span>
+                                                    <span class="change-additional-btn__price">€315,00</span>
+                                                </label>
+                                            </li>
+                                            <li class="show-pc">
+                                                <input type="checkbox" name="additional-packages" id="packages03">
+                                                <label for="packages03" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item">Convenience</span>
+                                                    <span class="change-additional-btn__price">€315,00</span>
+                                                </label>
+                                            </li>
+                                            <!-- [D] input disabled 스타일 .change-additional-btn__item에 .is-change 추가 -->
+                                            <li>
+                                                <input type="checkbox" name="additional-packages" id="packages04" disabled>
+                                                <label for="packages04" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item is-change">Convenience</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="additional-list-wrap">
+                                        <strong class="additional__title">Accessories</strong>
+                                        <ul class="additional-list">
+                                            <li>
+                                                <input type="checkbox" name="additional-accessories" id="accessories01">
+                                                <label for="accessories01" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item">Convenience</span>
+                                                    <span class="change-additional-btn__price">€315,00</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="additional-accessories" id="accessories02">
+                                                <label for="accessories02" class="change-additional-btn">
+                                                    <span class="change-additional-btn__item">Convenience</span>
+                                                    <span class="change-additional-btn__price">€315,00</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn__type02 btn--blue">
+                                    <span class="btn__text">Apply</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popup-layer-close">
+                            <button type="button" class="btn btn__layer-close">
+                                <span class="btn__text ir">close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// popup END -->
+        </div>
+        <!--// Container -->
+        <!-- Footer -->
+        <footer id="footer" class="footer-wrap"></footer>
+        <!--// Footer -->
+    </div>
+</body>
+</html>

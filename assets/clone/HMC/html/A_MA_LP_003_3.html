@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A_MA_LP_003_3</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+        
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- contents -->
+            <div class="contents is-wide" id="contents">
+                <!-- [js] 스크롤시 .is-fixed 추가 -->
+                <div class="contents__compare-model">
+                    <div class="contents__compare-choice">
+                        <div class="menu-tab-wrap menu-tab-wrap--vertical" id="menu-tab">
+                            <div class="menu-tab-wrap__inner">
+                                <div class="menu-tab">
+                                    <ul class="menu-tab__list" role="tablist">
+                                        <!-- [D] 탭 버튼 활성화시 .menu-tab__item 클래스에 .is-active 클래스 추가 -->
+                                        <li class="menu-tab__item">
+                                            <!-- [D] 탭 버튼 활성화시 aria-selected="true" 속성 추가 -->
+                                            <!-- [D] 탭 버튼 aria-controls="tab-panel-01" / 탭 컨텐츠 id="tab-panel-01" ID 값 매칭 -->
+                                            <a href="#none" class="menu-tab__link" role="tab" aria-selected="false"  aria-controls="tab-panel-01"><span>Specifications</span></a>
+                                        </li>
+                                        <li class="menu-tab__item is-active">
+                                            <a href="#none" class="menu-tab__link" role="tab" aria-selected="false" aria-controls="tab-panel-02"><span>Cross Compare</span></a>
+                                            <div class="sub-menu__box">
+                                                <ul class="sub-menu__list">
+                                                    <!-- [D] 탭 버튼 활성화시 .sub-menu-tab__item 클래스에 .is-active 클래스 추가 -->
+                                                    <li class="sub-menu__item sub-menu--green">
+                                                        <a href="#none" class="sub-menu__link" ><span>KONA</span></a>
+                                                    </li>
+                                                    <li class="sub-menu__item is-active">
+                                                        <a href="#none" class="sub-menu__link"><span>TUCSON</span></a>
+                                                    </li>
+                                                    <li class="sub-menu__item sub-menu--red">
+                                                        <a href="#none" class="sub-menu__link"><span>The new AVANTE Hybrid</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- [dev] slide가 2개일땐 div.contents__compare-box-wrap에 .contents__compare-box-wrap--slide2 추가 / Cross Compare 탭 선택시 div.contents__compare-box-wrap에 .contents__compare-box-wrap--cross 추가 -->
+                    <div class="contents__compare-box-wrap contents__compare-box-wrap--cross">
+                        <div class="contents__compare-box swiper-container compareSwiper">
+                            <div class="contents__compare-list swiper-wrapper">
+                                <div class="contents__compare-list--option swiper-slide">
+                                    <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                        <button type="button" class="select-btn" title="언어 선택"><span>KONA</span></button>
+                                        <div class="select-list">
+                                            <ul>
+                                                <li class="select__devide">suv</li>
+                                                <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                <li class="select__box is-active">
+                                                    <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                    <button type="button" class="select__item is-active" title="선택됨">
+                                                        <span class="select__title">KONA</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="Kona">
+                                                        </span>
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">TUCSON</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="TUCSON">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">The all-new AZERA (GRANDEUR)</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="The all-new AZERA (GRANDEUR)">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">SONATA</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="SONATA">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">VENU</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="VENU">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="car-info">
+                                        <div class="car-info--image">
+                                            <img src="../images/dummy/img_dummy_kona.png" alt="Kona">
+                                        </div>
+                                        <div class="car-info--type">
+                                            <span>Gasoline / Diesel</span>
+                                        </div>
+                                        <div class="car-info--price">
+                                            <span>€20,530.00 ~</span>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <button type="button" class="btn btn__type01 btn--blue">
+                                            <span class="btn-inner">
+                                                <span class="btn__text-wrap">
+                                                    <em class="btn__text">Build Your Own</em>
+                                                    <em class="btn__text btn__text--hover" aria-hidden="true">Build Your Own</em>
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" class="btn btn__type01 btn--white">
+                                            <span class="btn-inner">
+                                                <span class="btn__text-wrap">
+                                                    <em class="btn__text">Recommendation</em>
+                                                    <em class="btn__text btn__text--hover" aria-hidden="true">Recommendation</em>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="contents__compare-list--option swiper-slide">
+                                    <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                        <button type="button" class="select-btn" title="언어 선택"><span>TUCSON</span></button>
+                                        <div class="select-list">
+                                            <ul>
+                                                <li class="select__devide">suv</li>
+                                                <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                <li class="select__box is-active">
+                                                    <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                    <button type="button" class="select__item" title="선택됨">
+                                                        <span class="select__title">KONA</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="Kona">
+                                                        </span>
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item is-active">
+                                                        <span class="select__title">TUCSON</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="TUCSON">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">The all-new AZERA (GRANDEUR)</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="The all-new AZERA (GRANDEUR)">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">SONATA</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="SONATA">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">VENU</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="VENU">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="car-info">
+                                        <div class="car-info--image">
+                                            <img src="../images/dummy/img_dummy_tucson.png" alt="TUCSON">
+                                        </div>
+                                        <div class="car-info--type">
+                                            <span>Hybrid</span>
+                                        </div>
+                                        <div class="car-info--price">
+                                            <span>€20,530.00 ~</span>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <button type="button" class="btn btn__type01 btn--blue">
+                                            <span class="btn-inner">
+                                                <span class="btn__text-wrap">
+                                                    <em class="btn__text">Build Your Own</em>
+                                                    <em class="btn__text btn__text--hover" aria-hidden="true">Build Your Own</em>
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" class="btn btn__type01 btn--white">
+                                            <span class="btn-inner">
+                                                <span class="btn__text-wrap">
+                                                    <em class="btn__text">Recommendation</em>
+                                                    <em class="btn__text btn__text--hover" aria-hidden="true">Recommendation</em>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="contents__compare-list--option swiper-slide">
+                                    <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                        <button type="button" class="select-btn" title="언어 선택"><span>The all-new AZERA (GRANDEUR)</span></button>
+                                        <div class="select-list">
+                                            <ul>
+                                                <li class="select__devide">suv</li>
+                                                <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                <li class="select__box is-active">
+                                                    <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                    <button type="button" class="select__item" title="선택됨">
+                                                        <span class="select__title">KONA</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="Kona">
+                                                        </span>
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">TUCSON</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="TUCSON">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item is-active">
+                                                        <span class="select__title">The all-new AZERA (GRANDEUR)</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="The all-new AZERA (GRANDEUR)">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">SONATA</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="SONATA">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item">
+                                                        <span class="select__title">VENU</span>
+                                                        <span class="select__info">
+                                                            <span class="select__price">€ 17,123.00~</span> 
+                                                            <span class="select__image"><img src="../images/dummy/img_dummy_car.png" alt="VENU">
+                                                        </span>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="car-info">
+                                        <div class="car-info--image">
+                                            <img src="../images/dummy/img_dummy_avante.png" alt="AVANTE Hybrid">
+                                        </div>
+                                        <div class="car-info--type">
+                                            <span>Electric</span>
+                                        </div>
+                                        <div class="car-info--price">
+                                            <span>€20,530.00 ~</span>
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <button type="button" class="btn btn__type01 btn--blue">
+                                            <span class="btn-inner">
+                                                <span class="btn__text-wrap">
+                                                    <em class="btn__text">Build Your Own</em>
+                                                    <em class="btn__text btn__text--hover" aria-hidden="true">Build Your Own</em>
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button type="button" class="btn btn__type01 btn--white">
+                                            <span class="btn-inner">
+                                                <span class="btn__text-wrap">
+                                                    <em class="btn__text">Recommendation</em>
+                                                    <em class="btn__text btn__text--hover" aria-hidden="true">Recommendation</em>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination show-mobile compare-model-pagi"></div>
+                        </div>
+                        <div class="contents__compare-box--cross">
+                            <!-- [dev] pc이미지 노출 -->
+                            <div class="cross-image show-pc">
+                                <img src="../images/dummy/img_dummy_main_compare_tucson.png" alt="Tucson">
+                            </div>
+                            <!-- [dev] mobile이미지 노출 -->
+                            <div class="cross-image show-mobile">
+                                <img src="../images/dummy/img_dummy_main_compare_tucson_mo.png" alt="Tucson">
+                            </div>
+                            <div class="cross-bottom">
+                                <div class="car-price">
+                                    <span>€20,530.00 ~</span>
+                                </div>
+                                <div class="btn-wrap">
+                                    <button type="button" class="btn btn__type01 btn--blue">
+                                        <span class="btn-inner">
+                                            <span class="btn__text-wrap">
+                                                <em class="btn__text">Build Your Own</em>
+                                                <em class="btn__text btn__text--hover" aria-hidden="true">Build Your Own</em>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <button type="button" class="btn btn__type01 btn--white">
+                                        <span class="btn-inner">
+                                            <span class="btn__text-wrap">
+                                                <em class="btn__text">Recommendation</em>
+                                                <em class="btn__text btn__text--hover" aria-hidden="true">Recommendation</em>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <!-- [dev] Cross Compare 선택시 div.table-wrap에 1행 기준  table-type01 클래스 , 2행 기준 table-type02, 3행 기준 table-type03 추가-->
+                    <div class="table-wrap table-type02">  
+                        <div class="table-item">
+                            <strong class="table-item__title tit01">Model information</strong>
+                            <div class="table-box">
+                                <!-- [dev] td가 2개일땐 div.table에 .table_td2 추가/ td가 1개일땐 div.table에 .table_td1 추가 -->
+                                <table class="table">
+                                    <caption>Product Years, Fuel type, Available Eco Labels 내용의 표</caption>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Product Years</span></th>
+                                        <td><span class="number">2023</span></td>
+                                        <td><span class="number">2023</span></td>
+                                        <td><span class="number">2023</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Fuel type</span></th>
+                                        <td><span>Gasoline</span></td>
+                                        <td><span>Hybrid</span></td>
+                                        <td><span>Electric</span></td>
+                                    </tr>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Available Eco Labels</span></th>
+                                        <td><span class="number">-</span></td>
+                                        <td><img src="../images/dummy/ico_dgt-eco_01.png" alt="dgt-eco" class="img_dgt-eco-01"><img src="../images/dummy/ico_dgt-eco_02.png" alt="dgt-eco" class="img_dgt-eco-02"></td>
+                                        <td><img src="../images/dummy/ico_dgt-eco_01.png" alt="dgt-eco" class="img_dgt-eco-01"><img src="../images/dummy/ico_dgt-eco_02.png" alt="dgt-eco" class="img_dgt-eco-02"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>           
+                        <div class="table-item">
+                            <strong class="table-item__title tit02">Dimensions<span>(mm)</span></strong> 
+                            <div class="table-box">
+                                <table class="table">
+                                    <caption>Overall length, Overall width, Overall height, Wheelbase, Wheel tread, Front, Wheel tread, Rear 내용의 표</caption>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Overall length</span></th>
+                                        <td><span class="number">4,630</span></td>
+                                        <td><span class="number">+200</span></td>
+                                        <td><span class="number">+200</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Overall width</span></th>
+                                        <td><span class="number">1,865</span></td>
+                                        <td><span class="number">+450</span></td>
+                                        <td><span class="number">+450</span></td>
+                                    </tr>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Overall height</span></th>
+                                        <td><span class="number">2,765</span></td>
+                                        <td><span class="number">+450</span></td>
+                                        <td><span class="number">+450</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Wheelbase</span></th>
+                                        <td><span class="number">2,765</span></td>
+                                        <td><span class="number">+200</span></td>
+                                        <td><span class="number">+200</span></td>
+                                    </tr>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Wheel tread, Front</span></th>
+                                        <td><span class="number">5,234</span></td>
+                                        <td><span class="number">+200</span></td>
+                                        <td><span class="number">+200</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Wheel tread, Rear</span></th>
+                                        <td><span class="number">1,254</span></td>
+                                        <td><span class="number">+200</span></td>
+                                        <td><span class="number">+200</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>  
+                        <div class="table-item">
+                            <strong class="table-item__title tit03">Powertrain</strong> 
+                            <div class="table-box">
+                                <table class="table">
+                                    <caption>Engine type, Powertrain name, Transmission type, Displacement (cc), Max. Power (hp), Max. Torque (kgf.m), Max. Motor power (kW), Max. Motor torque (Nm) 내용의 표</caption>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Engine type</span></th>
+                                        <td><span>Gasoline</span></td>
+                                        <td><span>Hybrid</span></td>
+                                        <td><span>Electric</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Powertrain name</span></th>
+                                        <td><span>G1.6 Turbo</span></td>
+                                        <td><span>G1.6T</span></td>
+                                        <td><span class="number">-</span></td>
+                                    </tr>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Transmission type</span></th>
+                                        <td><span>DCT</span></td>
+                                        <td><span>Auto</span></td>
+                                        <td><span class="number">-</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Displacement (cc)</span></th>
+                                        <td><span class="number">1,865</span></td>
+                                        <td><span class="number">+100</span></td>
+                                        <td><span class="number">-</span></td>
+                                    </tr>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Max. Power (hp)</span></th>
+                                        <td><span>180 / 5,500</span></td>
+                                        <td><span>+100</span></td>
+                                        <td><span class="number">-</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Max. Torque (kgf.m)</span></th>
+                                        <td><span>27.0 /<br class="show-mobile"> 1,500~4,500</span></td>
+                                        <td><span>-1.5</span></td>
+                                        <td><span class="number">-</span></td>
+                                    </tr>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Max. Motor power (kW)</span></th>
+                                        <td><span class="number">-</span></td>
+                                        <td><span class="number">-</span></td>
+                                        <td><span class="number">168</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Max. Motor torque (Nm)</span></th>
+                                        <td><span class="number">-</span></td>
+                                        <td><span class="number">-</span></td>
+                                        <td><span class="number">350</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>    
+                        <div class="table-item">
+                            <strong class="table-item__title tit04">Distance driven</strong>
+                            <div class="table-box">
+                                <table class="table">
+                                    <caption>Max. Speed (km/h), Acceleration (0 -> 100km/h : sec), Driving range per 100% charging - Combined (km) 내용의 표</caption>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Max. Speed (km/h)</span></th>
+                                        <td><span class="number">230</span></td>
+                                        <td><span class="number">+15</span></td>
+                                        <td><span class="number">+20</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Acceleration (0 -> 100km/h : sec)</span></th>
+                                        <td><span class="number">6.7</span></td>
+                                        <td><span class="number">+1.4</span></td>
+                                        <td><span class="number">+1.4</span></td>
+                                    </tr>
+                                    <tr class="bg_gray td-height">
+                                        <th><span class="title">Driving range per 100% <br>charging - Combined (km)</span></th>
+                                        <td><span class="number">524</span></td>
+                                        <td><span class="number">+1.0</span></td>
+                                        <td><span class="number">+1.0</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table-item">
+                            <strong class="table-item__title tit05">Fuel</strong>
+                            <div class="table-box">
+                                <table class="table">
+                                    <caption>Fuel tank (l), Combined fuel economy (km/l) 내용의 표</caption>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Fuel tank (l)</span></th>
+                                        <td><span class="number">54</span></td>
+                                        <td><span class="number">+10</span></td>
+                                        <td><span class="number">-</span></td>
+                                    </tr>
+                                    <tr class="top_align">
+                                        <th><span class="title">Combined fuel economy <br>(km/l) <span class="footnote">*Electric : km/kWh <br>*Hydrogen : km/kg</span></span></th>
+                                        <td><span class="number">12.5</span></td>
+                                        <td><span class="number">-1.1</span></td>
+                                        <td><span class="number">12.5</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table-item">
+                            <strong class="table-item__title tit06">Battery</strong>
+                            <div class="table-box">
+                                <table class="table">
+                                    <caption>Battery type, Battery capacity (kWh/Ah) 내용의 표</caption>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">Battery type</span></th>
+                                        <td><span class="number">-</span></td>
+                                        <td><span class="number">-</span></td>
+                                        <td><span>Lithium-ion</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">Battery capacity (kWh/Ah)</span></th>
+                                        <td><span class="number">-</span></td>
+                                        <td><span class="number">-</span></td>
+                                        <td><span class="number">77.4</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table-item">
+                            <strong class="table-item__title tit07">CO2<span>(g/km)</span></strong>
+                            <div class="table-box">
+                                <table class="table">
+                                    <caption>CO2 emissions, CO2 Urban, CO2 Extra Urban 내용의 표</caption>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">CO2 emissions</span></th>
+                                        <td><span class="number">133</span></td>
+                                        <td><span class="number">+12</span></td>
+                                        <td><span class="number">0</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="title">CO2 Urban</span></th>
+                                        <td><span class="number">54</span></td>
+                                        <td><span class="number">+17</span></td>
+                                        <td><span class="number">0</span></td>
+                                    </tr>
+                                    <tr class="bg_gray">
+                                        <th><span class="title">CO2 Extra Urban</span></th>
+                                        <td><span class="number">79</span></td>
+                                        <td><span class="number">+9</span></td>
+                                        <td><span class="number">0</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+            <!--// contents -->
+        </div>
+        <!--// Container -->
+        
+    </div>
+    <script>
+        var swiper = new Swiper(".compareSwiper", {
+            // 751 이하에서 출력될 설정값
+            slidesPerView: 2, 
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true, // 페이지네이션 버튼 클릭시 스와이프 작동
+            },
+            breakpoints: {
+                // 751 이상에서 출력될 설정값
+                751: {
+                    slidesPerView: 3, // 한 화면에 세개의 슬라이드 출력
+                },
+            }
+        });
+        const test = document.querySelectorAll('.select-wrap.select__type02');
+        const comparePagi = document.querySelector('.compare-model-pagi');
+        test.forEach(function(item,index){
+            test[index].classList.add('hi');
+            if(test[index].classList.contains('is-active')){
+                
+            }
+        })
+
+    </script>
+</body>
+</html>

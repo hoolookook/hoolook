@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>common - cookie settings</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+        <!-- Header -->
+        <header class="header" id="header"></header>
+        <!--// Header -->
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- contents -->
+            <div class="contents is-wide" id="contents">
+            </div>
+            <!--// contents -->
+
+            
+            <!-- START -->
+            <div class="popup-layer-wrap type-popup--cookie is-active">
+                <div class="popup-layer-inner">
+                    <!-- [js] popup-layer-cont 스크롤하면 popup-layer에 is-active 추가 -->
+                    <div class="popup-layer">
+                        <div class="popup-layer-header">
+                            <h2 class="popup-layer__title popup--cookie__title">Cookie Settings</h2>
+                        </div>
+                        <div class="popup-layer-body">
+                            <div class="popup-layer-cont"> 
+                                <div class="popup-info__box">
+                                    <strong class="popup-info__title">Information We Collect About You</strong>
+                                    <p class="popup-info__text">
+                                        We want to be transparent about the data we and our partners collect and how we use it, so you can
+                                        best exercise control over your personal data. For more information, please see our 
+                                        <a href="https://www.hyundai.com/worldwide/en/footer/contact-legal/privacy-policy" target="_blank">Privacy Policy</a>.
+                                    </p>
+                                </div>
+                                <div class="popup-info__box">
+                                    <strong class="popup-info__title">Information Our Partners Collect</strong>
+                                    <p class="popup-info__text">
+                                        We use the following partners to better improve your overall web browsing experience. They use cookies
+                                        and other mechanisms to connect you with your social networks and tailor advertising to better
+                                        match your interests. You can elect to opt-out of this information collection by unticking the boxes below.
+                                    </p>
+                                </div>
+                                <div class="popup-category__box accordion-wrap">
+                                    <div class="category__header">
+                                        <strong class="category__title">Categories</strong>
+                                        <div class="btn-wrap">
+                                            <!-- [JS] 체크 활성화된 갯수에 따라 텍스트 변경 -->
+                                            <p class="checkbox_count">0 of 4 allowed</p>
+                                            <!-- [JS] 체크 활성화시 btn__switch--type03 에 is-active 추가 -->
+                                            <!-- [JS]체크 활성화시 모든 체크박스 활성화 -->
+                                            <div class="btn__switch-item btn__switch--type03 btn__switch-all">
+                                                <input type="checkbox" name="switch03" class="btn__switch" id="switchbtn01">
+                                                <label for="switchbtn01"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content-wrap table-wrap table-row category__body">
+                                        <div class="accordion-content-inner table-item">
+                                            <div class="accordion-title">
+                                                <div class="accordion-title-wrap">
+                                                    <strong class="accordion-title__title">Analytics</strong>
+                                                    <!-- [js] accordion-title__btn 클릭 시 accordion-title__btn, accordion-content 에 is-active 추가 -->
+                                                    <button type="button" class="accordion-title__btn is-active" onclick=""></button>
+                                                </div>
+                                                <div class="btn-wrap">
+                                                    <!-- [JS] 체크 활성화시 btn__switch--type03 에 is-active 추가 -->
+                                                    <div class="btn__switch-item btn__switch--type03">
+                                                        <input type="checkbox" name="switch03" class="btn__switch" id="switchbtn02">
+                                                        <label for="switchbtn02"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-box accordion-content is-active">
+                                                <!-- [dev] td가 2개일땐 div.table에 .table_td2 추가/ td가 1개일땐 div.table에 .table_td1 추가 -->
+                                                <table class="table accorheight">
+                                                    <caption>Vendors, Adobe, Adobe Experience Cloud (Analytics), Google Analytics, Oracle Data Cloud (formerly BlueKai) 내용의 표</caption>
+                                                    <tr>
+                                                        <th class="title"><span>Vendors</span></th>
+                                                        <td><a href="A_CO_LP_007.html"><span>Adobe</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Adobe Experience Cloud (Analytics)</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Google Analytics</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Oracle Data Cloud (formerly BlueKai)</span></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content-inner table-item">
+                                            <div class="accordion-title">
+                                                <div class="accordion-title-wrap">
+                                                    <strong class="accordion-title__title">Necessary</strong>
+                                                    <!-- [js] accordion-title__btn 클릭 시 accordion-title__btn, accordion-content 에 is-active 추가 -->
+                                                    <button type="button" class="accordion-title__btn is-active" onclick=""></button>
+                                                </div>
+                                                <span class="accordion__required">
+                                                    Required
+                                                </span>
+                                            </div>
+                                            <div class="table-box accordion-content is-active">
+                                                <table class="table accorheight">
+                                                    <caption>Vendors, Akamai Technologies, CDNJS, CloudFlare, Evidon, Google Tag Manager, jQuery 내용의 표</caption>
+                                                    <tr>
+                                                        <th class="title"><span>Vendors</span></th>
+                                                        <td><a href="A_CO_LP_007.html"><span>Akamai Technologies</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>CDNJS</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>CloudFlare</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Evidon</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Google Tag Manager</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>jQuery</span></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content-inner table-item">
+                                            <div class="accordion-title">
+                                                <div class="accordion-title-wrap">
+                                                    <strong class="accordion-title__title">Advertising/Marketing</strong>
+                                                    <!-- [js] accordion-title__btn 클릭 시 accordion-title__btn, accordion-content 에 is-active 추가 -->
+                                                    <button type="button" class="accordion-title__btn is-active" onclick=""></button>
+                                                </div>
+                                                <div class="btn-wrap">
+                                                    <!-- [JS] 체크 활성화시 btn__switch--type03 에 is-active 추가 -->
+                                                    <div class="btn__switch-item btn__switch--type03">
+                                                        <input type="checkbox" name="switch03" class="btn__switch" id="switchbtn03">
+                                                        <label for="switchbtn03"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-box accordion-content is-active">
+                                                <table class="table accorheight">
+                                                    <caption>Vendors, DoubleClick Bid Manager (formerly Invite Media), Facebook, Facebook Business (formerly Facebook Custom Audience), Facebook for Developers (formerly Facebook Connect), Google Inc. 내용의 표</caption>
+                                                    <tr>
+                                                        <th class="title"><span>Vendors</span></th>
+                                                        <td><a href="A_CO_LP_007.html"><span>DoubleClick Bid Manager (formerly Invite Media)</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Facebook</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Facebook Business (formerly Facebook Custom Audience)</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Facebook for Developers (formerly Facebook Connect)</span></a></td>
+                                                        <td><a href="A_CO_LP_007.html"><span>Google Inc.</span></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content-inner table-item">
+                                            <div class="accordion-title">
+                                                <div class="accordion-title-wrap">
+                                                    <strong class="accordion-title__title">Other</strong>
+                                                    <!-- [js] accordion-title__btn 클릭 시 accordion-title__btn, accordion-content 에 is-active 추가 -->
+                                                    <button type="button" class="accordion-title__btn is-active" onclick=""></button>
+                                                </div>
+                                                <div class="btn-wrap">
+                                                    <!-- [JS] 체크 활성화시 btn__switch--type03 에 is-active 추가 -->
+                                                    <div class="btn__switch-item btn__switch--type03">
+                                                        <input type="checkbox" name="switch03" class="btn__switch" id="switchbtn04">
+                                                        <label for="switchbtn04"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-box accordion-content is-active">
+                                                <table class="table accorheight">
+                                                    <caption>Vendors, Google Fonts 내용의 표</caption>
+                                                    <tr>
+                                                        <th class="title"><span>Vendors</span></th>
+                                                        <td><a href="A_CO_LP_007.html"><span>Google Fonts</span></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content-inner table-item">
+                                            <div class="accordion-title">
+                                                <div class="accordion-title-wrap">
+                                                    <strong class="accordion-title__title">Functional</strong>
+                                                    <!-- [js] accordion-title__btn 클릭 시 accordion-title__btn, accordion-content 에 is-active 추가 -->
+                                                    <button type="button" class="accordion-title__btn is-active" onclick=""></button>
+                                                </div>
+                                                <div class="btn-wrap">
+                                                    <!-- [JS] 체크 활성화시 btn__switch--type03 에 is-active 추가 -->
+                                                    <div class="btn__switch-item btn__switch--type03">
+                                                        <input type="checkbox" name="switch03" class="btn__switch" id="switchbtn05">
+                                                        <label for="switchbtn05"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-box accordion-content is-active">
+                                                <table class="table accorheight">
+                                                    <caption>Vendors, YouTube 내용의 표</caption>
+                                                    <tr>
+                                                        <th class="title"><span>Vendors</span></th>
+                                                        <td><a href="A_CO_LP_007.html"><span>YouTube</span></a></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button type="button" class="btn btn__type02 btn--white">
+                                    <span class="btn__text">Cancel</span>
+                                </button>
+                                <button type="button" class="btn btn__type02 btn--blue">
+                                    <!-- [D] 체크박스 변경되면 텍스트 Save Preference 로 변경 -->
+                                    <span class="btn__text">Opt-Out</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="popup-layer-close">
+                            <button type="button" class="btn btn__layer-close">
+                                <span class="btn__text ir">close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// END -->
+        </div>
+        <!--// Container -->
+        <!-- Footer -->
+        <footer id="footer" class="footer-wrap"></footer>
+        <!--// Footer -->
+        <script>
+            // 스크롤 전체화면
+            const popupLayer = document.querySelector('.popup-layer');
+            const popupLayerCont = document.querySelector('.popup-layer-cont');
+            popupLayerCont.addEventListener('scroll',()=>{
+                if(popupLayerCont.scrollTop > 0){
+                    popupLayer.classList.add('is-active');
+                }else{
+                    popupLayer.classList.remove('is-active');
+                }
+            })
+
+            // 토글
+            const checkAll = document.querySelector('.btn__switch-all input');
+            const checkItem = document.querySelectorAll('.btn__switch--type03:not(.btn__switch-all) input');
+            const checkColor = document.querySelectorAll('.btn__switch--type03 input');
+            const checkCountAll = checkItem.length; 
+            const checkCountText = document.querySelector('.checkbox_count');
+            let checkCount = 0;
+
+            // checkall 전체 선택
+            checkAll.addEventListener('click',()=>{
+                if(checkAll.checked === true){
+                    checkItem.forEach((el)=>{
+                        el.checked = checkAll.checked
+                        el.parentElement.classList.add('is-active')
+                        checkCount = checkCountAll - 1;
+                    })
+                }else{
+                    checkItem.forEach((el)=>{
+                        el.checked = checkAll.checked
+                        el.parentElement.classList.remove('is-active')
+                        checkCount = 1;
+                    })
+                }
+            })
+            // check 해제시 checkall 해제
+            checkItem.forEach((el)=>{
+                el.addEventListener('change',()=>{
+                    let checkedElement = [...checkItem].filter(a => a.checked);
+                    if(checkedElement.length === checkItem.length){
+                        checkAll.checked = true;
+                        checkAll.parentElement.classList.add('is-active')
+                    }else{
+                        checkAll.checked = false;
+                        checkAll.parentElement.classList.remove('is-active')
+                    }
+                })
+            })
+
+            // check 배경색, 텍스트 변경
+            checkColor.forEach((el)=>{
+                el.addEventListener('change',()=>{
+                    if(el.checked){
+                        el.parentElement.classList.add('is-active')
+                        checkCount++
+                    }else{
+                        el.parentElement.classList.remove('is-active')
+                        checkCount--
+                    }
+                    checkCountText.innerText = `${checkCount} of ${checkCountAll} allowed`;
+                })
+            })
+        </script>
+    </div>
+</body>
+</html>

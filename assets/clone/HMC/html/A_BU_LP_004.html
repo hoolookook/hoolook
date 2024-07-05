@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A_BU_LP_004</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+        <!-- Header -->
+        <header class="header header--configurator" id="header"></header>
+        <!--// Header -->
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- contents -->
+            <div class="contents is-wide is-max" id="contents">
+                <!-- START -->
+                <!-- [JS] intro 끝난 후 .configurator-wrap에 .is-active 클래스 추가 + 효과 끝난 후 .configurator-intro영역 hide 처리 필요 -->
+                <div class="configurator-wrap is-active">
+                    <!-- Intro -->
+
+                    <!-- Main(Swiper) -->
+                    <div class="configurator-main configurator-inner">
+                        <div class="btn-wrap btn-option">
+                            <div class="btn-option__item"><!-- [JS] btn__background 버튼 클릭시 is-active 클래스 추가 -->
+                                <button type="button" class="btn btn__background">
+                                    <span class="btn__text ir">Background</span>
+                                </button>
+                                <div class="item__list">
+                                    <div class="item__box">
+                                        <a href="#none" class="item__link btn--outside is-active" role="button" title="선택됨"><!-- [JS] 현재 활성화된 Outside/Studio 컷에 is-active 클래스 추가 -->
+                                            <span class="img__box">
+                                                <img src="../images/dummy/img_bg_select_dummy_01.png" alt="outside">
+                                            </span>
+                                            <strong class="item__title">Exterior</strong>
+                                        </a>
+                                        <a href="#none" class="item__link btn--studio" role="button">
+                                            <span class="img__box">
+                                                <img src="../images/dummy/img_bg_select_dummy_02.png" alt="studio">
+                                            </span>
+                                            <strong class="item__title">Studio</strong>
+                                        </a>
+                                    </div>
+                                    <button type="button" class="btn btn-option__close">
+                                        <span class="btn__text ir">Background layer close</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="btn-option__item">
+                                <button type="button" class="btn btn__dimensions">
+                                    <span class="btn__text ir">Dimensions</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="configurator-swiper">
+                            <!-- [JS] 활성화 시(.btn--outside 클릭 시) is-active 클래스 추가 -->
+                            <div class="swiper-container swiper-main swiperConfiguratorOutside is-active">
+                                <div class="swiper-wrapper swiper--outside">
+                                    <div class="swiper-slide">
+                                        <img src="../images/dummy/img_dummy_configurator_outside_01.png" alt="KONA Hybrid in outside 1">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../images/dummy/img_dummy_configurator_outside_02.png" alt="KONA Hybrid in outside 2">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../images/dummy/img_dummy_configurator_outside_03.png" alt="KONA Hybrid in outside 3">
+                                    </div>
+                                </div>
+                                <div class="half-swiper-indicator">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <div class="swiper-indicator">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-container swiper-thumbs swiperConfiguratorOutsideThumbs">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="../images/dummy/img_dummy_configurator_pagination_outside_01.png" alt="KONA Hybrid in outside 1 thumbnail">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../images/dummy/img_dummy_configurator_pagination_outside_02.png" alt="KONA Hybrid in outside 2 thumbnail">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="../images/dummy/img_dummy_configurator_pagination_outside_03.png" alt="KONA Hybrid in outside 3 thumbnail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <!-- 230703 : mobile indicator 추가 -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="configurator-disclaimer show-pc">
+                            <div class="btn-wrap">
+                                <a href="#none" class="btn btn__link type02" target="_blank">
+                                    <span class="btn__text">Disclaimer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Options -->
+                    <div class="configurator-options configurator-inner">
+                        <div class="options-head">
+                            <div class="options-select options-select--dropdown">
+                                <!-- [JS] 버튼 활성화 시 .options-select__btn에 .is-active 클래스 추가 -->
+                                <a href="#none" class="options-select__btn" title="Open a popup to select a model" role="button">
+                                    <span class="options-select__title">Model</span>
+                                </a>
+                                <strong class="options-select__selected-name">KONA Hybrid</strong>
+                            </div>
+                        </div>
+
+                        <div class="options-body  is-active">
+                            <div class="options-select-wrap">
+                                <!-- Year of Product -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Year of Product</h3>
+                                    <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                    <a href="#none" class="options-select__btn" title="Open a popup to select an option" role="button" data-popup=".yearProduct">
+                                        <span class="options-select__selected">
+                                            <span class="options-select__selected-name">Select Option</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- Body Type -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Body Type</h3>
+                                    <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                    <a href="#none" class="options-select__btn" title="Open a popup to select an option" role="button" data-popup=".bodyType">
+                                        <span class="options-select__selected">
+                                            <span class="options-select__selected-name">Select Option</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- Trim -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Trim</h3>
+                                    <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                    <a href="#none" class="options-select__btn" title="Open a popup to select an option" role="button" data-popup=".trim">
+                                        <span class="options-select__selected">
+                                            <span class="options-select__selected-name">Select Option</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- Powertrain -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Powertrain</h3>
+                                    <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                    <a href="#none" class="options-select__btn" title="Open a popup to select an option" role="button" data-popup=".powerTrain">
+                                        <span class="options-select__selected">
+                                            <span class="options-select__selected-name">Select Option</span>
+                                        </span>
+                                    </a>
+                                </div>
+                                <!-- Exterior -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Exterior</h3>
+                                    <div class="options-select__bundles">
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Colors</h4>
+                                            <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                            <a href="#none" class="options-select__btn use-thumbnail is-active" title="Open a popup to select an option" role="button" data-popup=".exteriorColors">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-thumbnail">
+                                                        <img src="../images/dummy/img_dummy_option_01.png" alt="$Exterior Colors : Glossy - Phantom Black Pearl$ image">
+                                                    </span>
+                                                    <span class="options-select__selected-name">Glossy - Phantom Black Pearl</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 90,00</span>
+                                            </a>
+                                        </div>
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Wheels</h4>
+                                            <a href="#none" class="options-select__btn use-thumbnail is-active" title="Open a popup to select an option" role="button" data-popup=".exteriorWheels">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-thumbnail">
+                                                        <img src="../images/dummy/img_dummy_option_03.png" alt="$Exterior Colors : 17-inch Alloy Wheels$ image">
+                                                    </span>
+                                                    <span class="options-select__selected-name">17-inch Alloy Wheels</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 90,00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Interior -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Interior</h3>
+                                    <div class="options-select__bundles">
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Colors</h4>
+                                            <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                            <a href="#none" class="options-select__btn use-thumbnail is-active" title="Open a popup to select an option" role="button" data-popup=".interiorColors">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-thumbnail">
+                                                        <img src="../images/dummy/img_dummy_option_02.png" alt="$Interior Colors : Black Monotone$ image">
+                                                    </span>
+                                                    <span class="options-select__selected-name">Black Monotone</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Additional -->
+                                <div class="options-select options-select--layer">
+                                    <h3 class="options-select__title">Additional</h3>
+                                    <div class="options-select__bundles">
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Options</h4>
+                                            <!-- [JS] 선택된 .options-select__btn에 is-active 클래스 추가 -->
+                                            <a href="#none" class="options-select__btn is-active" title="Open a popup to select an option" role="button" data-popup=".additionalOptions">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-name">Dual Full Auto Air-Conditioner</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 90,00</span>
+                                            </a>
+                                        </div>
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Packages</h4>
+                                            <a href="#none" class="options-select__btn is-active" title="Open a popup to select an option" role="button">
+                                                <span class="options-select__selected" data-popup=".additionalPackages">
+                                                    <span class="options-select__selected-name">Convenience</span>
+                                                    <span class="options-select__selected-multiple">1</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 315.00</span>
+                                            </a>
+                                        </div>
+                                        <div class="bundle">
+                                            <h4 class="bundle__title">Accessories</h4>
+                                            <a href="#none" class="options-select__btn is-active" title="Open a popup to select an option" role="button" data-popup=".accessories">
+                                                <span class="options-select__selected">
+                                                    <span class="options-select__selected-name">Floor Mat</span>
+                                                </span>
+                                                <span class="options-select__selected-price">€ 90,00</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="configurator-disclaimer show-mobile">
+                                <div class="btn-wrap">
+                                    <a href="#none" class="btn btn__link type02" target="_blank">
+                                        <span class="btn__text">Disclaimer</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="options-bottom  is-active">
+                            <div class="options-total">
+                                <a href="#none" class="total-btn" title="Go to your build page">
+                                    <span class="total__title">Total Price</span>
+                                    <span class="total__price">€ 20,530.00</span>
+                                </a>
+                            </div>
+                            <div class="options-compare">
+                                <div class="compare-btn btn-wrap btn-secondary__type01">
+                                    <button type="button" class="btn btn__compare-add">
+                                        <span class="btn__text ir">Add to Compare</span>
+                                    </button>
+                                    <button type="button" class="btn btn__compare--type01">
+                                        <span class="btn__text">Compare Your Build (1/3)</span>
+                                    </button>
+                                </div>
+                                <div class="compare-add">
+                                    <div class="add-box">
+                                        <span class="add__model">
+                                            <img src="../images/dummy/img_dummy_addcompare_01.png" alt="car image for comparison">
+                                        </span>
+                                        <span class="add__model">
+                                            <img src="../images/dummy/img_dummy_addcompare_02.png" alt="car image for comparison">
+                                        </span>
+                                        <!-- [D] 이미지 데이터가가 없을 경우 .add__model에 .nodata 클래스 추가 -->
+                                        <span class="add__model nodata">
+                                            <!-- <img src="../images/dummy/img_dummy_addcompare_03.png" alt="car image for comparison"> -->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layers -->
+                    <div class="configurator-layers configurator-inner">
+                        <!-- Layer(dropdown) : Model -->
+                        <!-- A_BU_LP_002.html -->
+                        
+                        <!-- Layer : Year of Product -->
+                        <!-- A_BU_LP_023.html -->
+
+                        <!-- Layer : Body Type -->
+                        <!-- A_BU_LP_024.html -->
+                        
+                        <!-- Layer : Trim -->
+                        <div class="layer trim is-active">
+                            <div class="layer__head">
+                                <button type="button" class="btn__layer-back">
+                                    <span class="btn__text ir">Go Back</span>
+                                </button>
+                                <strong class="layer__title">Trim</strong>
+                            </div>
+
+                            <div class="select-list-wrap">
+                                <div class="trim-detail show-pc">
+                                    <button type="button" class="btn btn__more">
+                                        <span class="btn__text">Details</span>
+                                    </button>
+                                </div>
+
+                                <div class="btn-wrap show-mobile">
+                                    <div class="btn__switch-item btn__switch--type02">
+                                        <input type="checkbox" name="switch02" class="btn__switch" id="switchbtn03">
+                                        <label for="switchbtn03">
+                                            <!-- [JS] 체크 활성화/비활성화시 .is-active 클래스 / title="선택됨" 추가 -->
+                                            <span class="btn__text is-active" title="선택됨">List</span>
+                                            <span class="btn__text">Image</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="select-list select-list--list is-active">
+                                    <ul>
+                                        <li class="select__box">
+                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                            <a href="#none" class="select__item type02 is-active" role="button">
+                                                <div class="item-image">
+                                                    <img src="../images/dummy/img_dummy_trim_01.png" alt="trim feature image">
+                                                </div>
+                                                <div class="item-box">
+                                                    <div class="item-option">
+                                                        <span class="item-option__name">Modern</span>
+                                                        <span class="item-option__price">€20,530.00</span>
+                                                    </div>
+                                                    <div class="item-info">
+                                                        <div class="trim-feature">
+                                                            <ul>
+                                                                <!-- [D] Admin 등록된 피쳐 상세 정보 있는 경우, .feature-wrap에 use-details 클래스 추가 -->
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn "><span>8-inch display audio</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-image">
+                                                                            <img src="../images/dummy/img_dummy_trim_02.png" alt="8-inch display audio image">
+                                                                        </div>
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">8-inch display audio</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Feature descriptions Feature description Feature descriptions Feature descriptions Feature description description  description description description description description
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>Start button & Smart key provided</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">Start button & Smart key provided</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Feature descriptions Feature description Feature descriptions Feature descriptions Feature description description  description description description description descriptionFeature 
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="select__box">
+                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                            <a href="#none" class="select__item type02" role="button">
+                                                <div class="item-image">
+                                                    <img src="../images/dummy/img_dummy_trim_01.png" alt="trim feature image">
+                                                </div>
+                                                <div class="item-box">
+                                                    <div class="item-option">
+                                                        <span class="item-option__name">Premium</span>
+                                                        <span class="item-option__price">€22,650.00</span>
+                                                    </div>
+                                                    <div class="item-info">
+                                                        <div class="trim-feature">
+                                                            <ul>
+                                                                <!-- [D] Admin 등록된 피쳐 상세 정보 있는 경우, .feature-wrap에 use-details 클래스 추가 -->
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>8-inch display audio</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-image">
+                                                                            <img src="../images/dummy/img_dummy_trim_02.png" alt="8-inch display audio image">
+                                                                        </div>
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">8-inch display audio</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Feature descriptions Feature description Feature descriptions Feature descriptions Feature description description  description description description description description
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>Start button & Smart key provided</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">Start button & Smart key provided</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Feature descriptions Feature 
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>Rear monitor</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-image">
+                                                                            <img src="../images/dummy/img_dummy_trim_02.png" alt="Rear monitor image">
+                                                                        </div>
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">Rear monitor</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>Start button & Smart key provided</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">Start button & Smart key provided</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Feature descriptions Feature 
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>Start button & Smart key provided</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">Start button & Smart key provided</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Feature descriptions Feature 
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="select__box">
+                                            <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                            <a href="#none" class="select__item type02" role="button">
+                                                <div class="item-image">
+                                                    <img src="../images/dummy/img_dummy_trim_01.png" alt="trim feature image">
+                                                </div>
+                                                <div class="item-box">
+                                                    <!-- [D] 이전에 선택한 옵션에 변동이 생길 경우, .item-option 클래스에 is-change 클래스 추가 -->
+                                                    <div class="item-option is-change">
+                                                        <span class="item-option__name">Inspiration</span>
+                                                    </div>
+                                                    <div class="item-info">
+                                                        <div class="trim-feature">
+                                                            <ul>
+                                                                <!-- [D] Admin 등록된 피쳐 상세 정보 있는 경우, .feature-wrap에 use-details 클래스 추가 -->
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>8-inch display audio</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-image">
+                                                                            <img src="../images/dummy/img_dummy_trim_02.png" alt="8-inch display audio image">
+                                                                        </div>
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">8-inch display audio</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Feature descriptions Feature description Feature descriptions Feature descriptions Feature 
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>Start button & Smart key provided</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">Start button & Smart key provided</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Feature descriptions Feature description Feature descriptions Feature descriptions Feature description description  
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>Rear monitor</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-image">
+                                                                            <img src="../images/dummy/img_dummy_trim_02.png" alt="Rear monitor image">
+                                                                        </div>
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">Rear monitor</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap use-details">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                                <li class="feature-wrap">
+                                                                    <p class="feature__btn"><span>feature title</span></p>
+                                                                    <figure class="feature__layer">
+                                                                        <div class="feature-info">
+                                                                            <figcaption class="feature-info__title">feature title</figcaption>
+                                                                            <p class="feature-info__text">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, omnis!
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="btn-wrap">
+                                                                            <button type="button" class="btn btn__layer-close">
+                                                                                <span class="btn__text ir">close</span>
+                                                                            </button>
+                                                                        </div>
+                                                                    </figure>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="select-list select-list--image show-mobile">
+                                    <div class="select-list--image__box">
+                                        <a href="#none" class="select__image">
+                                            <img src="../images/dummy/img_dummy_configurator_studio_01.png" alt="KONA Hybrid in studio 1">
+                                        </a>
+                                        <a href="#none" class="select__image">
+                                            <img src="../images/dummy/img_dummy_configurator_studio_02.png" alt="KONA Hybrid in studio 2">
+                                        </a>
+                                        <a href="#none" class="select__image">
+                                            <img src="../images/dummy/img_dummy_configurator_studio_03.png" alt="KONA Hybrid in studio 3">
+                                        </a>
+                                    </div>
+                                    <div class="select-list--btn-wrap">
+                                        <div style="flex:auto; width:100%">
+                                            <div class="btn-wrap btn-option">
+                                                <div class="btn-option__item"><!-- [JS] btn__background 버튼 클릭시 is-active 클래스 추가 -->
+                                                    <button type="button" class="btn btn__background">
+                                                        <span class="btn__text ir">Background</span>
+                                                    </button>
+                                                    <div class="item__list">
+                                                        <div class="item__box">
+                                                            <a href="#none" class="item__link is-active" role="button" title="선택됨"><!-- [JS] 현재 활성화된 Outside/Studio 컷에 is-active 클래스 추가 -->
+                                                                <span class="img__box">
+                                                                    <img src="../images/dummy/img_bg_select_dummy_01.png" alt="outside">
+                                                                </span>
+                                                                <strong class="item__title">Exterior</strong>
+                                                            </a>
+                                                            <a href="#none" class="item__link" role="button">
+                                                                <span class="img__box">
+                                                                    <img src="../images/dummy/img_bg_select_dummy_02.png" alt="studio">
+                                                                </span>
+                                                                <strong class="item__title">Studio</strong>
+                                                            </a>
+                                                        </div>
+                                                        <button type="button" class="btn btn-option__close">
+                                                            <span class="btn__text ir">Background layer close</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-option__item"><!-- [JS] btn__background 버튼 클릭시 is-active 클래스 추가 -->
+                                                    <button type="button" class="btn btn__interior">
+                                                        <span class="btn__text ir">Interior</span>
+                                                    </button>
+                                                    <div class="item__list">
+                                                        <div class="item__box">
+                                                            <a href="#none" class="item__link is-active" role="button"><!-- [JS] 현재 활성화된 Outside/Studio 컷에 is-active 클래스 추가 -->
+                                                                <span class="img__box">
+                                                                    <img src="../images/dummy/img_bg_select_dummy_01.png" alt="outside">
+                                                                </span>
+                                                                <strong class="item__title">Exterior</strong>
+                                                            </a>
+                                                            <a href="#none" class="item__link" role="button">
+                                                                <span class="img__box">
+                                                                    <img src="../images/dummy/img_bg_select_dummy_03.png" alt="interior">
+                                                                </span>
+                                                                <strong class="item__title">Interior</strong>
+                                                            </a>
+                                                        </div>
+                                                        <button type="button" class="btn btn-option__close">
+                                                            <span class="btn__text ir">Interior layer close</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li class="select__box">
+                                                <!-- [JS] 선택된 .select__item에 is-active 클래스 추가 -->
+                                                <a href="#none" class="select__item is-active" role="button">
+                                                    <div class="item-option">
+                                                        <span class="item-option__name">Modern</span>
+                                                        <span class="item-option__price">€20,530.00</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+    
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="trim-detail show-mobile">
+                                    <button type="button" class="btn btn__more">
+                                        <span class="btn__text">Details</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- dimm -->
+                            <div class="dimm"></div>
+                        </div>
+
+                        <!-- Layer : Powertrain -->
+                        <!-- Layer : Exterior -->
+                        <!-- Layer : Interior -->
+                        <!-- Layer : Additional -->
+                    </div>
+                </div>
+                <!--// END -->
+            </div>
+            <!--// contents -->
+        </div>
+        <!--// Container -->
+    </div>
+
+
+    <!-- 230620 : 개별 script ui.js로 이동 -->
+    <!-- <script></script> -->
+</body>
+</html>

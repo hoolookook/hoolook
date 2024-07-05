@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../css/yourbuild.css",
+	"sources": [
+		"../scss/yourbuild.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

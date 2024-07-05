@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "resize-observer-polyfill": "^1.5.1",
+    "simplebar": "^6.2.5"
+  },
+  "scripts": {
+    "clean": "rimraf css/*,js/*,images/*",
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers \"&gt; 1% in KO, ie 9\" -r css/* --no-map",
+    "scss": "node-sass --source-map false --output-style compact -o css scss",
+    "build:css": "run-s scss",
+    "build": "run-s build:*",
+    "watch:css": "onchange \"scss\" -- run-s build:css",
+    "watch": "run-p watch:*",
+    "dev": "run-s build watch"
+  }
+}

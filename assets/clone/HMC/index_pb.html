@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>HMC 현대자동차 CC</title>
+<link rel="stylesheet" href="http://code.jquery.com/jquery-latest.js" />
+<style>
+    @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/convention/html/standard_guide/font/NotoSans-Thin.woff') format('woff')
+    }
+
+    @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/convention/html/standard_guide/font/NotoSans-DemiLight.woff') format('woff')
+    }
+
+    @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/convention/html/standard_guide/font/NotoSans-Light.woff') format('woff')
+    }
+
+    @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/convention/html/standard_guide/font/NotoSans-Regular.woff') format('woff')
+    }
+
+    @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/convention/html/standard_guide/font/NotoSans-Medium.woff') format('woff')
+    }
+
+    @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/convention/html/standard_guide/font/NotoSans-Bold.woff') format('woff')
+    }
+
+    @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/convention/html/standard_guide/font/NotoSans-Black.woff') format('woff')
+    }
+
+    html,
+    body,
+    p {
+    margin: 0;
+    padding: 0
+    }
+
+    body,
+    td {
+    font-size: 1em;
+    font-family: 'NotoSans', '맑은 고딕', 'malgun gothic', dotum, '돋움', Sans-Serif;
+    font-weight: normal;
+    color: #000
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    th,
+    td,
+    a {
+    font-weight: normal
+    }
+
+    table {
+    border-collapse: collapse;
+    border-spacing: 0
+    }
+
+    caption,
+    legend {
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px 0 0 -1px;
+    font-size: 1px;
+    line-height: 0
+    }
+
+    #g_header {
+    padding: 23px 20px;
+    height: 90px;
+    background: #99248a;
+    box-sizing: border-box
+    }
+
+    #g_header h1 {
+    max-width: 1240px;
+    margin: 0 auto;
+    font-size: 2.3em;
+    font-weight: 600;
+    line-height: 1em;
+    color: #fff;
+    text-shadow: 0 0 0 rgba(0, 32, 44, 1), 0 0 3px rgba(0, 32, 44, 1)
+    }
+
+    #g_body {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px
+    }
+    #g_body{
+    position: relative;
+    }
+
+    #g_footer {
+    padding: 24px 20px;
+    background: #f6f6f6;
+    box-sizing: border-box
+    }
+
+    #g_footer span {
+    display: block;
+    max-width: 1240px;
+    margin: 0 auto;
+    font-size: 10px
+    }
+
+    .contents h2 {
+    margin: 50px 0 5px;
+    padding: 8px 0;
+    border-top: 3px dashed #999;
+    border-bottom: 3px dashed #999;
+    font-size: 1.6em;
+    font-weight: bold
+    }
+
+    .note_box {
+    max-width: 1240px;
+    margin: 0 auto 15px;
+    padding: 15px;
+    background: #c2f4ff;
+    line-height: 1.4em
+    }
+
+    .guide_table {
+    width: 100%;
+    margin-bottom: 80px;
+    border-bottom: 2px solid #c5c5c5
+    }
+    .update-time{
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    }
+
+    .guide_table thead th {
+    text-align: left;
+    padding: 6px 2px;
+    border-bottom: 2px solid #666;
+    border-right: 1px solid #292929;
+    border-left: 1px solid #292929;
+    background: #292929;
+    font-weight: 500;
+    color: #fff
+    }
+
+    .guide_table tbody tr:hover {
+    background: #efefef
+    }
+
+    .guide_table tbody td {
+    text-align: left;
+    padding: 5px 2px;
+    font-size: .9em;
+    border-bottom: 1px solid #ccc
+    }
+
+    .guide_table tbody dd {
+    display: inherit
+    }
+
+    .guide_table .no {
+    padding-right: 5px;
+    text-align: center
+    }
+
+    .count_bar {
+    float: right;
+    margin-top: 8px;
+    font-size: .6em;
+    font-weight: normal;
+    color: #666
+    }
+
+    .btn_area {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 0 30px;
+    text-align: right;
+    margin-top: -50px
+    }
+
+    .btn_top {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #292929;
+    color: #fff;
+    text-decoration: none
+    }
+
+    @media screen and (max-width:767px) {
+
+    body,
+    td,
+    .guide_table thead th {
+        font-size: .9em
+    }
+
+    #g_header {
+        padding: 20px 15px
+    }
+
+    #g_header h1 {
+        font-size: 1.6em;
+        line-height: 1.3em
+    }
+
+    #g_header {
+        height: auto
+    }
+
+    #g_body {
+        padding: 0 5px
+    }
+
+    .contents {
+        margin: 0
+    }
+
+    .contents h2 {
+        font-size: 1.3em;
+        margin-top: 20px;
+        padding: 4px 0;
+        border-top: 2px dotted #666;
+        border-bottom: 2px dotted #666
+    }
+
+    .guide_table {
+        margin-bottom: 40px
+    }
+
+    .note_box {
+        padding: 10px
+    }
+
+    .btn_area {
+        margin-top: -10px
+    }
+
+    .hidden-phone {
+        display: none !important
+    }
+
+    .t_center {
+        text-align: center !important
+    }
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    //<![CDATA[
+    $(document).ready(function () {
+    $('th:first-child').addClass('no');
+    // $('td:first-child').addClass('no');
+
+    $(window).resize(function () {
+        if ($(window).width() < 768) {
+        $('tr').children(':first-child').hide();
+        $('tr').children(':nth-child(7)').hide();
+        $('tr').children(':nth-child(8)').hide();
+        } else {
+        $('tr').children(':first-child').show();
+        $('tr').children(':nth-child(7)').show();
+        $('tr').children(':nth-child(8)').show();
+        }
+    });
+
+    var guideTable = $(".guide_table"),
+        len = 0,
+        idx = 0;
+
+    guideTable.each(function (i) {
+
+        len = $(this).find("td.no").length;
+        $(this).prev().find(".page_total").text(len);
+        $(this).find("td.no").each(function (n) {
+        $(this).text(n + 1);
+        });
+
+    });
+
+    guideTable.find("tbody tr").each(function () {
+
+        var idx = $(this).parents(".guide_table").find("thead th.condition").index(),
+        $this = $(this).find("td").eq(idx),
+        condition = $this.text();
+
+        switch (condition) {
+
+        case "완료":
+
+            // $this.css("color", "red");
+
+            break;
+
+        case "완료":
+
+            // $this.css("font-weight", "");
+
+        default:
+            break;
+        }
+
+    });
+
+    var $pageTotal = ($('table.guide_table tbody tr').length) - 1;
+    var $count_total = (($('table.guide_table tbody tr').find('td:eq("4")').children('a')).length) + 1;
+    var $pagePercent = (($count_total / $pageTotal) * 100).toFixed(2) + '%'
+    });
+
+    //]]>
+</script>
+</head>
+
+<body>
+<div id="g_header">
+    <h1>HMC 현대자동차 CC</h1>
+</div>
+
+<div id="g_body">
+    <div class="contents">
+    <!-- HMC 현대자동차 CC -->
+    <h2>HMC 현대자동차 CC 반응형<span class="count_bar">- TOTAL <span class="page_total"></span></span></h2>
+    <h3>Type A</h3>
+    <!-- 업데이트 날짜 -->
+    <div class="update-time">
+        <p class="text">최신 업데이트 : 2023-07-28</p>
+    </div>
+    <table class="guide_table" id="guide_table">
+        <caption>현대자동차그룹 </caption>
+        <colgroup>
+        <col style="width:4%">
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">NO</th>
+            <th scope="col">구분</th>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">3depth</th>
+            <th scope="col">4depth</th>
+            <!-- <th scope="col">화면ID</th> -->
+            <th scope="col" class="t_center">퍼블리싱 보기</th>
+            <th class="hidden-phone condition">상태</th>
+            <th scope="hidden-phone col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Common -->
+        <tr>
+            <td class="no"></td>
+            <td>testReview</td>
+            <td>reviewPage</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/allmodels.html" target="_blank">allmodels.html</a></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td>Common</td>
+            <td>header</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/webcc_header.html" target="_blank">webcc_header.html</a></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td>Common</td>
+            <td>Footer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/webcc_footer.html" target="_blank">webcc_footer.html</a></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Footer</td>
+            <td>Legal</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_CO_P_001</td> -->
+            <td class="filelink"><a href="html/A_CO_P_001.html" target="_blank">A_CO_P_001.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Cookies Policy</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_CO_P_003</td> -->
+            <td class="filelink"><a href="html/A_CO_P_003.html" target="_blank">A_CO_P_003.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Cookie</td>
+            <td>Cookie Notification</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_CO_LP_004</td> -->
+            <td class="filelink"><a href="html/A_CO_LP_004.html" target="_blank">A_CO_LP_004.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Cookie Setting</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_CO_LP_005</td> -->
+            <td class="filelink"><a href="html/A_CO_LP_005.html" target="_blank">A_CO_LP_005.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Cookie Setting 상세</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_CO_LP_007</td> -->
+            <td class="filelink"><a href="html/A_CO_LP_007.html" target="_blank">A_CO_LP_007.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>공통 메시지 팝업</td>
+            <td>Common_confirm</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_M_CO_001</td> -->
+            <td class="filelink"><a href="html/A_M_CO_001.html" target="_blank">A_M_CO_001.html</a>
+            <p>A_CO_LP_006</p>
+            </td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Common_alert</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_M_AL_004</td> -->
+            <td class="filelink"><a href="html/A_M_AL_004.html" target="_blank">A_M_AL_004.html</a>
+            <p>A_CO_LP_006</p>
+            </td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>progress bar</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_M_AL_004</td> -->
+            <td class="filelink"><a href="html/progressbar_full.html" target="_blank">progressbar_full.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>progress bar</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_M_AL_004</td> -->
+            <td class="filelink"><a href="html/progressbar_dimm.html" target="_blank">progressbar_dimm.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <!-- Main -->
+        <tr>
+            <td class="no"></td>
+            <td>Main</td>
+            <td>All Models</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_MA_P_001</td> -->
+            <td class="filelink"><a href="html/A_MA_P_001.html" target="_blank">A_MA_P_001.html</a>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <!-- <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>차량 카테고리</td>
+            <td class="filelink"><a href="html/" target="_blank"></a></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>차량 탐색 필터</td>
+            <td class="filelink"><a href="html/" target="_blank"></a></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>차량 정렬</td>
+            <td class="filelink"><a href="html/" target="_blank"></a></td>
+            <td></td>
+            <td></td>
+        </tr> -->
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>모델 비교</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_MA_P_002</td> -->
+            <td class="filelink"><a href="html/A_MA_LP_002.html" target="_blank">A_MA_LP_002.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <!-- <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>모델 비교</td>
+            <td></td>
+            <td></td>
+            <td>A_MA_LP_002_5</td>
+            <td class="filelink"><a href="html/A_MA_LP_002_5.html" target="_blank">A_MA_LP_002_5.html</a></td>
+            <td>작업중</td>
+            <td></td>
+        </tr> -->
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>교차 비교 탭</td>
+            <td></td>
+            <!-- <td>A_MA_P_003</td> -->
+            <td class="filelink"><a href="html/A_MA_LP_003.html" target="_blank">A_MA_LP_003.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Model Version 선택</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_PC_MA_004</td> -->
+            <td class="filelink"><a href="html/" target="_blank"></a></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <!-- Build -->
+        <tr>
+            <td class="no"></td>
+            <td>Build</td>
+            <td>Configurator</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/A_BU_P_001_1_1.html" target="_blank">인트로 포함 A_BU_P_001</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Intro</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_P_002</td> -->
+            <td class="filelink"><a href="html/A_BU_P_000.html" target="_blank">A_BU_P_000.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Body</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_P_001</td> -->
+            <td class="filelink"><a href="html/A_BU_P_001.html" target="_blank">A_BU_P_001.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Model</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_002</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_002.html" target="_blank">A_BU_LP_002.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Dimensions</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_003</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_003.html" target="_blank">A_BU_LP_003.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Year</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_023</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_023.html" target="_blank">A_BU_LP_023.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>풀 이미지 팝업</td>
+            <td></td>
+            <!-- <td>AMO_BU_LP_033</td> -->
+            <td class="filelink"><a href="html/AMO_BU_LP_033.html" target="_blank">AMO_BU_LP_033.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Body type</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_024</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_024.html" target="_blank">A_BU_LP_024.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Trim</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_004</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_004.html" target="_blank">A_BU_LP_004.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Trim 상세 설명</td>
+            <td></td>
+            <!-- <td>A_BU_LP_005</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_005.html" target="_blank">A_BU_LP_005.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Trim Feature 정보</td>
+            <td></td>
+            <!-- <td>A_BU_LP_018</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_018.html" target="_blank">A_BU_LP_018.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Powertrain</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_006</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_006.html" target="_blank">A_BU_LP_006.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Powertrain 상세 설명</td>
+            <td></td>
+            <!-- <td>A_BU_LP_007</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_007.html" target="_blank">A_BU_LP_007.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Powertrain Filter</td>
+            <td></td>
+            <!-- <td>A_BU_LP_025</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_025.html" target="_blank">A_BU_LP_025.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Exterior</td>
+            <td>Colors</td>
+            <td></td>
+            <!-- <td>A_BU_LP_008</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_008.html" target="_blank">A_BU_LP_008.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Wheels</td>
+            <td></td>
+            <!-- <td>A_BU_LP_009</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_009.html" target="_blank">A_BU_LP_009.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Wheels 상세설명</td>
+            <!-- <td>A_BU_LP_010</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_010.html" target="_blank">A_BU_LP_010.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Interior</td>
+            <td>Colors</td>
+            <td></td>
+            <!-- <td>A_BU_LP_011</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_011.html" target="_blank">A_BU_LP_011.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Additional</td>
+            <td>Options</td>
+            <td></td>
+            <!-- <td>A_BU_LP_012</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_012.html" target="_blank">A_BU_LP_012.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Options 상세 설명</td>
+            <!-- <td>A_BU_LP_019</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_019.html" target="_blank">A_BU_LP_019.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Packages</td>
+            <td></td>
+            <!-- <td>A_BU_LP_013</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_013.html" target="_blank">A_BU_LP_013.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Packages 상세 설명</td>
+            <!-- <td>A_BU_LP_020</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_020.html" target="_blank">A_BU_LP_020.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Packages Feature 정보</td>
+            <!-- <td>A_BU_LP_021</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_021.html" target="_blank">A_BU_LP_021.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Accessories</td>
+            <td></td>
+            <!-- <td>A_BU_LP_014</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_014.html" target="_blank">A_BU_LP_014.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Accessories 상세 설명</td>
+            <!-- <td>A_BU_LP_022</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_022.html" target="_blank">A_BU_LP_022.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Disclaimer</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_026</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_026.html" target="_blank">A_BU_LP_026.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>옵션 변경 안내</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_015</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_015.html" target="_blank">A_BU_LP_015.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>견적 모델 비교</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_BU_LP_016</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_016.html" target="_blank">A_BU_LP_016.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Additional 변경</td>
+            <td></td>
+            <!-- <td>A_BU_LP_017</td> -->
+            <td class="filelink"><a href="html/A_BU_LP_017.html" target="_blank">A_BU_LP_017.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <!-- Summary -->
+        <tr>
+            <td class="no"></td>
+            <td>Summary</td>
+            <td>Your Build</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_SU_P_001</td> -->
+            <td class="filelink"><a href="html/A_SU_P_001.html" target="_blank">A_SU_P_001.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <!-- <tr>
+            <td class="no"></td>
+            <td>Summary</td>
+            <td>Your Build</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>A_SU_P_001_mobile_share_popup</td>
+            <td class="filelink"><a href="html/A_SU_P_001_mobile_share_popup.html" target="_blank">A_SU_P_001_mobile_share_popup.html</a></td>
+            <td>작업중</td>
+            <td></td>
+        </tr> -->
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td>Share</td>
+            <td>E-mail 발송</td>
+            <!-- <td>A_SU_LP_002</td> -->
+            <td></td>
+            <td class="filelink"><a href="html/A_SU_LP_002.html" target="_blank">A_SU_LP_002.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>E-mail 발송(에러)</td>
+            <!-- <td>A_SU_LP_002_error</td> -->
+            <td></td>
+            <td class="filelink"><a href="html/A_SU_LP_002_error.html" target="_blank">A_SU_LP_002_error.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>E-mail 발송(값이 있을때)</td>
+            <!-- <td>A_SU_LP_002</td> -->
+            <td></td>
+            <td class="filelink"><a href="html/A_SU_LP_002_value.html" target="_blank">A_SU_LP_002_value.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>E-mail 발송 완료</td>
+            <!-- <td>A_SU_LP_003</td> -->
+            <td></td>
+            <td class="filelink"><a href="html/A_SU_LP_003.html" target="_blank">A_SU_LP_003.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>PDF Download</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure.html" target="_blank">HMC_WEB_CC_PDF_Brochure.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>PDF Download</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure2.html" target="_blank">HMC_WEB_CC_PDF_Brochure2.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>PDF Download</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_eco.html" target="_blank">HMC_WEB_CC_PDF_Brochure_eco.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>PDF Download</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_01.html" target="_blank">HMC_WEB_CC_PDF_Brochure_01.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_01_02.html" target="_blank">HMC_WEB_CC_PDF_Brochure_01_02.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_02.html" target="_blank">HMC_WEB_CC_PDF_Brochure_02.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_03.html" target="_blank">HMC_WEB_CC_PDF_Brochure_03.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_04.html" target="_blank">HMC_WEB_CC_PDF_Brochure_04.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_05.html" target="_blank">HMC_WEB_CC_PDF_Brochure_05.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_06.html" target="_blank">HMC_WEB_CC_PDF_Brochure_06.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>E-mail 발송 템플릿</td>
+            <td></td>
+            <td class="filelink"><a href="html/HMC_WEB_CC_PDF_Brochure_email.html" target="_blank">HMC_WEB_CC_PDF_Brochure_email.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <!-- Error -->
+        <tr>
+            <td class="no"></td>
+            <td>Error</td>
+            <td>유효기간 만료</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_ER_P_001</td> -->
+            <td></td>
+            <td class="filelink"><a href="html/A_ER_P_001.html" target="_blank">A_ER_P_001.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>404 Error</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_ER_P_002</td> -->
+            <td></td>
+            <td class="filelink"><a href="html/A_ER_P_002.html" target="_blank">A_ER_P_002.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>500 Error</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_ER_P_003</td> -->
+            <td></td>
+            <td class="filelink"><a href="html/A_ER_P_003.html" target="_blank">A_ER_P_003.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>공지</td>
+            <td></td>
+            <td></td>
+            <!-- <td>A_ER_P_004</td> -->
+            <td></td>
+            <td class="filelink"><a href="html/A_ER_P_004.html" target="_blank">A_ER_P_004.html</a></td>
+            <td>완료</td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+    <!--// HMC 현대자동차 CC -->
+
+    <h2>Guide</h2>
+    <h3>Type A</h3>
+    <table class="guide_table">
+        <caption>HMC 현대자동차 CC Guide</caption>
+        <colgroup>
+        <col style="width:4%">
+        <col>
+        <col>
+        <col>
+        <col>
+        <thead>
+        <tr>
+            <th scope="col">NO</th>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col" class="t_center">퍼블리싱 보기</th>
+            <th class="hidden-phone condition">상태</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="no"></td>
+            <td>Guide</td>
+            <td></td>
+            <td class="filelink"><a href="guide/guide.html" target="_blank">guide.html</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Layout</td>
+            <td class="filelink"><a href="guide/layout.html" target="_blank">layout.html</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Color Guide</td>
+            <td class="filelink"><a href="guide/color-guide.html" target="_blank">color-guide.html</a>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Button Guide</td>
+            <td class="filelink"><a href="guide/button-guide.html" target="_blank">Button-guide.html</a>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Icon Guide</td>
+            <td class="filelink"><a href="guide/icon-guide.html" target="_blank">Icon-guide.html</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Input guide</td>
+            <td class="filelink"><a href="guide/input-guide.html" target="_blank">Input-guide.html</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Tab Guide</td>
+            <td class="filelink"><a href="guide/tab-guide.html" target="_blank">Tab-guide.html</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Product Guide</td>
+            <td class="filelink"><a href="guide/product-guide.html" target="_blank">Product-guide.html</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="no"></td>
+            <td></td>
+            <td>Popup Guide</td>
+            <td class="filelink"><a href="guide/popup-guide.html" target="_blank">popup-guide.html</a></td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+
+    </div>
+    <div class="btn_area">
+    <a href="#top" class="btn_top" title="상단으로 이동">TOP</a>
+    </div>
+</div>
+<div id="g_footer">
+    <span>Copyright &copy; 2018 by HIWEB All Rights Reserved.</span>
+</div>
+</body>
+
+</html>

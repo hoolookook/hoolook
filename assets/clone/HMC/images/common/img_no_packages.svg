@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43 44V30H15V58H27" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M33.0007 53.3333L33.709 48H45.2923L46.0007 53.3333C47.1973 53.3333 48.1673 54.3034 48.1673 55.5V61.5H44.3757V59.3333H34.6257V61.5H30.8342L30.8341 55.5C30.834 54.3034 31.8041 53.3333 33.0007 53.3333Z" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M46.5 52.5L47.75 51.75L49 51" stroke="#CCCCCC" stroke-width="2"/>
+<path d="M32.5 52.5L30 51" stroke="#CCCCCC" stroke-width="2"/>
+<path d="M32.8496 53.3335H46.1519" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M20 37H20.3684H22.5" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M20 42H20.3684H22.5" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M20 47H20.3684H22.5" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M24 37H26.5789H38" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M24 42H26.5789H38" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M24 47H24.9211H29" stroke="#CCCCCC" stroke-width="2.5"/>
+<circle cx="32" cy="12" r="9" stroke="#CCCCCC" stroke-width="2.5"/>
+<path d="M32 6.99979L32 12.6942M32 15L32 17.1998" stroke="#CCCCCC" stroke-width="2.5"/>
+</svg>

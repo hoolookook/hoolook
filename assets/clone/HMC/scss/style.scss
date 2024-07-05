@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "main.scss";
+@import "configurator.scss";
+@import "yourbuild.scss";
+@import "popup.scss";
+@import "guide.scss";
+
+/* PC - 1920 ~ */
+@include main_desktop;
+@include configurator_desktop;
+@include yourbuild_desktop;
+@include popup_desktop;
+
+
+/* PC - 751 ~ 1920 */
+@media screen and (min-width: 751px) and (max-width: 1920px){
+	@include main_tablet;
+	@include configurator_tablet;
+	@include yourbuild_tablet;
+	@include popup_tablet;
+}
+
+
+/* MO */
+@media screen and (max-width: 750px) {
+	@include main_mobile;
+	@include configurator_mobile;
+	@include yourbuild_mobile;
+	@include popup_mobile;
+}

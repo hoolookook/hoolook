@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HMC WEB CC</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+
+        <!-- Header -->
+        <header class="header" id="header"><!-- [js] 윈도우 scroll 사용시 is-fixed 클래스 추가 -->
+            <div class="header-inner">
+                <h1 class="header-logo">
+                    <a href="#none">
+                        <img src="../images/common/img_logo_01.svg" alt="hyundai">
+                    </a>
+                </h1>
+                
+                <!-- 230728 : configurator 종료 버튼 추가 -->
+                <div class="exit-wrap">
+                    <button type="button" class="btn btn_exit"><span class="blind">close</span><i class="img__box" aria-hidden="true"></i></button>
+                </div>
+                <!-- // 230728 : configurator 종료 버튼 추가 -->
+
+
+                <!-- [js] select 버튼 마우스오버,클릭시 lang-wrap 클래스에 is-active 클래스 추가 -->
+                <div class="lang-wrap">
+                    <button type="button" class="lang-select" title="언어 선택"><span>EN</span></button>
+                    <div class="lang-list">
+                        <ul>
+                            <!-- [js] select 국가의 .lang__item 클래스에 is-active 클래스 / .lang__link 클래스에 title="선택됨" 속성 추가 -->
+                            <li class="lang__item is-active">
+                                <a href="#none" class="lang__link" title="선택됨"><span>EN</span></a>
+                            </li>
+                            <li class="lang__item">
+                                <a href="#none" class="lang__link"><span>DE</span></a>
+                            </li>
+                            <li class="lang__item">
+                                <a href="#none" class="lang__link"><span>FR</span></a>
+                            </li>
+                            <li class="lang__item">
+                                <a href="#none" class="lang__link"><span>ES</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--// Header -->
+    </div>
+</body>
+</html>

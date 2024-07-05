@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AMO_BU_LP_033</title>
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../js/ui.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- skip-nav -->
+        <div class="accessibility">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!--// skip-nav -->
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- contents -->
+            <div class="contents is-wide" id="contents">
+            </div>
+            <!--// contents -->
+
+
+            <!-- START -->
+            <div class="popup-layer-wrap type-popup--fullimage is-active">
+                <div class="popup-layer-inner">
+                    <div class="popup-layer">
+                        <div class="select-list select-list--image swiper-container show-mobile">
+                            <div class="select-list--image__box swiper-wrapper">
+                                <div href="#none" class="select__image swiper-slide">
+                                    <img src="../images/dummy/img_dummy_configurator_studio_01.png" alt="KONA Hybrid in studio 1">
+                                </div>
+                                <div href="#none" class="select__image swiper-slide">
+                                    <img src="../images/dummy/img_dummy_configurator_studio_02.png" alt="KONA Hybrid in studio 2">
+                                </div>
+                                <div href="#none" class="select__image swiper-slide">
+                                    <img src="../images/dummy/img_dummy_configurator_studio_03.png" alt="KONA Hybrid in studio 3">
+                                </div>
+                            </div>
+                            <div class="select-list--btn-wrap">
+                                <div style="flex:auto; width:100%">
+                                    <div class="btn-wrap btn-option">
+                                        <div class="btn-option__item"><!-- [JS] btn__background 버튼 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="btn btn__background">
+                                                <span class="btn__text ir">Background</span>
+                                            </button>
+                                            <div class="item__list">
+                                                <div class="item__box">
+                                                    <a href="#none" class="item__link is-active" role="button" title="선택됨"><!-- [JS] 현재 활성화된 Outside/Studio 컷에 is-active 클래스 추가 -->
+                                                        <span class="img__box">
+                                                            <img src="../images/dummy/img_bg_select_dummy_01.png" alt="outside">
+                                                        </span>
+                                                        <strong class="item__title">Exterior</strong>
+                                                    </a>
+                                                    <a href="#none" class="item__link" role="button">
+                                                        <span class="img__box">
+                                                            <img src="../images/dummy/img_bg_select_dummy_02.png" alt="studio">
+                                                        </span>
+                                                        <strong class="item__title">Studio</strong>
+                                                    </a>
+                                                </div>
+                                                <button type="button" class="btn btn-option__close">
+                                                    <span class="btn__text ir">Background layer close</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="btn-option__item"><!-- [JS] btn__background 버튼 클릭시 is-active 클래스 추가 -->
+                                            <button type="button" class="btn btn__interior">
+                                                <span class="btn__text ir">Interior</span>
+                                            </button>
+                                            <div class="item__list">
+                                                <div class="item__box">
+                                                    <a href="#none" class="item__link is-active" role="button"><!-- [JS] 현재 활성화된 Outside/Studio 컷에 is-active 클래스 추가 -->
+                                                        <span class="img__box">
+                                                            <img src="../images/dummy/img_bg_select_dummy_01.png" alt="outside">
+                                                        </span>
+                                                        <strong class="item__title">Exterior</strong>
+                                                    </a>
+                                                    <a href="#none" class="item__link" role="button">
+                                                        <span class="img__box">
+                                                            <img src="../images/dummy/img_bg_select_dummy_03.png" alt="interior">
+                                                        </span>
+                                                        <strong class="item__title">Interior</strong>
+                                                    </a>
+                                                </div>
+                                                <button type="button" class="btn btn-option__close">
+                                                    <span class="btn__text ir">Interior layer close</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination show-mobile"></div>
+                        </div>
+                        <div class="popup-layer-close">
+                            <button type="button" class="btn btn__layer-close">
+                                <span class="btn__text ir">close</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// END -->
+        </div>
+        <!--// Container -->
+        <script>
+            const swiperFullImage = new Swiper('.select-list--image', {
+                slidesPerView: 1,
+                loop: true,
+                direction: 'vertical',
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                },
+
+            })
+        </script>
+    </div>
+</body>
+</html>

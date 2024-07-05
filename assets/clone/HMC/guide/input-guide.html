@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hyundai-Guide</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/guide.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper-bundle.min.css">
+    <script type="text/javascript" src="../js/ui.js"></script>
+    <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- Container -->
+        <div class="container" id="container">
+            <!-- Default -->
+            <div class="contents" id="contents">
+                <!-- START -->
+                <h2 class="guide-title">Input/Select</h2>
+                <div class="guide-tab">
+                    <ul>
+                        <li class="guide-tab-list">
+                            <a href="color-guide.html">Color</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="button-guide.html">Button</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="icon-guide.html">Icon</a>
+                        </li>
+                        <li class="guide-tab-list active">
+                            <a href="input-guide.html">Input/Select</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="tab-guide.html">Tab</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="popup-guide.html">PoPup</a>
+                        </li>
+                        <li class="guide-tab-list">
+                            <a href="product-guide.html">Product</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guide-content input"><!-- [P] 컨텐츠에 맞는 더블 클래스 추가하여 CSS 적용 -->
+                    <div class="item-box">
+                        <strong class="item__title">Checkbox</strong>
+                        <div class="item-list">
+                            <ul>
+                                <li>
+                                    <strong class="list__title">Normal</strong>
+                                    <div class="check-box check__type01">
+                                        <input type="checkbox" name="checkbox01" id="check01">
+                                        <label for="check01">
+                                            <span class="text">TEXTTEXT</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="list__title">Checked</strong>
+                                    <div class="check-box check__type01">
+                                        <input type="checkbox" name="checkbox02" id="check03" checked>
+                                        <label for="check03">
+                                            <span class="text">TEXTTEXT</span>
+                                        </label>
+                                    </div>
+                                </li> 
+                                <li>
+                                    <strong class="list__title">Disabled</strong>
+                                    <div class="check-box check__type01">
+                                        <input type="checkbox" name="checkbox03" id="check03" disabled>
+                                        <label for="check03">
+                                            <span class="text">TEXTTEXT</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <strong class="item__title">Radio</strong>
+                        <div class="item-list">
+                            <ul>
+                                <li>
+                                    <strong class="list__title">Normal</strong>
+                                    <div class="radio-box radio__type01">
+                                        <input type="radio" name="radio-box01" id="radio01">
+                                        <label for="radio01">
+                                            <span class="text">TEXTTEXT</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="list__title">Checked</strong>
+                                    <div class="radio-box radio__type01">
+                                        <input type="radio" name="radio-box01" id="radio02" checked>
+                                        <label for="radio02">
+                                            <span class="text">TEXTTEXT</span>
+                                        </label>
+                                    </div>
+                                </li> 
+                                <li>
+                                    <strong class="list__title">Disabled</strong>
+                                    <div class="radio-box radio__type01">
+                                        <input type="radio" name="radio-box01" id="radio03" disabled>
+                                        <label for="radio03">
+                                            <span class="text">TEXTTEXT</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <strong class="item__title">Dropdown</strong>
+                        <div class="item-list">
+                            <ul>
+                                <li>
+                                    <strong class="list__title">Normal</strong>
+                                    <div class="select-wrap select__type01"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                        <button type="button" class="select-btn" title="언어 선택"><span>Lowest Price</span></button>
+                                        <div class="select-list">
+                                            <ul>
+                                                <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                <li class="select__box is-active">
+                                                    <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                    <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">Lowest Price</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item02</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item03</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item04</span></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="list__title">Active</strong>
+                                    <div class="select-wrap select__type01 is-active"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                        <button type="button" class="select-btn" title="언어 선택"><span>Lowest Price</span></button>
+                                        <div class="select-list">
+                                            <ul>
+                                                <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                <li class="select__box is-active">
+                                                    <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                    <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">Lowest Price</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item02</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item03</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item04</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item02</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item03</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item04</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item02</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item03</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item04</span></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div>
+                        <div class="item-list" style="padding-top:250px">
+                            <ul>
+                                <li>
+                                    <strong class="list__title">Normal</strong>
+                                    <div class="select-wrap select__type02"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                        <button type="button" class="select-btn" title="언어 선택"><span>Lowest Price</span></button>
+                                        <div class="select-list">
+                                            <ul>
+                                                <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                <li class="select__box is-active">
+                                                    <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                    <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">Lowest Price</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item02</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item03</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item04</span></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="list__title">Active</strong>
+                                    <div class="select-wrap select__type02 is-active"><!-- [js] .select-btn 클릭시 is-active 클래스 추가 -->
+                                        <button type="button" class="select-btn" title="언어 선택"><span>Lowest Price</span></button>
+                                        <div class="select-list">
+                                            <ul>
+                                                <!-- [js] .select-btn 선택되어진곳에 .select__box 클래스에 is-active 클래스 추가 -->
+                                                <li class="select__box is-active">
+                                                    <!-- [js] 선택된 .select__item 클래스에 is-active 클래스 & title="선택됨" 속성 추가 -->
+                                                    <button type="button" class="select__item is-active" title="선택됨"><span class="select__title">Lowest Price</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item02</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item03</span></button>
+                                                </li>
+                                                <!-- [js] 선택 불가 옵션일 경우 .select__box 클래스에 is-change 클래스 추가 -->
+                                                <li class="select__box is-change">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item04</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item02</span></button>
+                                                </li>
+                                                <li class="select__box">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item03</span></button>
+                                                </li>
+                                                <!-- [js] 선택 불가 옵션일 경우 .select__box 클래스에 is-change 클래스 추가 -->
+                                                <li class="select__box is-change">
+                                                    <button type="button" class="select__item"><span class="select__title">Select__item04</span></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-box" style="padding-top:200px">
+                        <strong class="item__title">Input</strong>
+                        <div class="item-list">
+                            <ul>
+                                <li>
+                                    <strong class="list__title">Normal / Active</strong>
+                                    <div class="input-box input__type01"><!-- [D] input 에러일 경우 input-box--error 클래스 추가-->
+                                        <label for="input_01">
+                                            <span class="text blind">input 제목</span>
+                                        </label>
+                                        <input type="text" id="input_01" placeholder="Please enter your email">
+                                        <span class="error-text">Error Text</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="list__title">Filled</strong>
+                                    <div class="input-box input__type01"><!-- [D] input 에러일 경우 input-box--error 클래스 추가-->
+                                        <label for="input_02">
+                                            <span class="text blind">input 제목</span>
+                                        </label>
+                                        <input type="text" id="input_02" placeholder="Please enter your email" value="abcd">
+                                        <span class="error-text">Error Text</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="list__title">Disabled</strong>
+                                    <div class="input-box input__type01"><!-- [D] input 에러일 경우 input-box--error 클래스 추가-->
+                                        <label for="input_03">
+                                            <span class="text blind">input 제목</span>
+                                        </label>
+                                        <input type="text" id="input_03" placeholder="Text entry not possible" disabled>
+                                        <span class="error-text">Error Text</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong class="list__title">Error</strong>
+                                    <div class="input-box input__type01 input-box--error"><!-- [D] input 에러일 경우 input-box--error 클래스 추가-->
+                                        <label for="input_04">
+                                            <span class="text blind">input 제목</span>
+                                        </label>
+                                        <input type="text" id="input_04" placeholder="Please enter your email" value="abcd">
+                                        <span class="error-text">Error Text</span>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <strong class="list__title">Cannot edit text</strong>
+                                    <div class="input-box input__type01"><!-- [D] input 에러일 경우 input-box--error 클래스 추가-->
+                                        <label for="input_05">
+                                            <span class="text blind">input 제목</span>
+                                        </label>
+                                        <input type="text" id="input_05" placeholder="Please enter your email" value="abcd" readonly>
+                                        <span class="error-text">Error Text</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--// END -->
+            </div>
+            <!--// Default -->
+        </div>
+        <!--// Container -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* opacity */
+.opacity3 { opacity: .3; }
+
+.opacity4 { opacity: .4; }
+
+.opacity5 { opacity: .5; }
+
+/* color */
+.dark { color: #151515 !important; }
+
+.gray { color: #666 !important; }
+
+/* font-size */
+.font-size6 { font-size: 6px !important; }
+
+.font-size8 { font-size: 8px !important; }
+
+.font-size10 { font-size: 10px !important; }
+
+.font-size12 { font-size: 12px !important; }
+
+.font-size18 { font-size: 18px !important; }
+
+.font-size20 { font-size: 20px !important; }
+
+/* padding-top */
+.pt8 { padding-top: 8px !important; }
+
+.pt16 { padding-top: 16px !important; }
+
+.pt20 { padding-top: 20px !important; }
+
+/* wrap */
+/* container */
+#pdf-contents { position: relative; width: 595px; margin: 0 auto; color: #000; /* pdf-contents */ /* configurator dimension */ }
+
+#pdf-contents .pdf-contents { display: flex; flex-direction: column; min-height: 842px; padding: 40px 40px 0; }
+
+#pdf-contents .pdf-contents:has(.price-summary) { padding-top: 20px; }
+
+#pdf-contents .pdf-contents:has(.pdf-dimension-detail__contents) .pdf-contents__title + .contents-box { margin-bottom: 0; }
+
+#pdf-contents .pdf-contents .contents-box { display: flex; justify-content: center; padding-top: 8px; margin-bottom: 32px; border-top: 0.5px solid #151515 !important; }
+
+#pdf-contents .pdf-contents .contents-box__sup-text { color: #666 !important; font-size: 8px; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item { flex: 1 1 50%; height: 100%; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item__title { font-size: 10px; font-weight: 500; line-height: 1; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item__text { display: block; font-size: 12px; line-height: 1; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item__text > .contents-item__text { padding-top: 4px; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item__image { width: 228px; padding-top: 12px; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item.type2 { padding-top: 30px; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item.type3 { padding-top: 10px; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item .contents-item__info--thumbnail { display: flex; align-items: center; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item .contents-item__info-image { width: 30px; height: 30px; margin-right: 12px; }
+
+#pdf-contents .pdf-contents .contents-box .contents-item .contents-item__info-description { width: calc(100% - 42px); }
+
+#pdf-contents .pdf-contents .contents-box:last-child { margin-bottom: 0; }
+
+#pdf-contents .pdf-contents .contents-box.type2 { color: #151515; }
+
+#pdf-contents .pdf-contents .contents-box.type2 .contents-item__text { font-size: 8px; }
+
+#pdf-contents .pdf-contents .contents-box.type2 .contents-item__info + .contents-item__info { padding-top: 12px; }
+
+#pdf-contents .pdf-contents .contents-box.type2 + .pdf-contents__title { padding-top: 30px; }
+
+#pdf-contents .pdf-contents .contents-box.type2 .contents-item__info-price { font-weight: 400; }
+
+#pdf-contents .pdf-contents .price-summary { padding: 20px; margin: 0 -20px 20px; border-radius: 4px; background-color: #ede4d9; }
+
+#pdf-contents .pdf-contents .price-summary .contents-box { border-top: 1px solid #151515 !important; }
+
+#pdf-contents .pdf-contents .price-summary .contents-box .contents-item__text { font-size: 8px; line-height: 1; }
+
+#pdf-contents .pdf-contents .price-summary ~ .contents-box { margin-bottom: 20px; }
+
+#pdf-contents .pdf-contents .price-box { display: flex; }
+
+#pdf-contents .pdf-contents .price-box > * { flex: 1; }
+
+#pdf-contents .pdf-contents .price-box__item { display: flex; flex-direction: column; justify-content: space-between; }
+
+#pdf-contents .pdf-contents .price-box__item-title { max-width: 231px; font-size: 24px; font-weight: 500; line-height: 1; color: #151515; }
+
+#pdf-contents .pdf-contents .price-box__item-text { display: block; padding-top: 10px; font-size: 7px; font-weight: 400; color: #151515; }
+
+#pdf-contents .pdf-contents .price-box__item-image { display: flex; align-items: center; max-width: 176.05px; width: fit-content; height: 87px; border-radius: 4px; overflow: hidden; }
+
+#pdf-contents .pdf-contents .price-box__item-image img { object-fit: cover; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__info-price.gray { font-weight: 400; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__info.line { padding-top: 8px !important; margin: 8px 0 20px; border-top: .5px solid #000; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__info--gap1 { margin-top: 48px; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__info--gap1 ~ .contents-item__info .contents-item__text { font-weight: 500; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__info--gap1 .contents-item__text { font-weight: 500; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__info--gap2 { padding-top: 14px !important; margin-top: 89px; border-top: .5px solid #000; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__info--gap2 .contents-item__text { font-weight: 400; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__info + .contents-item__info { padding-top: 4px; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__description { padding-top: 12px; }
+
+#pdf-contents .pdf-contents .price-box .contents-item__text { font-size: 8px; font-weight: 500; }
+
+#pdf-contents .pdf-contents .contents-item__description { padding-top: 16px; font-family: 'HyundaiSansText'; font-size: 6px; line-height: 1.33; }
+
+#pdf-contents .pdf-contents .contents-item__info + .contents-item__info { padding-top: 8px; }
+
+#pdf-contents .pdf-contents .contents-item__info-box { display: flex; justify-content: space-between; align-items: center; }
+
+#pdf-contents .pdf-contents .contents-item__info-box + .contents-item__info-box { padding-top: 2px; }
+
+#pdf-contents .pdf-contents .contents-item__info-price { text-align: right; font-size: 8px; font-weight: 500; line-height: 1; }
+
+#pdf-contents .pdf-contents .contents-item__type { display: block; padding-bottom: 4px; font-size: 8px; font-weight: 500; line-height: 10px; }
+
+#pdf-contents .pdf-contents__title { padding-bottom: 12px; font-size: 18px; }
+
+#pdf-contents .pdf-contents__title--gray { padding-bottom: 5px; font-size: 8px; color: #666; opacity: .5; }
+
+#pdf-contents .pdf-contents--image .contents-box { margin-bottom: 0; }
+
+#pdf-contents .pdf-contents--image .contents-box + .contents-box { margin-top: 32px; }
+
+#pdf-contents .pdf-contents--image .contents-box .contents-item__title { font-size: 18px; }
+
+#pdf-contents .pdf-contents--image .contents-box .contents-item__info-price { font-size: 12px; font-weight: 400; }
+
+#pdf-contents .pdf-contents--image .contents-item__info + .contents-item__info { padding-top: 20px; }
+
+#pdf-contents .pdf-contents--image .contents-item__info-box + .contents-item__info-box { padding-top: 4px; }
+
+#pdf-contents .pdf-contents--image .contents-item__type { padding-bottom: 6px; }
+
+#pdf-contents .pdf-contents--image .image-box { display: flex; flex-wrap: wrap; padding-top: 12px; padding-bottom: 24px; }
+
+#pdf-contents .pdf-contents--image .image-item { width: 100%; }
+
+#pdf-contents .pdf-contents--image .image-item:not(:first-child) { width: 50%; }
+
+#pdf-contents .footer { display: flex; justify-content: space-between; padding: 15px 0 25px; font-size: 8px; border-top: .5px solid #000; }
+
+#pdf-contents .footer-wrap { margin-top: auto; background: none; }
+
+#pdf-contents .footer-item { flex: 1; }
+
+#pdf-contents .footer-item:nth-child(2) { text-align: center; }
+
+#pdf-contents .footer-item:nth-child(3) { text-align: right; }
+
+#pdf-contents .footer-logo { width: 54px; }
+
+#pdf-contents .footer-logo img { display: none; }
+
+#pdf-contents .footer-text { padding-bottom: 16px; font-family: 'HyundaiSansText'; font-size: 6px; line-height: 120%; }
+
+#pdf-contents .pdf-dimension-detail__contents { display: flex; justify-content: center; margin-top: 9px; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box { padding-top: 0; margin-bottom: 36px !important; border-top: none !important; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box:nth-child(1) { width: 157px; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box:nth-child(2) { width: 200px; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box:nth-child(3) { width: 157px; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box + .contents-box { display: flex; justify-content: center; margin-top: 0; border-left: 1px solid #ebebeb; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box .contents-item { display: flex; flex-direction: column; align-items: center; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box .contents-item .contents-model { height: 144px; margin-bottom: 11px; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box .contents-item .contents-model > img { height: 100%; width: fit-content; object-fit: cover; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-box .contents-item .contents-info { position: relative; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-info-item { display: flex; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-info-item:first-child { margin-bottom: 16px; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-info__model { display: flex; align-items: center; justify-content: center; width: 45px; height: 38px; margin-right: 13px; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-info__model > img { height: 100%; object-fit: scale-down; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-info__num { display: flex; flex-direction: column; justify-content: center; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-info__num .num { display: block; margin-bottom: 3px; font-size: 11px; color: #151515; }
+
+#pdf-contents .pdf-dimension-detail__contents .contents-info__num .text { font-size: 5px; color: #666; }
+
+/*# sourceMappingURL=../false/pdf.css.map */
