@@ -655,7 +655,7 @@ a {
 	transition: width 0.25s linear;
 }
 #header .headerWrap .navWrap .nav > a .login {
-	background-image: url(/resource/images/icons/nav-login-icon-white.png);
+	background-image: url(../../images/icons/nav-login-icon-white.png);
 	background-repeat: no-repeat;
 	padding-right: 22px;
 	background-position: center right;
@@ -901,7 +901,7 @@ a {
 #contents .dropDownSection .wrap .container select {
 	width: 28.5%;
 	background: transparent;
-	background-image: url(/resource/images/icons/form-select-arrow-white.png);
+	background-image: url(../../images/icons/form-select-arrow-white.png);
 	background-repeat: no-repeat;
 	background-position-x: 92%;
 	background-position-y: 25px;
@@ -1022,7 +1022,7 @@ a {
 	height: 12px;
 	background-repeat: no-repeat;
 	background-size: 14px 8px;
-	background-image: url(/resource/images/icons/form-select-arrow-white.png);
+	background-image: url(../../images/icons/form-select-arrow-white.png);
 }
 #fullpage .cardSection .section1,
 #fullpage .cardSection .section3,
@@ -1230,7 +1230,7 @@ a {
 	height: 10px;
 	background-repeat: no-repeat;
 	background-size: 12px 7px;
-	background-image: url(/resource/images/icons/form-select-arrow-white.png);
+	background-image: url(../../images/icons/form-select-arrow-white.png);
 }
 #fullpage #fixed .recruitWrap {
 	max-width: 1170px;
@@ -1322,7 +1322,7 @@ a {
 	left: none;
 	background-repeat: no-repeat;
 	background-size: 14px 17px;
-	background-image: url(/resource/images/icons/label-ico-alarm-white.png);
+	background-image: url(../../images/icons/label-ico-alarm-white.png);
 }
 #fullpage #fixed .recruitWrap .rightAria li:last-child {
 	margin-left: 40px;

@@ -16,11 +16,11 @@ $(document).ready(function () {
 
       $(".logo img").attr(
         "src",
-        "/resource/images/icons/header-ci-black.png"
+        "resource/images/icons/header-ci-black.png"
       );
       $(".navWrap .nav .login").css({
         "background-image":
-          "url(/resource/images/icons/nav-login-icon-black.png)",
+          "url(resource/images/icons/nav-login-icon-black.png)",
       });
       $(".navWrap .nav a").css({
         color: "black",
@@ -31,11 +31,11 @@ $(document).ready(function () {
       });
       $(".logo img").attr(
         "src",
-        "/resource/images/icons/header-ci-white.png"
+        "resource/images/icons/header-ci-white.png"
       );
       $(".navWrap .nav .login").css({
         "background-image":
-          "url(/resource/images/icons/nav-login-icon-white.png)",
+          "url(resource/images/icons/nav-login-icon-white.png)",
       });
       $(".navWrap .nav a").css({
         color: "white",
