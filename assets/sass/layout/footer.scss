@@ -21,17 +21,38 @@
       }
       .profileContact {
         padding: 50px 25px;
-        @include commonFlex(column wrap, center, flex-start);
-        p {
-          @include commonFont(16px, $fontC);
-          padding: 5px 5px;
-          &:last-child {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        dl{
+          display: flex;
+          width: 100%;
+          &+dl{
+            margin-top: 5px;
+          }
+          dt{
+            @include commonFont(16px, $fontC);
+            width: 50%;
+            text-align: left;
+          }
+          dd{
+            @include commonFont(16px, $fontC);
+            width: 50%;
+            text-align: left;
             a {
-              // vertical-align: text-bottom;
               font-size: 16px;
             }
           }
         }
+        // p {
+        //   padding: 5px 5px;
+        //   &:last-child {
+        //     a {
+        //       // vertical-align: text-bottom;
+        //       font-size: 16px;
+        //     }
+        //   }
+        // }
       }
     }
     .profileR {

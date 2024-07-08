@@ -48,16 +48,29 @@
 #footer .profileWrap .profileL .profileContact {
   padding: 50px 25px;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
 }
-#footer .profileWrap .profileL .profileContact p {
+#footer .profileWrap .profileL .profileContact dl {
+  display: flex;
+  width: 100%;
+}
+#footer .profileWrap .profileL .profileContact dl + dl {
+  margin-top: 5px;
+}
+#footer .profileWrap .profileL .profileContact dl dt {
   font-size: 16px;
   color: #caa623;
-  padding: 5px 5px;
+  width: 50%;
+  text-align: left;
 }
-#footer .profileWrap .profileL .profileContact p:last-child a {
+#footer .profileWrap .profileL .profileContact dl dd {
+  font-size: 16px;
+  color: #caa623;
+  width: 50%;
+  text-align: left;
+}
+#footer .profileWrap .profileL .profileContact dl dd a {
   font-size: 16px;
 }
 #footer .profileWrap .profileR .skills p {
