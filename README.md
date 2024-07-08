@@ -5,7 +5,7 @@
 
 <!-- <h1>hoolookook portfolio</h1> -->
 
-<strong title="내 포트폴리오로">http://hoolookook.dothome.co.kr/</strong>
+<strong title="내 포트폴리오로"><a href="https://hoolookook.github.io/hoolook/" target="_blank">hoolookook.github.io</strong>
 
 <h3>CONCEPT</h3>
 
